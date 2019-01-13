@@ -1,0 +1,393 @@
+10-16 23:29 root         INFO     start our program
+10-16 23:29 root         WARNING  love bebe <3
+10-16 23:29 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-16 23:29 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=crude+oil&from=2018-10-14&to=2018-10-14&language=en&sortBy=relevancy&pageSize=100&page=1 HTTP/1.1" 200 90483
+10-16 23:29 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-16 23:29 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=crude+oil&from=2018-10-14&to=2018-10-14&language=en&sortBy=relevancy&pageSize=100&page=2 HTTP/1.1" 200 19934
+10-16 23:31 root         INFO     start our program
+10-16 23:31 root         WARNING  love bebe <3
+10-16 23:31 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-16 23:31 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=crude+oil&from=2018-10-14&to=2018-10-14&language=en&sortBy=relevancy&pageSize=100&page=1 HTTP/1.1" 200 90483
+10-16 23:31 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-16 23:31 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=crude+oil&from=2018-10-14&to=2018-10-14&language=en&sortBy=relevancy&pageSize=100&page=2 HTTP/1.1" 200 19934
+10-16 23:31 root         INFO     Downloaded file:crude_oil_2018-10-14
+10-16 23:33 root         INFO     start our program
+10-16 23:33 root         WARNING  love bebe <3
+10-16 23:33 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-16 23:33 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=crude+oil&from=2018-10-14&to=2018-10-14&language=en&sortBy=relevancy&pageSize=100&page=1 HTTP/1.1" 200 90483
+10-16 23:33 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-16 23:33 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=crude+oil&from=2018-10-14&to=2018-10-14&language=en&sortBy=relevancy&pageSize=100&page=2 HTTP/1.1" 200 19934
+10-16 23:36 root         INFO     start our program
+10-16 23:36 root         WARNING  love bebe <3
+10-16 23:36 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-16 23:36 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=crude+oil&from=2018-10-14&to=2018-10-14&language=en&sortBy=relevancy&pageSize=100&page=1 HTTP/1.1" 200 90483
+10-16 23:36 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-16 23:36 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=crude+oil&from=2018-10-14&to=2018-10-14&language=en&sortBy=relevancy&pageSize=100&page=2 HTTP/1.1" 200 19934
+10-16 23:36 root         INFO     Downloaded file:crude_oil_2018-10-14
+10-16 23:36 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-16 23:36 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=bitcoin&from=2018-10-14&to=2018-10-14&language=en&sortBy=relevancy&pageSize=100&page=1 HTTP/1.1" 200 50753
+10-16 23:36 root         INFO     Downloaded file:bitcoin_2018-10-14
+10-16 23:36 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-16 23:36 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-14&to=2018-10-14&language=en&sortBy=relevancy&pageSize=100&page=1 HTTP/1.1" 200 92834
+10-16 23:36 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-16 23:36 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-14&to=2018-10-14&language=en&sortBy=relevancy&pageSize=100&page=2 HTTP/1.1" 200 90612
+10-16 23:36 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-16 23:36 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-14&to=2018-10-14&language=en&sortBy=relevancy&pageSize=100&page=3 HTTP/1.1" 200 90973
+10-16 23:36 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-16 23:36 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-14&to=2018-10-14&language=en&sortBy=relevancy&pageSize=100&page=4 HTTP/1.1" 200 89212
+10-16 23:36 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-16 23:36 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-14&to=2018-10-14&language=en&sortBy=relevancy&pageSize=100&page=5 HTTP/1.1" 200 92782
+10-16 23:36 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-16 23:36 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-14&to=2018-10-14&language=en&sortBy=relevancy&pageSize=100&page=6 HTTP/1.1" 200 83231
+10-16 23:36 root         INFO     Downloaded file:gold_2018-10-14
+10-16 23:36 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-16 23:36 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=crude+oil&from=2018-10-15&to=2018-10-15&language=en&sortBy=relevancy&pageSize=100&page=1 HTTP/1.1" 200 89485
+10-16 23:36 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-16 23:36 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=crude+oil&from=2018-10-15&to=2018-10-15&language=en&sortBy=relevancy&pageSize=100&page=2 HTTP/1.1" 200 92580
+10-16 23:36 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-16 23:36 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=crude+oil&from=2018-10-15&to=2018-10-15&language=en&sortBy=relevancy&pageSize=100&page=3 HTTP/1.1" 200 90727
+10-16 23:36 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-16 23:36 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=crude+oil&from=2018-10-15&to=2018-10-15&language=en&sortBy=relevancy&pageSize=100&page=4 HTTP/1.1" 200 91268
+10-16 23:36 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-16 23:36 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=crude+oil&from=2018-10-15&to=2018-10-15&language=en&sortBy=relevancy&pageSize=100&page=5 HTTP/1.1" 200 73515
+10-16 23:36 root         INFO     Downloaded file:crude_oil_2018-10-15
+10-16 23:36 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-16 23:36 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=bitcoin&from=2018-10-15&to=2018-10-15&language=en&sortBy=relevancy&pageSize=100&page=1 HTTP/1.1" 200 90761
+10-16 23:36 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-16 23:36 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=bitcoin&from=2018-10-15&to=2018-10-15&language=en&sortBy=relevancy&pageSize=100&page=2 HTTP/1.1" 200 89522
+10-16 23:36 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-16 23:36 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=bitcoin&from=2018-10-15&to=2018-10-15&language=en&sortBy=relevancy&pageSize=100&page=3 HTTP/1.1" 200 4660
+10-16 23:36 root         INFO     Downloaded file:bitcoin_2018-10-15
+10-16 23:36 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-16 23:36 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-15&to=2018-10-15&language=en&sortBy=relevancy&pageSize=100&page=1 HTTP/1.1" 200 91297
+10-16 23:36 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-16 23:36 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-15&to=2018-10-15&language=en&sortBy=relevancy&pageSize=100&page=2 HTTP/1.1" 200 91024
+10-16 23:36 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-16 23:37 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-15&to=2018-10-15&language=en&sortBy=relevancy&pageSize=100&page=3 HTTP/1.1" 200 91425
+10-16 23:37 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-16 23:37 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-15&to=2018-10-15&language=en&sortBy=relevancy&pageSize=100&page=4 HTTP/1.1" 200 90082
+10-16 23:37 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-16 23:37 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-15&to=2018-10-15&language=en&sortBy=relevancy&pageSize=100&page=5 HTTP/1.1" 200 90666
+10-16 23:37 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-16 23:37 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-15&to=2018-10-15&language=en&sortBy=relevancy&pageSize=100&page=6 HTTP/1.1" 200 87825
+10-16 23:37 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-16 23:37 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-15&to=2018-10-15&language=en&sortBy=relevancy&pageSize=100&page=7 HTTP/1.1" 200 87552
+10-16 23:37 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-16 23:37 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-15&to=2018-10-15&language=en&sortBy=relevancy&pageSize=100&page=8 HTTP/1.1" 200 91514
+10-16 23:37 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-16 23:37 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-15&to=2018-10-15&language=en&sortBy=relevancy&pageSize=100&page=9 HTTP/1.1" 200 91411
+10-16 23:37 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-16 23:37 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-15&to=2018-10-15&language=en&sortBy=relevancy&pageSize=100&page=10 HTTP/1.1" 200 92810
+10-16 23:37 root         INFO     Downloaded file:gold_2018-10-15
+10-16 23:37 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-16 23:37 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=crude+oil&from=2018-10-16&to=2018-10-16&language=en&sortBy=relevancy&pageSize=100&page=1 HTTP/1.1" 200 91626
+10-16 23:37 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-16 23:37 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=crude+oil&from=2018-10-16&to=2018-10-16&language=en&sortBy=relevancy&pageSize=100&page=2 HTTP/1.1" 200 91966
+10-16 23:37 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-16 23:37 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=crude+oil&from=2018-10-16&to=2018-10-16&language=en&sortBy=relevancy&pageSize=100&page=3 HTTP/1.1" 200 85685
+10-16 23:37 root         INFO     Downloaded file:crude_oil_2018-10-16
+10-16 23:37 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-16 23:37 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=bitcoin&from=2018-10-16&to=2018-10-16&language=en&sortBy=relevancy&pageSize=100&page=1 HTTP/1.1" 200 90506
+10-16 23:37 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-16 23:37 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=bitcoin&from=2018-10-16&to=2018-10-16&language=en&sortBy=relevancy&pageSize=100&page=2 HTTP/1.1" 200 7330
+10-16 23:37 root         INFO     Downloaded file:bitcoin_2018-10-16
+10-16 23:37 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-16 23:37 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-16&to=2018-10-16&language=en&sortBy=relevancy&pageSize=100&page=1 HTTP/1.1" 200 90382
+10-16 23:37 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-16 23:37 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-16&to=2018-10-16&language=en&sortBy=relevancy&pageSize=100&page=2 HTTP/1.1" 200 92544
+10-16 23:37 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-16 23:37 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-16&to=2018-10-16&language=en&sortBy=relevancy&pageSize=100&page=3 HTTP/1.1" 200 91113
+10-16 23:37 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-16 23:37 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-16&to=2018-10-16&language=en&sortBy=relevancy&pageSize=100&page=4 HTTP/1.1" 200 91470
+10-16 23:37 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-16 23:37 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-16&to=2018-10-16&language=en&sortBy=relevancy&pageSize=100&page=5 HTTP/1.1" 200 88431
+10-16 23:37 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-16 23:37 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-16&to=2018-10-16&language=en&sortBy=relevancy&pageSize=100&page=6 HTTP/1.1" 200 89107
+10-16 23:37 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-16 23:37 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-16&to=2018-10-16&language=en&sortBy=relevancy&pageSize=100&page=7 HTTP/1.1" 200 90440
+10-16 23:37 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-16 23:37 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-16&to=2018-10-16&language=en&sortBy=relevancy&pageSize=100&page=8 HTTP/1.1" 200 51707
+10-16 23:37 root         INFO     Downloaded file:gold_2018-10-16
+10-17 16:37 root         INFO     start our program
+10-17 16:37 root         WARNING  love bebe <3
+10-17 16:37 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 16:37 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=crude+oil&from=2018-10-16&to=2018-10-16&language=en&sortBy=relevancy&pageSize=100&page=1 HTTP/1.1" 200 90535
+10-17 16:37 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 16:37 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=crude+oil&from=2018-10-16&to=2018-10-16&language=en&sortBy=relevancy&pageSize=100&page=2 HTTP/1.1" 200 92708
+10-17 16:37 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 16:37 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=crude+oil&from=2018-10-16&to=2018-10-16&language=en&sortBy=relevancy&pageSize=100&page=3 HTTP/1.1" 200 91156
+10-17 16:37 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 16:37 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=crude+oil&from=2018-10-16&to=2018-10-16&language=en&sortBy=relevancy&pageSize=100&page=4 HTTP/1.1" 200 93617
+10-17 16:37 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 16:37 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=crude+oil&from=2018-10-16&to=2018-10-16&language=en&sortBy=relevancy&pageSize=100&page=5 HTTP/1.1" 200 11372
+10-17 16:37 root         INFO     Downloaded file:crude_oil_2018-10-16
+10-17 16:37 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 16:37 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=bitcoin&from=2018-10-16&to=2018-10-16&language=en&sortBy=relevancy&pageSize=100&page=1 HTTP/1.1" 200 90165
+10-17 16:37 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 16:37 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=bitcoin&from=2018-10-16&to=2018-10-16&language=en&sortBy=relevancy&pageSize=100&page=2 HTTP/1.1" 200 67009
+10-17 16:37 root         INFO     Downloaded file:bitcoin_2018-10-16
+10-17 16:37 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 16:37 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-16&to=2018-10-16&language=en&sortBy=relevancy&pageSize=100&page=1 HTTP/1.1" 200 92658
+10-17 16:37 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 16:37 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-16&to=2018-10-16&language=en&sortBy=relevancy&pageSize=100&page=2 HTTP/1.1" 200 88934
+10-17 16:37 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 16:37 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-16&to=2018-10-16&language=en&sortBy=relevancy&pageSize=100&page=3 HTTP/1.1" 200 90726
+10-17 16:37 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 16:37 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-16&to=2018-10-16&language=en&sortBy=relevancy&pageSize=100&page=4 HTTP/1.1" 200 90607
+10-17 16:37 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 16:37 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-16&to=2018-10-16&language=en&sortBy=relevancy&pageSize=100&page=5 HTTP/1.1" 200 91602
+10-17 16:37 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 16:37 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-16&to=2018-10-16&language=en&sortBy=relevancy&pageSize=100&page=6 HTTP/1.1" 200 91381
+10-17 16:37 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 16:37 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-16&to=2018-10-16&language=en&sortBy=relevancy&pageSize=100&page=7 HTTP/1.1" 200 89790
+10-17 16:37 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 16:38 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-16&to=2018-10-16&language=en&sortBy=relevancy&pageSize=100&page=8 HTTP/1.1" 200 86200
+10-17 16:38 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 16:38 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-16&to=2018-10-16&language=en&sortBy=relevancy&pageSize=100&page=9 HTTP/1.1" 200 89322
+10-17 16:38 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 16:38 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-16&to=2018-10-16&language=en&sortBy=relevancy&pageSize=100&page=10 HTTP/1.1" 200 89083
+10-17 16:38 root         INFO     Downloaded file:gold_2018-10-16
+10-17 16:38 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 16:38 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=crude+oil&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=1 HTTP/1.1" 200 89163
+10-17 16:38 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 16:38 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=crude+oil&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=2 HTTP/1.1" 200 16686
+10-17 16:38 root         INFO     Downloaded file:crude_oil_2018-10-17
+10-17 16:38 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 16:38 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=bitcoin&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=1 HTTP/1.1" 200 20288
+10-17 16:38 root         INFO     Downloaded file:bitcoin_2018-10-17
+10-17 16:38 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 16:38 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=1 HTTP/1.1" 200 90329
+10-17 16:38 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 16:38 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=2 HTTP/1.1" 200 88440
+10-17 16:38 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 16:38 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=3 HTTP/1.1" 200 73629
+10-17 16:38 root         INFO     Downloaded file:gold_2018-10-17
+10-17 16:44 root         INFO     start our program
+10-17 16:44 root         WARNING  love bebe <3
+10-17 16:44 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 16:44 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=crude+oil&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=1 HTTP/1.1" 200 88865
+10-17 16:44 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 16:44 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=crude+oil&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=2 HTTP/1.1" 200 19478
+10-17 16:44 root         INFO     Downloaded file:crude_oil_2018-10-17
+10-17 16:44 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 16:44 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=bitcoin&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=1 HTTP/1.1" 200 21242
+10-17 16:44 root         INFO     Downloaded file:bitcoin_2018-10-17
+10-17 16:44 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 16:44 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=1 HTTP/1.1" 200 90320
+10-17 16:44 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 16:44 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=2 HTTP/1.1" 200 88344
+10-17 16:44 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 16:44 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=3 HTTP/1.1" 200 79339
+10-17 16:44 root         INFO     Downloaded file:gold_2018-10-17
+10-17 16:49 root         INFO     start our program
+10-17 16:49 root         WARNING  love bebe <3
+10-17 16:49 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 16:49 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=crude+oil&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=1 HTTP/1.1" 200 88865
+10-17 16:49 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 16:49 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=crude+oil&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=2 HTTP/1.1" 200 19478
+10-17 16:49 root         INFO     start our program
+10-17 16:49 root         WARNING  love bebe <3
+10-17 16:49 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 16:49 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=crude+oil&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=1 HTTP/1.1" 200 88865
+10-17 16:49 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 16:49 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=crude+oil&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=2 HTTP/1.1" 200 19478
+10-17 16:49 root         INFO     Downloaded file:crude_oil_2018-10-17
+10-17 16:49 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 16:49 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=bitcoin&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=1 HTTP/1.1" 200 21242
+10-17 16:49 root         INFO     Downloaded file:bitcoin_2018-10-17
+10-17 16:49 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 16:49 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=1 HTTP/1.1" 200 90320
+10-17 16:49 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 16:49 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=2 HTTP/1.1" 200 88344
+10-17 16:49 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 16:49 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=3 HTTP/1.1" 200 79339
+10-17 16:49 root         INFO     Downloaded file:gold_2018-10-17
+10-17 16:57 root         INFO     start our program
+10-17 16:57 root         WARNING  love bebe <3
+10-17 16:57 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 16:57 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=crude+oil&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=1 HTTP/1.1" 200 88865
+10-17 16:57 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 16:57 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=crude+oil&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=2 HTTP/1.1" 200 19478
+10-17 16:59 root         INFO     start our program
+10-17 16:59 root         WARNING  love bebe <3
+10-17 16:59 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 16:59 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=crude+oil&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=1 HTTP/1.1" 200 88865
+10-17 16:59 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 16:59 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=crude+oil&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=2 HTTP/1.1" 200 19478
+10-17 16:59 root         INFO     start our program
+10-17 16:59 root         WARNING  love bebe <3
+10-17 16:59 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 16:59 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=crude+oil&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=1 HTTP/1.1" 200 88865
+10-17 16:59 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 16:59 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=crude+oil&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=2 HTTP/1.1" 200 19478
+10-17 17:00 root         INFO     start our program
+10-17 17:00 root         WARNING  love bebe <3
+10-17 17:00 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:00 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=crude+oil&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=1 HTTP/1.1" 200 88865
+10-17 17:00 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:00 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=crude+oil&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=2 HTTP/1.1" 200 19478
+10-17 17:01 root         INFO     start our program
+10-17 17:01 root         WARNING  love bebe <3
+10-17 17:01 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:01 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=crude+oil&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=1 HTTP/1.1" 200 88865
+10-17 17:01 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:01 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=crude+oil&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=2 HTTP/1.1" 200 19478
+10-17 17:01 root         INFO     Downloaded file:crude_oil_2018-10-17
+10-17 17:01 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:01 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=bitcoin&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=1 HTTP/1.1" 200 22188
+10-17 17:01 root         INFO     Downloaded file:bitcoin_2018-10-17
+10-17 17:01 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:01 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=1 HTTP/1.1" 200 90500
+10-17 17:01 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:01 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=2 HTTP/1.1" 200 88234
+10-17 17:01 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:01 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=3 HTTP/1.1" 200 90263
+10-17 17:01 root         INFO     Downloaded file:gold_2018-10-17
+10-17 17:04 root         INFO     start our program
+10-17 17:04 root         WARNING  love bebe <3
+10-17 17:04 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:04 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=crude+oil&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=1 HTTP/1.1" 200 88662
+10-17 17:04 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:04 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=crude+oil&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=2 HTTP/1.1" 200 21340
+10-17 17:04 root         INFO     Downloaded file:crude_oil_2018-10-17
+10-17 17:04 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:04 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=bitcoin&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=1 HTTP/1.1" 200 22188
+10-17 17:04 root         INFO     Downloaded file:bitcoin_2018-10-17
+10-17 17:04 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:04 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=1 HTTP/1.1" 200 90500
+10-17 17:05 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:05 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=2 HTTP/1.1" 200 88234
+10-17 17:05 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:05 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=3 HTTP/1.1" 200 90263
+10-17 17:05 root         INFO     Downloaded file:gold_2018-10-17
+10-17 17:10 root         INFO     start our program
+10-17 17:10 root         WARNING  love bebe <3
+10-17 17:10 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:10 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=crude+oil&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=1 HTTP/1.1" 200 88662
+10-17 17:10 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:10 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=crude+oil&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=2 HTTP/1.1" 200 21340
+10-17 17:10 root         INFO     Downloaded file:crude_oil_2018-10-17
+10-17 17:10 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:10 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=bitcoin&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=1 HTTP/1.1" 200 22188
+10-17 17:10 root         INFO     Downloaded file:bitcoin_2018-10-17
+10-17 17:10 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:10 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=1 HTTP/1.1" 200 90500
+10-17 17:10 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:10 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=2 HTTP/1.1" 200 88234
+10-17 17:10 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:10 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=3 HTTP/1.1" 200 90263
+10-17 17:10 root         INFO     Downloaded file:gold_2018-10-17
+10-17 17:15 root         INFO     start our program
+10-17 17:15 root         WARNING  love bebe <3
+10-17 17:15 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:16 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=crude+oil&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=1 HTTP/1.1" 200 88944
+10-17 17:16 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:16 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=crude+oil&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=2 HTTP/1.1" 200 23716
+10-17 17:16 root         INFO     Downloaded file:crude_oil_2018-10-17
+10-17 17:16 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:16 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=bitcoin&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=1 HTTP/1.1" 200 23966
+10-17 17:16 root         INFO     Downloaded file:bitcoin_2018-10-17
+10-17 17:16 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:16 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=1 HTTP/1.1" 200 90467
+10-17 17:16 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:16 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=2 HTTP/1.1" 200 88602
+10-17 17:16 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:16 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=3 HTTP/1.1" 200 90372
+10-17 17:16 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:16 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=4 HTTP/1.1" 200 12075
+10-17 17:16 root         INFO     Downloaded file:gold_2018-10-17
+10-17 17:16 root         INFO     start our program
+10-17 17:16 root         WARNING  love bebe <3
+10-17 17:16 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:16 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=crude+oil&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=1 HTTP/1.1" 200 88944
+10-17 17:16 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:16 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=crude+oil&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=2 HTTP/1.1" 200 23716
+10-17 17:16 root         INFO     Downloaded file:crude_oil_2018-10-17
+10-17 17:16 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:16 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=bitcoin&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=1 HTTP/1.1" 200 23966
+10-17 17:16 root         INFO     Downloaded file:bitcoin_2018-10-17
+10-17 17:16 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:16 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=1 HTTP/1.1" 200 90467
+10-17 17:16 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:16 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=2 HTTP/1.1" 200 88602
+10-17 17:16 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:16 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=3 HTTP/1.1" 200 90372
+10-17 17:16 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:16 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=4 HTTP/1.1" 200 12075
+10-17 17:16 root         INFO     Downloaded file:gold_2018-10-17
+10-17 17:21 root         INFO     start our program
+10-17 17:21 root         WARNING  love bebe <3
+10-17 17:21 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:21 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=crude+oil&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=1 HTTP/1.1" 200 88944
+10-17 17:21 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:21 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=crude+oil&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=2 HTTP/1.1" 200 23716
+10-17 17:21 root         INFO     Downloaded file:crude_oil_2018-10-17
+10-17 17:21 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:21 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=bitcoin&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=1 HTTP/1.1" 200 23966
+10-17 17:21 root         INFO     Downloaded file:bitcoin_2018-10-17
+10-17 17:21 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:21 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=1 HTTP/1.1" 200 90467
+10-17 17:21 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:21 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=2 HTTP/1.1" 200 88602
+10-17 17:21 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:21 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=3 HTTP/1.1" 200 90372
+10-17 17:21 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:21 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=4 HTTP/1.1" 200 12075
+10-17 17:21 root         INFO     Downloaded file:gold_2018-10-17
+10-17 17:22 root         INFO     start our program
+10-17 17:22 root         WARNING  love bebe <3
+10-17 17:22 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:22 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=crude+oil&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=1 HTTP/1.1" 200 88944
+10-17 17:22 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:22 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=crude+oil&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=2 HTTP/1.1" 200 23716
+10-17 17:22 root         INFO     Downloaded file:crude_oil_2018_10_17
+10-17 17:22 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:22 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=bitcoin&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=1 HTTP/1.1" 200 23966
+10-17 17:22 root         INFO     Downloaded file:bitcoin_2018_10_17
+10-17 17:22 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:22 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=1 HTTP/1.1" 200 90467
+10-17 17:22 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:22 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=2 HTTP/1.1" 200 88602
+10-17 17:22 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:22 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=3 HTTP/1.1" 200 90372
+10-17 17:22 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:22 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=4 HTTP/1.1" 200 12075
+10-17 17:22 root         INFO     Downloaded file:gold_2018_10_17
+10-17 17:25 root         INFO     start our program
+10-17 17:25 root         WARNING  love bebe <3
+10-17 17:25 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:25 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=crude+oil&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=1 HTTP/1.1" 200 88944
+10-17 17:25 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:25 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=crude+oil&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=2 HTTP/1.1" 200 23716
+10-17 17:25 root         INFO     Downloaded file:crude_oil_2018_10_17
+10-17 17:25 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:25 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=bitcoin&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=1 HTTP/1.1" 200 23966
+10-17 17:25 root         INFO     Downloaded file:bitcoin_2018_10_17
+10-17 17:25 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:25 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=1 HTTP/1.1" 200 90467
+10-17 17:25 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:25 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=2 HTTP/1.1" 200 88602
+10-17 17:25 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:25 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=3 HTTP/1.1" 200 90372
+10-17 17:25 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:25 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=4 HTTP/1.1" 200 12075
+10-17 17:25 root         INFO     Downloaded file:gold_2018_10_17
+10-17 17:38 root         INFO     start our program
+10-17 17:38 root         WARNING  love bebe <3
+10-17 17:38 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:38 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=crude+oil&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=1 HTTP/1.1" 200 88837
+10-17 17:38 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:38 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=crude+oil&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=2 HTTP/1.1" 200 27500
+10-17 17:38 root         INFO     Downloaded file:crude_oil_2018_10_17
+10-17 17:38 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:38 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=bitcoin&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=1 HTTP/1.1" 200 27825
+10-17 17:38 root         INFO     Downloaded file:bitcoin_2018_10_17
+10-17 17:38 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:39 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=1 HTTP/1.1" 200 90931
+10-17 17:39 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:39 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=2 HTTP/1.1" 200 88420
+10-17 17:39 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:39 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=3 HTTP/1.1" 200 89843
+10-17 17:39 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): newsapi.org
+10-17 17:39 urllib3.connectionpool DEBUG    https://newsapi.org:443 "GET /v2/everything?q=gold&from=2018-10-17&to=2018-10-17&language=en&sortBy=relevancy&pageSize=100&page=4 HTTP/1.1" 200 22041
+10-17 17:39 root         INFO     Downloaded file:gold_2018_10_17

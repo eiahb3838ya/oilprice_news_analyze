@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<!-- saved from url=(0092)http://www.datagenicgroup.com/sentiment-analysis-when-commodity-trading-meets-deep-learning/ -->
+<html lang="en-GB" prefix="og: http://ogp.me/ns#" class="js touch cssanimations csstransitions csstransforms csstransforms3d has-cookie-bar cookie-bar-top-bar cookie-bar-bar" data-ult_smooth_speed="480" data-ult_smooth_step="80" style="margin-top: 110px;"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1" name="viewport">
+	<title>Sentiment Analysis - When Commodity Trading Meets Deep Learning</title>
+
+<!-- This site is optimized with the Yoast SEO plugin v3.4.2 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="Sentiment Analysis - When Commodity Trading Meets Deep Learning">
+<meta name="robots" content="noodp">
+<link rel="canonical" href="http://www.datagenicgroup.com/sentiment-analysis-when-commodity-trading-meets-deep-learning/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Sentiment Analysis - When Commodity Trading Meets Deep Learning">
+<meta property="og:description" content="Sentiment Analysis - When Commodity Trading Meets Deep Learning">
+<meta property="og:url" content="http://www.datagenicgroup.com/sentiment-analysis-when-commodity-trading-meets-deep-learning/">
+<meta property="og:site_name" content="DataGenic">
+<meta property="article:section" content="Blogs At DataGenic">
+<meta property="article:published_time" content="2017-03-14T11:22:22+01:00">
+<meta property="article:modified_time" content="2017-07-26T11:24:22+01:00">
+<meta property="og:updated_time" content="2017-07-26T11:24:22+01:00">
+<meta property="og:image" content="http://blog.datagenicgroup.com/hubfs/Images/1%20internet%20minute%20Infographic.jpg">
+<meta property="og:image" content="http://blog.datagenicgroup.com/hubfs/Images/statistic_id303681_twitter_-number-of-worldwide-users-2014-2020.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:description" content="Sentiment Analysis - When Commodity Trading Meets Deep Learning">
+<meta name="twitter:title" content="Sentiment Analysis - When Commodity Trading Meets Deep Learning">
+<meta name="twitter:image" content="http://blog.datagenicgroup.com/hubfs/Images/1%20internet%20minute%20Infographic.jpg">
+<!-- / Yoast SEO plugin. -->
+
+<link rel="dns-prefetch" href="http://maps.googleapis.com/">
+<link rel="dns-prefetch" href="http://s.w.org/">
+<link rel="alternate" type="application/rss+xml" title="DataGenic » Feed" href="http://www.datagenicgroup.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="DataGenic » Comments Feed" href="http://www.datagenicgroup.com/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="DataGenic » Sentiment Analysis – When Commodity Trading Meets Deep Learning Comments Feed" href="http://www.datagenicgroup.com/sentiment-analysis-when-commodity-trading-meets-deep-learning/feed/">
+		<script src="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/2488336.js.下載" type="text/javascript" id="hs-script-loader"></script><script id="twitter-wjs" src="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/widgets.js.下載"></script><script id="hs-analytics" src="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/2488336.js(1).下載"></script><script async="" src="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/analytics.js.下載"></script><script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/www.datagenicgroup.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.8.7"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,56826,8203,55356,56819),0,0),c=j.toDataURL(),b!==c&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55358,56794,8205,9794,65039),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55358,56794,8203,9794,65039),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/wp-emoji-release.min.js.下載" type="text/javascript" defer=""></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="blake-blog-css" href="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/blog.css" type="text/css" media="all">
+<link rel="stylesheet" id="blake-bootstrap-css" href="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/bootstrap.css" type="text/css" media="all">
+<link rel="stylesheet" id="blake-icons-css" href="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/icons-font.css" type="text/css" media="all">
+<link rel="stylesheet" id="blake-component-css" href="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/component.css" type="text/css" media="all">
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='blake-IE-css'  href='http://www.datagenicgroup.com/wp-content/themes/blake/css/IE.css?ver=4.8.7' type='text/css' media='all' />
+<![endif]-->
+<link rel="stylesheet" id="blake-editor-css" href="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/editor-style.css" type="text/css" media="all">
+<link rel="stylesheet" id="blake-woo-layout-css" href="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/blake-woo-layout.css" type="text/css" media="all">
+<link rel="stylesheet" id="blake-woo-css" href="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/blake-woocommerce.css" type="text/css" media="all">
+<link rel="stylesheet" id="blake-ytp-css" href="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/mb.YTPlayer.css" type="text/css" media="all">
+<link rel="stylesheet" id="blake-retina-css" href="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/retina.css" type="text/css" media="all">
+<link rel="stylesheet" id="blake-style-css" href="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/style.css" type="text/css" media="all">
+<style id="blake-style-inline-css" type="text/css">
+.widget li a:after, .widget_nav_menu li a:after, .custom-widget.widget_recent_entries li a:after{
+		color: #777777;
+	}
+	body, p, .lovepost a, .widget ul li a, .widget p, .widget span, .widget ul li, .the_content ul li, .the_content ol li, #recentcomments li, .custom-widget h4, .widget.widget-newsletter h3, .widget.des_cubeportfolio_widget h4, .widget.des_recent_posts_widget h4, .custom-widget ul li a, .des_partners_widget h4, .aio-icon-description, li, .smile_icon_list li .icon_description p, .contact-widget-container h4{
+		
+		font-family: 'Helvetica', 'Arial', 'sans-serif' ,sans-serif;
+		font-weight: ;
+		font-size: 15px;
+		color: #777777;
+	}
+	
+	.map_info_text{
+		
+		font-family: 'Helvetica', 'Arial', 'sans-serif' ,sans-serif;
+		font-weight: ;
+		font-size: 15px;
+		color: #777777 !important;
+	}
+	
+	a, .pageXofY .pageX, .pricing .bestprice .name, .filter li a:hover, .widget_links ul li a:hover, #contacts a:hover, .title-color, .ms-staff-carousel .ms-staff-info h4, .filter li a:hover, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus, a.go-about:hover, .text_color, .navbar-nav .dropdown-menu a:hover, .profile .profile-name, #elements h4, #contact li a:hover, #agency-slider h5, .ms-showcase1 .product-tt h3, .filter li a.active, .contacts li i, .big-icon i, .navbar-default.dark .navbar-brand:hover,.navbar-default.dark .navbar-brand:focus, a.p-button.border:hover, .navbar-default.light-menu .navbar-nav > li > a.selected, .navbar-default.light-menu .navbar-nav > li > a.selected:hover, .navbar-default.light-menu .navbar-nav > li > a.selected, .navbar-default.light-menu .navbar-nav > .open > a,.navbar-default.light-menu .navbar-nav > .open > a:hover, .navbar-default.light-menu .navbar-nav > .open > a:focus, .light-menu .dropdown-menu > li > a:focus, a.social:hover:before, .symbol.colored i, .icon-nofill, .slidecontent-bi .project-title-bi p a:hover, .grid .figcaption a.thumb-link:hover, .tp-caption a:hover, .btn-1d:hover, .btn-1d:active, #contacts .tweet_text a, #contacts .tweet_time a, .social-font-awesome li a:hover, h2.post-title a:hover, .tags a:hover, .blake-button-color span, #contacts .form-success p, .nav-container .social-icons-fa a i:hover, .the_title h2 a:hover, .widget ul li a:hover, .nav-previous-nav1:hover a, .nav-next-nav1:hover a, .blake_breadcrumbs a:hover, .special_tabs.icontext .label.current a, .special_tabs.text .label.current a, #big_footer .widget-newsletter .banner .text_color, .custom-widget .widget-newsletter .banner .text_color, .des-pages .postpagelinks, .widget_nav_menu .current-menu-item > a, .team-position{
+	  color: #7db624;
+	}
+	
+	.aio-icon-read, .tp-caption a.text_color, #big_footer .social-icons-fa a i:hover{color: #7db624 !important;}
+	
+	.homepage_parallax .home-logo-text a.light:hover, .homepage_parallax .home-logo-text a.dark:hover, .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel.vc_active .vc_tta-panel-title>a, #big_footer .newsletter_shortcode .banner h3 .text_color, .widget li a:hover:before, .widget_nav_menu li a:hover:before, .footer_sidebar ul li a:hover:before, .custom-widget li a:hover:before, .special_tabs.icontext .label.current i, .single-portfolio .social-shares ul li a:hover, .partners-container .slick-dots .slick-active i{
+		color: #7db624 !important;
+	}
+	
+	a.sf-button.hide-icon, .tabs li.current, .readmore:hover, .navbar-default .navbar-nav > .open > a,.navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus, a.p-button:hover, a.p-button.colored, .light #contacts a.p-button, .tagcloud a:hover, .rounded.fill, .colored-section, .pricing .bestprice .price, .pricing .bestprice .signup, .signup:hover, .divider.colored, .services-graph li span, .no-touch .hi-icon-effect-1a .hi-icon:hover, .hi-icon-effect-1b .hi-icon:hover, .no-touch .hi-icon-effect-1b .hi-icon:hover, .symbol.colored .line-left, .symbol.colored .line-right, .projects-overlay #projects-loader, .panel-group .panel.active .panel-heading, .double-bounce1, .double-bounce2, .blake-button-color-1d:after, .container1 > div, .container2 > div, .container3 > div, .cbp-l-caption-buttonLeft:hover, .cbp-l-caption-buttonRight:hover, .flex-control-paging li a.flex-active, .post-content a:hover .post-quote, .post-listing .post a:hover .post-quote, h2.post-title.post-link:hover, .blake-button-color-1d:after, .woocommerce .widget_price_filter .ui-slider-horizontal .ui-slider-range, .woocommerce-page .widget_price_filter .ui-slider-horizontal .ui-slider-range,.blake_little_shopping_bag .overview span.minicart_items, .nav-previous:hover, .nav-next:hover, .next-posts:hover, .prev-posts:hover, .btn-contact-left input, .single #commentform .form-submit #submit, a#send-comment, .newsletter_shortcode form input.button, .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel.vc_active .vc_tta-panel-title>a i.vc_tta-controls-icon, .errorbutton, .single-portfolio .social-shares ul li a:hover i{
+		background-color:#7db624;
+	}
+	
+	.wpcf7 .blake-form-main-slider .slider-button input, .flip-box-wrap .flip_link a:hover, .vc_btn3-style-custom:hover, .btn-contact-left.inversecolor input:hover{
+		background-color:#7db624 !important;color: #fff !important;
+	}
+	.flip-box-wrap .flip_link a:hover{border: 2px solid #7db624}
+	.widget .slick-dots li.slick-active i, .style-light .slick-dots li.slick-active i, .style-dark .slick-dots li.slick-active i{color: #7db624 !important;opacity: 1;}
+	
+	
+	.woocommerce #content input.button, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce-page #content input.button, .woocommerce-page #respond input#submit, .woocommerce-page a.button, .woocommerce-page button.button, .woocommerce-page input.button, .woocommerce #content div.product form.cart .button, .woocommerce div.product form.cart .button, .woocommerce-page #content div.product form.cart .button, .woocommerce-page div.product form.cart .button, .woocommerce ul.products li.product .onsale, .woocommerce-page ul.products li.product .onsale{
+		background-color:#7db624;
+		color: #fff !important;
+	}
+	.nav-container a.button.blake_minicart_checkout_but:hover, .nav-container a.button.blake_minicart_cart_but:hover{
+		background-color: #7db624 !important;
+		color: #fff !important;
+		border: 2px solid #7db624 !important;
+		opacity: 1;
+	}
+	.blake-button-color-1d:hover, .blake-button-color-1d:active{
+		border: 1px double #7db624;
+	}
+	
+	.blake-button-color{
+		background-color:#7db624;
+		color: #7db624;
+	}
+
+	.widget_posts .tabs li.current{border: 1px solid #7db624;}
+	.hi-icon-effect-1 .hi-icon:after{box-shadow: 0 0 0 3px #7db624;}
+	.colored-section:after {border: 20px solid #7db624;}
+	.filter li a.active, .filter li a:hover, .panel-group .panel.active .panel-heading{border:1px solid #7db624;}
+	.navbar-default.light-menu.border .navbar-nav > li > a.selected:before, .navbar-default.light-menu.border .navbar-nav > li > a.selected:hover, .navbar-default.light-menu.border .navbar-nav > li > a.selected{
+		border-bottom: 1px solid #7db624;
+	}
+	
+	.cbp-l-caption-alignCenter .cbp-l-caption-buttonLeft:hover, .cbp-l-caption-alignCenter .cbp-l-caption-buttonRight:hover {
+	    background-color: #212121 !important;
+	    color: #fff !important;
+	}
+	
+	.doubleborder{
+		border: 6px double #7db624;
+	}
+	
+	
+	.special_tabs.icon .current .blake_icon_special_tabs{
+		background: #7db624;
+		border: 1px solid transparent;
+	}
+	.blake-button-color, .des-pages .postpagelinks, .tagcloud a:hover{
+		border: 1px solid #7db624;
+	}
+	
+	.navbar-collapse ul.menu-depth-1 li:not(.blake_mega_hide_link) a, .dl-menuwrapper li:not(.blake_mega_hide_link) a, .gosubmenu, .nav-container .blake_minicart ul li {
+		font-family: 'Helvetica Neue', 'Arial', 'sans-serif', sans-serif;
+		font-weight: ;
+		font-size: 13px;
+		color: #949494;letter-spacing: 0px;
+	}
+	.dl-back{color: #949494;}
+	
+	.navbar-collapse ul.menu-depth-1 li:not(.blake_mega_hide_link):hover > a, .dl-menuwrapper li:not(.blake_mega_hide_link):hover > a, .dl-menuwrapper li:not(.blake_mega_hide_link):hover > a, .dl-menuwrapper li:not(.blake_mega_hide_link):hover > .gosubmenu, .dl-menuwrapper li.dl-back:hover, .navbar-nav .dropdown-menu a:hover i{
+		color: #f5f5f5;
+	}
+	
+	ul.menu-depth-1, ul.menu-depth-1 ul, #dl-menu ul{background-color: rgba(31,31,31,1) !important;
+	}
+	
+	.navbar-collapse .blake_mega_menu ul.menu-depth-2, .navbar-collapse .blake_mega_menu ul.menu-depth-2 ul {background-color: transparent !important;} 
+	
+	li:not(.blake_mega_menu) ul.menu-depth-1 li:hover, li.blake_mega_menu li.menu-item-depth-1 li:hover, .dl-menu li:hover{background-color: rgba(31,31,31,1) !important;
+	}
+	
+	.navbar-collapse li:not(.blake_mega_menu) ul.menu-depth-1 li:not(:first-child){
+		border-top: 1px solid #242424;
+	}
+	
+	.navbar-collapse li.blake_mega_menu ul.menu-depth-2{
+		border-right: 1px solid #242424;
+	}
+	#dl-menu ul li:not(:last-child) a, .blake_sub_menu_border_color{
+		border-bottom: 1px solid #242424;
+	}
+	
+	.navbar-collapse > ul > li > a{
+		font-family: 'Helvetica Neue', 'Arial', 'sans-serif', sans-serif;
+		font-weight: ;
+		font-size: 12px;
+		color: #585858;text-transform: uppercase;
+letter-spacing: 0px;
+	}
+	
+	.navbar-collapse > ul > li > a:hover, .navbar-collapse > ul > li.current-menu-ancestor > a, .navbar-collapse > ul > li.current-menu-item > a, .navbar-collapse > ul > li > a.selected{
+		color: #333333;
+	}
+	
+	.navbar-default .navbar-nav > li > a {
+		padding-right:20px;
+		padding-left:20px;
+		padding-top:25px;
+		padding-bottom:20px;
+	}
+	
+	header.style1 .header_social_icons, header.style2 .header_social_icons, header.style1 .search_trigger, header.style2 .search_trigger, header.style1 .blake_dynamic_shopping_bag, header.style2 .blake_dynamic_shopping_bag{
+		padding-top:25px;
+		padding-bottom:20px;
+	}
+	
+	header:not(.header_after_scroll) .navbar-nav > li > ul{
+		margin-top:20px;
+	}
+
+	header:not(.header_after_scroll) .dl-menuwrapper button:after{
+		background: #333333;
+		box-shadow: 0 6px 0 #333333, 0 12px 0 #333333;
+	}
+
+	.blake_minicart_wrapper{
+		padding-top: 20px;
+	}
+	
+	li.blake_mega_hide_link > a, li.blake_mega_hide_link > a:hover{
+		font-family: 'Helvetica Neue', 'Arial', 'sans-serif' !important;
+		font-weight: ;
+		font-size: 12px !important;
+		color: #f2f2f2 !important;letter-spacing: 0px !important;
+	}
+	
+	.nav-container .blake_minicart li a:hover {
+		color: #f2f2f2 !important;
+		text-decoration: none;
+	}
+	.nav-container .blake_minicart li a{
+		font-family: 'Helvetica Neue', 'Arial', 'sans-serif';
+		font-weight: ;
+		font-size: 13px;
+		color: #949494;letter-spacing: 0px;
+	}
+	
+	.dl-trigger{
+		font-family: 'Helvetica Neue', 'Arial', 'sans-serif' !important;
+		font-weight:  !important;
+		font-size: 12px;text-transform: uppercase;
+letter-spacing: 0px;
+	}
+	
+	.blake_minicart{background-color: rgba(31,31,31,1) !important;
+	}
+	
+	.page_content a, header a, #big_footer a{
+		font-family: 'Helvetica', 'Arial', 'sans-serif';
+		font-weight: ;
+		font-size: 15px;
+		color: #777777
+	}
+	.page_content a:hover, header a:hover, #big_footer a:hover{
+		color: #7db624;
+		background-color: #;
+	}
+	
+	h1{
+		font-family: 'Helvetica Neue', 'Arial', 'sans-serif';
+		font-weight: ;
+		font-size: 36px;
+		color: #777777;
+	}
+	
+	h2{
+		font-family: 'Helvetica Neue', 'Arial', 'sans-serif';
+		font-weight: ;
+		font-size: 32px;
+		color: #777777;
+	}
+	
+	h3{
+		font-family: 'Helvetica Neue', 'Arial', 'sans-serif';
+		font-weight: ;
+		font-size: 25px;
+		color: #777777;
+	}
+	
+	h4{
+		font-family: 'Helvetica Neue', 'Arial', 'sans-serif';
+		font-weight: ;
+		font-size: 22px;
+		color: #777777;
+	}
+	.widget h2 > .widget_title_span, .wpb_content_element .wpb_accordion_header a, .custom-widget h4, .widget.widget-newsletter h3, .widget.des_cubeportfolio_widget h4, .widget.des_recent_posts_widget h4, .des_partners_widget h4, .contact-widget-container h4{
+		color: #777777;
+	}
+	.ult-item-wrap .title h4{font-size: 16px !important;}
+	.wpb_content_element .wpb_accordion_header.ui-accordion-header-active a{color: #7db624;}
+	h5{
+		font-family: 'Helvetica Neue', 'Arial', 'sans-serif';
+		font-weight: ;
+		font-size: 18px;
+		color: #777777;
+	}
+	
+	h6{
+		font-family: 'Helvetica Neue', 'Arial', 'sans-serif';
+		font-weight: ;
+		font-size: 16px;
+		color: #777777;
+	}
+		
+	header.navbar{background-color: rgba(255,255,255,0);
+	}
+	
+	body#boxed_layout{background-color: #ffffff;
+	}
+	
+	header a.navbar-brand{margin-top: 35px;margin-bottom: 35px;margin-left: 0px;height:35px;
+	}
+	header a.navbar-brand img{max-height: 35px;}
+	#primary_footer > .container{
+		padding-top:80px;
+		padding-bottom:80px;
+	}
+	#primary_footer{background-color: rgba(36,36,39,1);
+	}
+
+	#primary_footer input, #primary_footer textarea{background-color: rgba(36,36,39,1);
+	}
+	#primary_footer input, #primary_footer textarea{
+		border: 1px solid #242427;
+	}
+	#primary_footer hr, .footer_sidebar ul li a{
+		border-top: 1px solid #242427;
+	}
+	.footer_sidebar ul li:last-child{
+		border-bottom: 1px solid #242427;
+	}
+	#primary_footer a{
+		color: #ACACAD;
+	}
+	
+	#primary_footer, #primary_footer p, #big_footer input, #big_footer textarea{
+		color: #ACACAD;
+	}
+	
+	#primary_footer .footer_sidebar > h4, #primary_footer .footer_sidebar > .widget > h4 {
+		color: #ffffff;
+	}
+	
+	#secondary_footer{background-color: rgba(30,30,33,1);
+		padding-top:20px;
+		padding-bottom:20px;
+	}
+	header .search_input{background-color: rgba(1,28,5,0.97);
+	}
+	header .search_input input.search_input_value{
+		font-family: 'Helvetica Neue', 'Arial', 'sans-serif';
+		font-weight: ;
+	}
+	header .search_input input.search_input_value, header .search_close{
+		font-size: 30px;
+		color: #ffffff;
+	}
+	header .search_input .ajax_search_results ul{background-color: rgba(255,255,255,0.98);
+	}
+	header .search_input .ajax_search_results ul li.selected{background-color: rgba(242,242,242,0.98);
+	}
+	header .search_input .ajax_search_results ul li{
+		border-bottom: 1px solid #dedede;
+	}
+	header .search_input .ajax_search_results ul li a{
+		font-family: 'Helvetica Neue', 'Arial', 'sans-serif';
+		font-weight: ;
+		font-size: 14px;
+		color: #696969
+	}
+	header .search_input .ajax_search_results ul li.selected a{
+		color: #3d3d3d
+	}
+	header .search_input .ajax_search_results ul li a span, header .search_input .ajax_search_results ul li a span i{
+		font-family: 'Helvetica Neue', 'Arial', 'sans-serif';
+		font-weight: ;
+		font-size: 12px;
+		color: #c2c2c2
+	}
+	header .search_input .ajax_search_results ul li.selected a span{
+		color: #c2c2c2
+	}
+	.blake_breadcrumbs, .blake_breadcrumbs a, .blake_breadcrumbs span{
+		font-family: 'Helvetica Neue', 'Arial', 'sans-serif';
+		font-weight: ;
+		color: #f2f2f2;
+		font-size: 13px;
+	}
+
+	#menu_top_bar > li ul{background: #1E1E1E;}
+	#menu_top_bar > li ul li:hover{background: #1E1E1E;}
+	#menu_top_bar > li ul a{color: #8C8C8C !important;}
+	#menu_top_bar > li ul a:hover, #menu_top_bar > li ul li:hover > a{color: #f2f2f2 !important;}
+	
+	header.navbar .nav-container i{color: #C3C5C5;}
+	header.navbar .nav-container i:hover:not(.dropdown-menu i:hover){color: #333333;}
+	header.header_after_scroll.navbar .nav-container i{color: #ABABAB;}
+	header.header_after_scroll.navbar .nav-container i:hover{color: #333333;}
+</style>
+<link rel="stylesheet" id="edsanimate-animo-css-css" href="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/animate-animo.css" type="text/css" media="all">
+<link rel="stylesheet" id="contact-form-7-css" href="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/styles.css" type="text/css" media="all">
+<link rel="stylesheet" id="rs-plugin-settings-css" href="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/settings.css" type="text/css" media="all">
+<style id="rs-plugin-settings-inline-css" type="text/css">
+.tp-caption{text-align:left}
+</style>
+<link rel="stylesheet" id="cookie-consent-style-css" href="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/style(1).css" type="text/css" media="all">
+<link rel="stylesheet" id="megamenu-css" href="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/style(2).css" type="text/css" media="all">
+<link rel="stylesheet" id="dashicons-css" href="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/dashicons.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="cubeportfolio-jquery-css-css" href="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/main.min-1.13.2.css" type="text/css" media="all">
+<link rel="stylesheet" id="prettyphoto-css" href="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/prettyPhoto.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="bsf-Defaults-css" href="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/Defaults.css" type="text/css" media="all">
+<script type="text/javascript" src="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/js"></script>
+<!--[if lt IE 9]>
+<script type='text/javascript' src='http://www.datagenicgroup.com/wp-content/themes/blake/js/html5.js?ver=4.8.7'></script>
+<![endif]-->
+<script type="text/javascript" src="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/jquery.js.下載"></script>
+<script type="text/javascript" src="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/jquery-migrate.min.js.下載"></script>
+<script type="text/javascript" src="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/jquery.themepunch.tools.min.js.下載"></script>
+<script type="text/javascript" src="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/jquery.themepunch.revolution.min.js.下載"></script>
+<link rel="https://api.w.org/" href="http://www.datagenicgroup.com/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.datagenicgroup.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.datagenicgroup.com/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 4.8.7">
+<link rel="shortlink" href="http://www.datagenicgroup.com/?p=11769">
+<link rel="alternate" type="application/json+oembed" href="http://www.datagenicgroup.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.datagenicgroup.com%2Fsentiment-analysis-when-commodity-trading-meets-deep-learning%2F">
+<link rel="alternate" type="text/xml+oembed" href="http://www.datagenicgroup.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.datagenicgroup.com%2Fsentiment-analysis-when-commodity-trading-meets-deep-learning%2F&amp;format=xml">
+<script type="text/javascript">
+				jQuery(document).ready(function($) {
+				var ult_smooth_speed = 480;
+				var ult_smooth_step = 80;
+				$('html').attr('data-ult_smooth_speed',ult_smooth_speed).attr('data-ult_smooth_step',ult_smooth_step);
+				});
+			</script><style id="ctcc-css" type="text/css" media="screen">
+				#catapult-cookie-bar {
+					box-sizing: border-box;
+					max-height: 0;
+					opacity: 0;
+					z-index: 99999;
+					overflow: hidden;
+					color: #ddd;
+					position: fixed;
+					left: 0;
+					top: 0;
+					width: 100%;
+					background-color: #464646;
+				}
+				#catapult-cookie-bar a {
+					color: #ffffff;
+				}
+				#catapult-cookie-bar .x_close span {
+					background-color: #282828;
+				}
+				button#catapultCookie {
+					background:;
+					color: #282828;
+					border: 0; padding: 6px 9px; border-radius: 3px;
+				}
+				#catapult-cookie-bar h3 {
+					color: #ddd;
+				}
+				.has-cookie-bar #catapult-cookie-bar {
+					opacity: 1;
+					max-height: 999px;
+					min-height: 30px;
+				}</style><meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress.">
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="http://www.datagenicgroup.com/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]--><!--[if IE  8]><link rel="stylesheet" type="text/css" href="http://www.datagenicgroup.com/wp-content/plugins/js_composer/assets/css/vc-ie8.min.css" media="screen"><![endif]--><script type="text/javascript">if (typeof ajaxurl === "undefined") {var ajaxurl = "https://www.datagenicgroup.com/wp-admin/admin-ajax.php"}</script><meta name="generator" content="Powered by Slider Revolution 5.2.5.4 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface.">
+<link rel="icon" href="http://www.datagenicgroup.com/wp-content/uploads/2016/09/cropped-fav-32x32.png" sizes="32x32">
+<link rel="icon" href="http://www.datagenicgroup.com/wp-content/uploads/2016/09/cropped-fav-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon-precomposed" href="http://www.datagenicgroup.com/wp-content/uploads/2016/09/cropped-fav-180x180.png">
+<meta name="msapplication-TileImage" content="http://www.datagenicgroup.com/wp-content/uploads/2016/09/cropped-fav-270x270.png">
+<noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>	<!-- Hotjar Tracking Code for www.datagenicgroup.com -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:437181,hjsv:5};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+</script><script async="" src="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/hotjar-437181.js.下載"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/7iWjCqxpwOS3qo3CEKllk"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-3586001-42');
+</script>
+
+<script type="text/javascript" charset="UTF-8" src="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/common.js.下載"></script><script type="text/javascript" charset="UTF-8" src="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/util.js.下載"></script><script type="text/javascript" charset="UTF-8" src="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/stats.js.下載"></script><script type="text/javascript" charset="utf-8" async="" src="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/timeline.f2e3d1573ec0a0169368802d4d67b150.js.下載"></script><script async="" src="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/modules-f8a1e283f65f251ee5a9c2c382e49726.js.下載"></script><style type="text/css">iframe#_hjRemoteVarsFrame {display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;}</style></head>
+
+
+<body class="post-template-default single single-post postid-11769 single-format-standard wpb-js-composer js-comp-ver-4.12 vc_responsive">
+
+<!-- DataGenic Google Analytics tracking code - ARM 2016/09/09 -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2672882-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- Start of Async HubSpot Analytics Code - ARM 2016/09/26 -->
+<script type="text/javascript">
+(function(d,s,i,r) {
+if (d.getElementById(i)){return;}
+var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/2488336.js';
+e.parentNode.insertBefore(n, e);
+})(document,"script","hs-analytics",300000);
+</script>
+<!-- End of Async HubSpot Analytics Code -->
+    
+    <div class="topheadbg"></div>
+    
+    
+		
+		<header class="navbar navbar-default navbar-fixed-top style1  header_not_fixed">
+		
+				
+		<div class="nav-container container">
+	    	<div class="navbar-header">
+		    					<a class="navbar-brand nav-to" href="http://www.datagenicgroup.com/" tabindex="-1">
+	        						<img class="logo_normal notalone" style="position: relative;" src="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/logo.png" alt="" title="">
+    					
+    					    				<img class="logo_retina" style="display:none; position: relative;" src="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/logo.png" alt="" title="">
+    						        </a>
+			</div>
+			
+						
+			<div class="navbar-collapse collapse">
+				<div id="mega-menu-wrap-PrimaryNavigation" class="mega-menu-wrap"><div class="mega-menu-toggle" tabindex="0"><div class="mega-toggle-block mega-menu-toggle-block mega-toggle-block-right mega-toggle-block-1" id="mega-toggle-block-1"></div></div><ul id="mega-menu-PrimaryNavigation" class="mega-menu mega-menu-horizontal" data-event="hover" data-effect="fade_up" data-effect-speed="400" data-second-click="go" data-document-click="collapse" data-reverse-mobile-items="true" data-vertical-behaviour="standard" data-breakpoint="994"><li class="mega-blake_mega_menu mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-menu-item-9736" id="mega-menu-item-9736"><a class="mega-menu-link" href="http://www.datagenicgroup.com/products/" tabindex="0">Products</a>
+<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-widget widget_text mega-menu-columns-4-of-4 mega-menu-item-text-7" id="mega-menu-item-text-7">			<div class="textwidget"><div class="navigation-infor-top">
+<p>Our clients benefit from our depth of experience in real world data management and our commitment to reliable, scalable and leading-edge​ products.</p>
+<span class="navlinkwrap"><a class="nd-btn" href="http://www.datagenicgroup.com/products/">View our Products </a></span>
+</div></div>
+		</li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-clear mega-menu-item-9737" id="mega-menu-item-9737"><a class="mega-menu-link" href="http://www.datagenicgroup.com/products/enterprise-data-management/">Genic DataManager™</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9740" id="mega-menu-item-9740"><a class="mega-menu-link" href="http://www.datagenicgroup.com/products/forward-curve-builder/">Genic CurveBuilder™</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9739" id="mega-menu-item-9739"><a class="mega-menu-link" href="http://www.datagenicgroup.com/products/business-process-management/">Genic WorkFlow™</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9738" id="mega-menu-item-9738"><a class="mega-menu-link" href="http://www.datagenicgroup.com/products/data-quality-management/">Genic QualityManager™</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-clear mega-menu-item-9741" id="mega-menu-item-9741"><a class="mega-menu-link" href="http://www.datagenicgroup.com/products/business-intelligence-tools/">Genic DataiQ™</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9742" id="mega-menu-item-9742"><a class="mega-menu-link" href="http://www.datagenicgroup.com/products/genic-live-connect/">Genic LiveConnect™</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9743" id="mega-menu-item-9743"><a class="mega-menu-link" href="http://www.datagenicgroup.com/products/commodity-market-data/">Genic DataHub™</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9744" id="mega-menu-item-9744"><a class="mega-menu-link" href="http://www.datagenicgroup.com/products/excel-add-in/">Genic ExcelAdd-In™</a></li><li class="mega-menu-item mega-menu-item-type-widget widget_text mega-menu-columns-2-of-4 mega-menu-clear mega-menu-item-text-12" id="mega-menu-item-text-12">			<div class="textwidget"><div class="navigation-infor-top gcbrtnto">
+<p><b>Introducing Genic CurveBuilderRT</b> - Customised forward curves in Real-Time</p>
+<span class="navlinkwrap"><a class="nd-btn" href="http://www.datagenicgroup.com/products/forward-curve-builder/real-time/">Find out more </a></span>
+</div></div>
+		</li><li class="mega-menu-item mega-menu-item-type-widget widget_text mega-menu-columns-2-of-4 mega-menu-item-text-13" id="mega-menu-item-text-13">			<div class="textwidget"><div class="navigation-infor-top gcbrtnto genicfusihd">
+<p><b>Genic Fusion</b> - Plug-and-play connectivity to a global network of trusted partners</p>
+<span class="navlinkwrap"><a class="nd-btn" href="http://www.datagenicgroup.com/genic-fusion/">Find out more </a></span>
+</div></div>
+		</li></ul>
+</li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-menu-item-9745" id="mega-menu-item-9745"><a class="mega-menu-link" href="http://www.datagenicgroup.com/solutions/" tabindex="0">Solutions</a>
+<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-widget widget_text mega-menu-columns-4-of-4 mega-menu-item-text-8" id="mega-menu-item-text-8">			<div class="textwidget"><div class="navigation-infor-top">
+<p>Delivering innovative and award-winning​ solutions since 2002. <br><em>The natural choice for commodity market participants.</em></p>
+<span class="navlinkwrap"><a class="nd-btn" href="http://www.datagenicgroup.com/solutions/">View our Solutions </a></span>
+</div></div>
+		</li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-clear mega-menu-item-9754" id="mega-menu-item-9754"><a class="mega-menu-link" href="http://www.datagenicgroup.com/solutions/data-management/">Smart Commodity Data Management</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9755" id="mega-menu-item-9755"><a class="mega-menu-link" href="http://www.datagenicgroup.com/solutions/forward-curve-solutions/">Forward Curve Modelling For Commodity Markets</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9751" id="mega-menu-item-9751"><a class="mega-menu-link" href="http://www.datagenicgroup.com/solutions/workflow-management/">Workflow Management</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9748" id="mega-menu-item-9748"><a class="mega-menu-link" href="http://www.datagenicgroup.com/solutions/quality-management/">Enterprise Data Quality Management</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-clear mega-menu-item-9756" id="mega-menu-item-9756"><a class="mega-menu-link" href="http://www.datagenicgroup.com/solutions/market-data/">Market Data</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9759" id="mega-menu-item-9759"><a class="mega-menu-link" href="http://www.datagenicgroup.com/solutions/decision-support/">Decision Support</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9753" id="mega-menu-item-9753"><a class="mega-menu-link" href="http://www.datagenicgroup.com/solutions/ctrm-integration/">CTRM Integration</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9746" id="mega-menu-item-9746"><a class="mega-menu-link" href="http://www.datagenicgroup.com/solutions/on-premise-solutions/">On-Premise</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-clear mega-menu-item-9752" id="mega-menu-item-9752"><a class="mega-menu-link" href="http://www.datagenicgroup.com/?page_id=8849">Cloud Solutions2</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9758" id="mega-menu-item-9758"><a class="mega-menu-link" href="http://www.datagenicgroup.com/solutions/big-data-solutions/">Big Data Solutions</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9757" id="mega-menu-item-9757"><a class="mega-menu-link" href="http://www.datagenicgroup.com/solutions/natural-language-processing/">Natural Language Processing</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-11359" id="mega-menu-item-11359"><a class="mega-menu-link" href="http://www.datagenicgroup.com/iso-market-data/">ISO Markets</a></li></ul>
+</li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-menu-item-9761" id="mega-menu-item-9761"><a class="mega-menu-link" href="http://www.datagenicgroup.com/industries/" tabindex="0">Industries</a>
+<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-widget widget_text mega-menu-columns-3-of-3 mega-menu-item-text-9" id="mega-menu-item-text-9">			<div class="textwidget"><div class="navigation-infor-top">
+<p>Our market knowledge and unique application of technology has allowed us to provide solutions that are focused on energy &amp; commodity market participants.</p>
+<span class="navlinkwrap"><a class="nd-btn" href="http://www.datagenicgroup.com/industries/">View Industries </a></span>
+</div></div>
+		</li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-3 mega-menu-clear mega-menu-item-9762" id="mega-menu-item-9762"><a class="mega-menu-link" href="http://www.datagenicgroup.com/industries/energy/">Energy Markets</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-3 mega-menu-item-9763" id="mega-menu-item-9763"><a class="mega-menu-link" href="http://www.datagenicgroup.com/industries/commodities/">Commodities</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-3 mega-menu-item-9760" id="mega-menu-item-9760"><a class="mega-menu-link" href="http://www.datagenicgroup.com/industries/commercial-and-industrial/">Commercial and Industrial</a></li></ul>
+</li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-menu-item-9764" id="mega-menu-item-9764"><a class="mega-menu-link" href="http://www.datagenicgroup.com/company/" tabindex="0">Company</a>
+<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-widget widget_text mega-menu-columns-4-of-4 mega-menu-item-text-10" id="mega-menu-item-text-10">			<div class="textwidget"><div class="navigation-infor-top">
+<p>At DataGenic we build innovative products and services to drive data automation and intelligent insight.</p>
+<span class="navlinkwrap"><a class="nd-btn" href="http://www.datagenicgroup.com/company/">Learn about DataGenic </a></span>
+</div></div>
+		</li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-clear mega-menu-item-9765" id="mega-menu-item-9765"><a class="mega-menu-link" href="http://www.datagenicgroup.com/company/customer-success/">Customer Success</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9766" id="mega-menu-item-9766"><a class="mega-menu-link" href="http://www.datagenicgroup.com/company/industry-recognition/">Industry Recognition</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9767" id="mega-menu-item-9767"><a class="mega-menu-link" href="http://www.datagenicgroup.com/company/why-choose-datagenic/">Why Choose DataGenic</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9768" id="mega-menu-item-9768"><a class="mega-menu-link" href="http://www.datagenicgroup.com/company/partners/">Partners</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-clear mega-menu-item-9769" id="mega-menu-item-9769"><a class="mega-menu-link" href="http://www.datagenicgroup.com/company/our-mission/">Our Mission</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9770" id="mega-menu-item-9770"><a class="mega-menu-link" href="http://www.datagenicgroup.com/company/leadership-team/">Leadership Team</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9771" id="mega-menu-item-9771"><a class="mega-menu-link" href="http://www.datagenicgroup.com/company/business-responsibility/">Business Responsibility</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9772" id="mega-menu-item-9772"><a class="mega-menu-link" href="http://www.datagenicgroup.com/company/careers/">Careers</a></li><li class="mega-menu-item mega-menu-item-type-widget widget_text mega-menu-columns-4-of-4 mega-menu-clear mega-menu-item-text-14" id="mega-menu-item-text-14">			<div class="textwidget"><div class="navigation-infor-top gcbrtnto fifyearan">
+<p><img src="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/15years.png"><b>Our journey started with a conversation between four friends…</b></p>
+<span class="navlinkwrap"><a class="nd-btn" href="http://www.datagenicgroup.com/company/our-journey/">View our Journey</a></span>
+</div></div>
+		</li></ul>
+</li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-menu-item-9773" id="mega-menu-item-9773"><a class="mega-menu-link" href="http://www.datagenicgroup.com/resources/" tabindex="0">Resources</a>
+<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-widget widget_text mega-menu-columns-5-of-5 mega-menu-item-text-11" id="mega-menu-item-text-11">			<div class="textwidget"><div class="navigation-infor-top">
+<p>Find the information you need from our wide variety of datasheets, published articles, news and more.</p>
+<span class="navlinkwrap"><a class="nd-btn" href="http://www.datagenicgroup.com/resources/">Access our Resources </a></span>
+</div></div>
+		</li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-5 mega-menu-clear mega-menu-item-9774" id="mega-menu-item-9774"><a class="mega-menu-link" href="http://www.datagenicgroup.com/resources/news/">News</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-5 mega-menu-item-9775" id="mega-menu-item-9775"><a class="mega-menu-link" href="http://www.datagenicgroup.com/resources/events/">Events</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-5 mega-menu-item-9776" id="mega-menu-item-9776"><a class="mega-menu-link" href="http://www.datagenicgroup.com/resources/datasheets/">Datasheets</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-5 mega-menu-item-9777" id="mega-menu-item-9777"><a class="mega-menu-link" href="http://www.datagenicgroup.com/resources/articles/">Articles</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-5 mega-menu-item-9778" id="mega-menu-item-9778"><a class="mega-menu-link" href="http://www.datagenicgroup.com/resources/blogs-at-datagenic/">Blogs at DataGenic</a></li></ul>
+</li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-9779" id="mega-menu-item-9779"><a class="mega-menu-link" href="http://www.datagenicgroup.com/contact/" tabindex="0">Contact</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-9780" id="mega-menu-item-9780"><a class="mega-menu-link" href="http://www.datagenicgroup.com/request-demo/" tabindex="0">Request Demo</a></li></ul></div>			</div>
+			
+			
+								<div class="header_social_icons ">
+														<div class="search_trigger_mobile"><i class="fa fa-search"></i></div>
+													</div>
+								
+								<div class="search_trigger"><i class="fa fa-search"></i></div>
+								 
+								<div id="dl-menu" class="dl-menuwrapper">
+						<div class="dl-trigger-wrapper">
+							<button class="dl-trigger"><!-- Open Menu --></button>
+						</div>
+						<div id="mega-menu-wrap-PrimaryNavigation" class="mega-menu-wrap"><div class="mega-menu-toggle" tabindex="0"><div class="mega-toggle-block mega-menu-toggle-block mega-toggle-block-right mega-toggle-block-1" id="mega-toggle-block-1"></div></div><ul id="mega-menu-PrimaryNavigation" class="mega-menu mega-menu-horizontal" data-event="hover" data-effect="fade_up" data-effect-speed="400" data-second-click="go" data-document-click="collapse" data-reverse-mobile-items="true" data-vertical-behaviour="standard" data-breakpoint="994"><li class="mega-blake_mega_menu mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-menu-item-9736" id="mega-menu-item-9736"><a class="mega-menu-link" href="http://www.datagenicgroup.com/products/" tabindex="0">Products</a>
+<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-widget widget_text mega-menu-columns-4-of-4 mega-menu-item-text-7" id="mega-menu-item-text-7">			<div class="textwidget"><div class="navigation-infor-top">
+<p>Our clients benefit from our depth of experience in real world data management and our commitment to reliable, scalable and leading-edge​ products.</p>
+<span class="navlinkwrap"><a class="nd-btn" href="http://www.datagenicgroup.com/products/">View our Products </a></span>
+</div></div>
+		</li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-clear mega-menu-item-9737" id="mega-menu-item-9737"><a class="mega-menu-link" href="http://www.datagenicgroup.com/products/enterprise-data-management/">Genic DataManager™</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9740" id="mega-menu-item-9740"><a class="mega-menu-link" href="http://www.datagenicgroup.com/products/forward-curve-builder/">Genic CurveBuilder™</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9739" id="mega-menu-item-9739"><a class="mega-menu-link" href="http://www.datagenicgroup.com/products/business-process-management/">Genic WorkFlow™</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9738" id="mega-menu-item-9738"><a class="mega-menu-link" href="http://www.datagenicgroup.com/products/data-quality-management/">Genic QualityManager™</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-clear mega-menu-item-9741" id="mega-menu-item-9741"><a class="mega-menu-link" href="http://www.datagenicgroup.com/products/business-intelligence-tools/">Genic DataiQ™</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9742" id="mega-menu-item-9742"><a class="mega-menu-link" href="http://www.datagenicgroup.com/products/genic-live-connect/">Genic LiveConnect™</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9743" id="mega-menu-item-9743"><a class="mega-menu-link" href="http://www.datagenicgroup.com/products/commodity-market-data/">Genic DataHub™</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9744" id="mega-menu-item-9744"><a class="mega-menu-link" href="http://www.datagenicgroup.com/products/excel-add-in/">Genic ExcelAdd-In™</a></li><li class="mega-menu-item mega-menu-item-type-widget widget_text mega-menu-columns-2-of-4 mega-menu-clear mega-menu-item-text-12" id="mega-menu-item-text-12">			<div class="textwidget"><div class="navigation-infor-top gcbrtnto">
+<p><b>Introducing Genic CurveBuilderRT</b> - Customised forward curves in Real-Time</p>
+<span class="navlinkwrap"><a class="nd-btn" href="http://www.datagenicgroup.com/products/forward-curve-builder/real-time/">Find out more </a></span>
+</div></div>
+		</li><li class="mega-menu-item mega-menu-item-type-widget widget_text mega-menu-columns-2-of-4 mega-menu-item-text-13" id="mega-menu-item-text-13">			<div class="textwidget"><div class="navigation-infor-top gcbrtnto genicfusihd">
+<p><b>Genic Fusion</b> - Plug-and-play connectivity to a global network of trusted partners</p>
+<span class="navlinkwrap"><a class="nd-btn" href="http://www.datagenicgroup.com/genic-fusion/">Find out more </a></span>
+</div></div>
+		</li></ul>
+</li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-menu-item-9745" id="mega-menu-item-9745"><a class="mega-menu-link" href="http://www.datagenicgroup.com/solutions/" tabindex="0">Solutions</a>
+<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-widget widget_text mega-menu-columns-4-of-4 mega-menu-item-text-8" id="mega-menu-item-text-8">			<div class="textwidget"><div class="navigation-infor-top">
+<p>Delivering innovative and award-winning​ solutions since 2002. <br><em>The natural choice for commodity market participants.</em></p>
+<span class="navlinkwrap"><a class="nd-btn" href="http://www.datagenicgroup.com/solutions/">View our Solutions </a></span>
+</div></div>
+		</li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-clear mega-menu-item-9754" id="mega-menu-item-9754"><a class="mega-menu-link" href="http://www.datagenicgroup.com/solutions/data-management/">Smart Commodity Data Management</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9755" id="mega-menu-item-9755"><a class="mega-menu-link" href="http://www.datagenicgroup.com/solutions/forward-curve-solutions/">Forward Curve Modelling For Commodity Markets</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9751" id="mega-menu-item-9751"><a class="mega-menu-link" href="http://www.datagenicgroup.com/solutions/workflow-management/">Workflow Management</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9748" id="mega-menu-item-9748"><a class="mega-menu-link" href="http://www.datagenicgroup.com/solutions/quality-management/">Enterprise Data Quality Management</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-clear mega-menu-item-9756" id="mega-menu-item-9756"><a class="mega-menu-link" href="http://www.datagenicgroup.com/solutions/market-data/">Market Data</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9759" id="mega-menu-item-9759"><a class="mega-menu-link" href="http://www.datagenicgroup.com/solutions/decision-support/">Decision Support</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9753" id="mega-menu-item-9753"><a class="mega-menu-link" href="http://www.datagenicgroup.com/solutions/ctrm-integration/">CTRM Integration</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9746" id="mega-menu-item-9746"><a class="mega-menu-link" href="http://www.datagenicgroup.com/solutions/on-premise-solutions/">On-Premise</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-clear mega-menu-item-9752" id="mega-menu-item-9752"><a class="mega-menu-link" href="http://www.datagenicgroup.com/?page_id=8849">Cloud Solutions2</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9758" id="mega-menu-item-9758"><a class="mega-menu-link" href="http://www.datagenicgroup.com/solutions/big-data-solutions/">Big Data Solutions</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9757" id="mega-menu-item-9757"><a class="mega-menu-link" href="http://www.datagenicgroup.com/solutions/natural-language-processing/">Natural Language Processing</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-11359" id="mega-menu-item-11359"><a class="mega-menu-link" href="http://www.datagenicgroup.com/iso-market-data/">ISO Markets</a></li></ul>
+</li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-menu-item-9761" id="mega-menu-item-9761"><a class="mega-menu-link" href="http://www.datagenicgroup.com/industries/" tabindex="0">Industries</a>
+<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-widget widget_text mega-menu-columns-3-of-3 mega-menu-item-text-9" id="mega-menu-item-text-9">			<div class="textwidget"><div class="navigation-infor-top">
+<p>Our market knowledge and unique application of technology has allowed us to provide solutions that are focused on energy &amp; commodity market participants.</p>
+<span class="navlinkwrap"><a class="nd-btn" href="http://www.datagenicgroup.com/industries/">View Industries </a></span>
+</div></div>
+		</li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-3 mega-menu-clear mega-menu-item-9762" id="mega-menu-item-9762"><a class="mega-menu-link" href="http://www.datagenicgroup.com/industries/energy/">Energy Markets</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-3 mega-menu-item-9763" id="mega-menu-item-9763"><a class="mega-menu-link" href="http://www.datagenicgroup.com/industries/commodities/">Commodities</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-3 mega-menu-item-9760" id="mega-menu-item-9760"><a class="mega-menu-link" href="http://www.datagenicgroup.com/industries/commercial-and-industrial/">Commercial and Industrial</a></li></ul>
+</li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-menu-item-9764" id="mega-menu-item-9764"><a class="mega-menu-link" href="http://www.datagenicgroup.com/company/" tabindex="0">Company</a>
+<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-widget widget_text mega-menu-columns-4-of-4 mega-menu-item-text-10" id="mega-menu-item-text-10">			<div class="textwidget"><div class="navigation-infor-top">
+<p>At DataGenic we build innovative products and services to drive data automation and intelligent insight.</p>
+<span class="navlinkwrap"><a class="nd-btn" href="http://www.datagenicgroup.com/company/">Learn about DataGenic </a></span>
+</div></div>
+		</li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-clear mega-menu-item-9765" id="mega-menu-item-9765"><a class="mega-menu-link" href="http://www.datagenicgroup.com/company/customer-success/">Customer Success</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9766" id="mega-menu-item-9766"><a class="mega-menu-link" href="http://www.datagenicgroup.com/company/industry-recognition/">Industry Recognition</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9767" id="mega-menu-item-9767"><a class="mega-menu-link" href="http://www.datagenicgroup.com/company/why-choose-datagenic/">Why Choose DataGenic</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9768" id="mega-menu-item-9768"><a class="mega-menu-link" href="http://www.datagenicgroup.com/company/partners/">Partners</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-clear mega-menu-item-9769" id="mega-menu-item-9769"><a class="mega-menu-link" href="http://www.datagenicgroup.com/company/our-mission/">Our Mission</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9770" id="mega-menu-item-9770"><a class="mega-menu-link" href="http://www.datagenicgroup.com/company/leadership-team/">Leadership Team</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9771" id="mega-menu-item-9771"><a class="mega-menu-link" href="http://www.datagenicgroup.com/company/business-responsibility/">Business Responsibility</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9772" id="mega-menu-item-9772"><a class="mega-menu-link" href="http://www.datagenicgroup.com/company/careers/">Careers</a></li><li class="mega-menu-item mega-menu-item-type-widget widget_text mega-menu-columns-4-of-4 mega-menu-clear mega-menu-item-text-14" id="mega-menu-item-text-14">			<div class="textwidget"><div class="navigation-infor-top gcbrtnto fifyearan">
+<p><img src="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/15years.png"><b>Our journey started with a conversation between four friends…</b></p>
+<span class="navlinkwrap"><a class="nd-btn" href="http://www.datagenicgroup.com/company/our-journey/">View our Journey</a></span>
+</div></div>
+		</li></ul>
+</li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-menu-item-9773" id="mega-menu-item-9773"><a class="mega-menu-link" href="http://www.datagenicgroup.com/resources/" tabindex="0">Resources</a>
+<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-widget widget_text mega-menu-columns-5-of-5 mega-menu-item-text-11" id="mega-menu-item-text-11">			<div class="textwidget"><div class="navigation-infor-top">
+<p>Find the information you need from our wide variety of datasheets, published articles, news and more.</p>
+<span class="navlinkwrap"><a class="nd-btn" href="http://www.datagenicgroup.com/resources/">Access our Resources </a></span>
+</div></div>
+		</li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-5 mega-menu-clear mega-menu-item-9774" id="mega-menu-item-9774"><a class="mega-menu-link" href="http://www.datagenicgroup.com/resources/news/">News</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-5 mega-menu-item-9775" id="mega-menu-item-9775"><a class="mega-menu-link" href="http://www.datagenicgroup.com/resources/events/">Events</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-5 mega-menu-item-9776" id="mega-menu-item-9776"><a class="mega-menu-link" href="http://www.datagenicgroup.com/resources/datasheets/">Datasheets</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-5 mega-menu-item-9777" id="mega-menu-item-9777"><a class="mega-menu-link" href="http://www.datagenicgroup.com/resources/articles/">Articles</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-5 mega-menu-item-9778" id="mega-menu-item-9778"><a class="mega-menu-link" href="http://www.datagenicgroup.com/resources/blogs-at-datagenic/">Blogs at DataGenic</a></li></ul>
+</li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-9779" id="mega-menu-item-9779"><a class="mega-menu-link" href="http://www.datagenicgroup.com/contact/" tabindex="0">Contact</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-9780" id="mega-menu-item-9780"><a class="mega-menu-link" href="http://www.datagenicgroup.com/request-demo/" tabindex="0">Request Demo</a></li></ul></div>					</div>
+								
+			
+		</div>
+		
+					<form autocomplete="off" role="search" method="get" class="search_input fade" action="http://www.datagenicgroup.com/">
+				<div class="search_close">
+					<i class="fa fa-times"></i>
+				</div>
+				<div class="container">
+					<input value="" name="s" class="search_input_value" type="text" placeholder="Search DataGenic...">
+					<input class="hidden" type="submit" id="searchsubmit" value="Search">
+					<div class="ajax_search_results"><ul></ul></div>
+				</div>
+			</form>	
+					
+	</header><header class="navbar navbar-default navbar-fixed-top style1  header_not_fixed headerclone" style="">
+		
+				
+		<div class="nav-container container">
+	    	<div class="navbar-header">
+		    					<a class="navbar-brand nav-to" href="http://www.datagenicgroup.com/" tabindex="-1">
+	        						<img class="logo_normal notalone" style="position: relative;" src="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/logo.png" alt="" title="">
+    					
+    					    				<img class="logo_retina" style="display:none; position: relative;" src="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/logo.png" alt="" title="">
+    						        </a>
+			</div>
+			
+						
+			<div class="navbar-collapse collapse">
+				<div id="mega-menu-wrap-PrimaryNavigation" class="mega-menu-wrap"><div class="mega-menu-toggle" tabindex="0"><div class="mega-toggle-block mega-menu-toggle-block mega-toggle-block-right mega-toggle-block-1" id="mega-toggle-block-1"></div></div><ul id="mega-menu-PrimaryNavigation" class="mega-menu mega-menu-horizontal" data-event="hover" data-effect="fade_up" data-effect-speed="400" data-second-click="go" data-document-click="collapse" data-reverse-mobile-items="true" data-vertical-behaviour="standard" data-breakpoint="994"><li class="mega-blake_mega_menu mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-menu-item-9736" id="mega-menu-item-9736"><a class="mega-menu-link" href="http://www.datagenicgroup.com/products/" tabindex="0">Products</a>
+<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-widget widget_text mega-menu-columns-4-of-4 mega-menu-item-text-7" id="mega-menu-item-text-7">			<div class="textwidget"><div class="navigation-infor-top">
+<p>Our clients benefit from our depth of experience in real world data management and our commitment to reliable, scalable and leading-edge​ products.</p>
+<span class="navlinkwrap"><a class="nd-btn" href="http://www.datagenicgroup.com/products/">View our Products </a></span>
+</div></div>
+		</li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-clear mega-menu-item-9737" id="mega-menu-item-9737"><a class="mega-menu-link" href="http://www.datagenicgroup.com/products/enterprise-data-management/">Genic DataManager™</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9740" id="mega-menu-item-9740"><a class="mega-menu-link" href="http://www.datagenicgroup.com/products/forward-curve-builder/">Genic CurveBuilder™</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9739" id="mega-menu-item-9739"><a class="mega-menu-link" href="http://www.datagenicgroup.com/products/business-process-management/">Genic WorkFlow™</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9738" id="mega-menu-item-9738"><a class="mega-menu-link" href="http://www.datagenicgroup.com/products/data-quality-management/">Genic QualityManager™</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-clear mega-menu-item-9741" id="mega-menu-item-9741"><a class="mega-menu-link" href="http://www.datagenicgroup.com/products/business-intelligence-tools/">Genic DataiQ™</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9742" id="mega-menu-item-9742"><a class="mega-menu-link" href="http://www.datagenicgroup.com/products/genic-live-connect/">Genic LiveConnect™</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9743" id="mega-menu-item-9743"><a class="mega-menu-link" href="http://www.datagenicgroup.com/products/commodity-market-data/">Genic DataHub™</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9744" id="mega-menu-item-9744"><a class="mega-menu-link" href="http://www.datagenicgroup.com/products/excel-add-in/">Genic ExcelAdd-In™</a></li><li class="mega-menu-item mega-menu-item-type-widget widget_text mega-menu-columns-2-of-4 mega-menu-clear mega-menu-item-text-12" id="mega-menu-item-text-12">			<div class="textwidget"><div class="navigation-infor-top gcbrtnto">
+<p><b>Introducing Genic CurveBuilderRT</b> - Customised forward curves in Real-Time</p>
+<span class="navlinkwrap"><a class="nd-btn" href="http://www.datagenicgroup.com/products/forward-curve-builder/real-time/">Find out more </a></span>
+</div></div>
+		</li><li class="mega-menu-item mega-menu-item-type-widget widget_text mega-menu-columns-2-of-4 mega-menu-item-text-13" id="mega-menu-item-text-13">			<div class="textwidget"><div class="navigation-infor-top gcbrtnto genicfusihd">
+<p><b>Genic Fusion</b> - Plug-and-play connectivity to a global network of trusted partners</p>
+<span class="navlinkwrap"><a class="nd-btn" href="http://www.datagenicgroup.com/genic-fusion/">Find out more </a></span>
+</div></div>
+		</li></ul>
+</li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-menu-item-9745" id="mega-menu-item-9745"><a class="mega-menu-link" href="http://www.datagenicgroup.com/solutions/" tabindex="0">Solutions</a>
+<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-widget widget_text mega-menu-columns-4-of-4 mega-menu-item-text-8" id="mega-menu-item-text-8">			<div class="textwidget"><div class="navigation-infor-top">
+<p>Delivering innovative and award-winning​ solutions since 2002. <br><em>The natural choice for commodity market participants.</em></p>
+<span class="navlinkwrap"><a class="nd-btn" href="http://www.datagenicgroup.com/solutions/">View our Solutions </a></span>
+</div></div>
+		</li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-clear mega-menu-item-9754" id="mega-menu-item-9754"><a class="mega-menu-link" href="http://www.datagenicgroup.com/solutions/data-management/">Smart Commodity Data Management</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9755" id="mega-menu-item-9755"><a class="mega-menu-link" href="http://www.datagenicgroup.com/solutions/forward-curve-solutions/">Forward Curve Modelling For Commodity Markets</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9751" id="mega-menu-item-9751"><a class="mega-menu-link" href="http://www.datagenicgroup.com/solutions/workflow-management/">Workflow Management</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9748" id="mega-menu-item-9748"><a class="mega-menu-link" href="http://www.datagenicgroup.com/solutions/quality-management/">Enterprise Data Quality Management</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-clear mega-menu-item-9756" id="mega-menu-item-9756"><a class="mega-menu-link" href="http://www.datagenicgroup.com/solutions/market-data/">Market Data</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9759" id="mega-menu-item-9759"><a class="mega-menu-link" href="http://www.datagenicgroup.com/solutions/decision-support/">Decision Support</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9753" id="mega-menu-item-9753"><a class="mega-menu-link" href="http://www.datagenicgroup.com/solutions/ctrm-integration/">CTRM Integration</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9746" id="mega-menu-item-9746"><a class="mega-menu-link" href="http://www.datagenicgroup.com/solutions/on-premise-solutions/">On-Premise</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-clear mega-menu-item-9752" id="mega-menu-item-9752"><a class="mega-menu-link" href="http://www.datagenicgroup.com/?page_id=8849">Cloud Solutions2</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9758" id="mega-menu-item-9758"><a class="mega-menu-link" href="http://www.datagenicgroup.com/solutions/big-data-solutions/">Big Data Solutions</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9757" id="mega-menu-item-9757"><a class="mega-menu-link" href="http://www.datagenicgroup.com/solutions/natural-language-processing/">Natural Language Processing</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-11359" id="mega-menu-item-11359"><a class="mega-menu-link" href="http://www.datagenicgroup.com/iso-market-data/">ISO Markets</a></li></ul>
+</li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-menu-item-9761" id="mega-menu-item-9761"><a class="mega-menu-link" href="http://www.datagenicgroup.com/industries/" tabindex="0">Industries</a>
+<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-widget widget_text mega-menu-columns-3-of-3 mega-menu-item-text-9" id="mega-menu-item-text-9">			<div class="textwidget"><div class="navigation-infor-top">
+<p>Our market knowledge and unique application of technology has allowed us to provide solutions that are focused on energy &amp; commodity market participants.</p>
+<span class="navlinkwrap"><a class="nd-btn" href="http://www.datagenicgroup.com/industries/">View Industries </a></span>
+</div></div>
+		</li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-3 mega-menu-clear mega-menu-item-9762" id="mega-menu-item-9762"><a class="mega-menu-link" href="http://www.datagenicgroup.com/industries/energy/">Energy Markets</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-3 mega-menu-item-9763" id="mega-menu-item-9763"><a class="mega-menu-link" href="http://www.datagenicgroup.com/industries/commodities/">Commodities</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-3 mega-menu-item-9760" id="mega-menu-item-9760"><a class="mega-menu-link" href="http://www.datagenicgroup.com/industries/commercial-and-industrial/">Commercial and Industrial</a></li></ul>
+</li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-menu-item-9764" id="mega-menu-item-9764"><a class="mega-menu-link" href="http://www.datagenicgroup.com/company/" tabindex="0">Company</a>
+<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-widget widget_text mega-menu-columns-4-of-4 mega-menu-item-text-10" id="mega-menu-item-text-10">			<div class="textwidget"><div class="navigation-infor-top">
+<p>At DataGenic we build innovative products and services to drive data automation and intelligent insight.</p>
+<span class="navlinkwrap"><a class="nd-btn" href="http://www.datagenicgroup.com/company/">Learn about DataGenic </a></span>
+</div></div>
+		</li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-clear mega-menu-item-9765" id="mega-menu-item-9765"><a class="mega-menu-link" href="http://www.datagenicgroup.com/company/customer-success/">Customer Success</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9766" id="mega-menu-item-9766"><a class="mega-menu-link" href="http://www.datagenicgroup.com/company/industry-recognition/">Industry Recognition</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9767" id="mega-menu-item-9767"><a class="mega-menu-link" href="http://www.datagenicgroup.com/company/why-choose-datagenic/">Why Choose DataGenic</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9768" id="mega-menu-item-9768"><a class="mega-menu-link" href="http://www.datagenicgroup.com/company/partners/">Partners</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-clear mega-menu-item-9769" id="mega-menu-item-9769"><a class="mega-menu-link" href="http://www.datagenicgroup.com/company/our-mission/">Our Mission</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9770" id="mega-menu-item-9770"><a class="mega-menu-link" href="http://www.datagenicgroup.com/company/leadership-team/">Leadership Team</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9771" id="mega-menu-item-9771"><a class="mega-menu-link" href="http://www.datagenicgroup.com/company/business-responsibility/">Business Responsibility</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9772" id="mega-menu-item-9772"><a class="mega-menu-link" href="http://www.datagenicgroup.com/company/careers/">Careers</a></li><li class="mega-menu-item mega-menu-item-type-widget widget_text mega-menu-columns-4-of-4 mega-menu-clear mega-menu-item-text-14" id="mega-menu-item-text-14">			<div class="textwidget"><div class="navigation-infor-top gcbrtnto fifyearan">
+<p><img src="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/15years.png"><b>Our journey started with a conversation between four friends…</b></p>
+<span class="navlinkwrap"><a class="nd-btn" href="http://www.datagenicgroup.com/company/our-journey/">View our Journey</a></span>
+</div></div>
+		</li></ul>
+</li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-menu-item-9773" id="mega-menu-item-9773"><a class="mega-menu-link" href="http://www.datagenicgroup.com/resources/" tabindex="0">Resources</a>
+<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-widget widget_text mega-menu-columns-5-of-5 mega-menu-item-text-11" id="mega-menu-item-text-11">			<div class="textwidget"><div class="navigation-infor-top">
+<p>Find the information you need from our wide variety of datasheets, published articles, news and more.</p>
+<span class="navlinkwrap"><a class="nd-btn" href="http://www.datagenicgroup.com/resources/">Access our Resources </a></span>
+</div></div>
+		</li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-5 mega-menu-clear mega-menu-item-9774" id="mega-menu-item-9774"><a class="mega-menu-link" href="http://www.datagenicgroup.com/resources/news/">News</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-5 mega-menu-item-9775" id="mega-menu-item-9775"><a class="mega-menu-link" href="http://www.datagenicgroup.com/resources/events/">Events</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-5 mega-menu-item-9776" id="mega-menu-item-9776"><a class="mega-menu-link" href="http://www.datagenicgroup.com/resources/datasheets/">Datasheets</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-5 mega-menu-item-9777" id="mega-menu-item-9777"><a class="mega-menu-link" href="http://www.datagenicgroup.com/resources/articles/">Articles</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-5 mega-menu-item-9778" id="mega-menu-item-9778"><a class="mega-menu-link" href="http://www.datagenicgroup.com/resources/blogs-at-datagenic/">Blogs at DataGenic</a></li></ul>
+</li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-9779" id="mega-menu-item-9779"><a class="mega-menu-link" href="http://www.datagenicgroup.com/contact/" tabindex="0">Contact</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-9780" id="mega-menu-item-9780"><a class="mega-menu-link" href="http://www.datagenicgroup.com/request-demo/" tabindex="0">Request Demo</a></li></ul></div>			</div>
+			
+			
+								<div class="header_social_icons ">
+														<div class="search_trigger_mobile"><i class="fa fa-search"></i></div>
+													</div>
+								
+								<div class="search_trigger"><i class="fa fa-search"></i></div>
+								 
+								<div id="dl-menu" class="dl-menuwrapper">
+						<div class="dl-trigger-wrapper">
+							<button class="dl-trigger"><!-- Open Menu --></button>
+						</div>
+						<div id="mega-menu-wrap-PrimaryNavigation" class="mega-menu-wrap"><div class="mega-menu-toggle" tabindex="0"><div class="mega-toggle-block mega-menu-toggle-block mega-toggle-block-right mega-toggle-block-1" id="mega-toggle-block-1"></div></div><ul id="mega-menu-PrimaryNavigation" class="mega-menu mega-menu-horizontal" data-event="hover" data-effect="fade_up" data-effect-speed="400" data-second-click="go" data-document-click="collapse" data-reverse-mobile-items="true" data-vertical-behaviour="standard" data-breakpoint="994"><li class="mega-blake_mega_menu mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-menu-item-9736" id="mega-menu-item-9736"><a class="mega-menu-link" href="http://www.datagenicgroup.com/products/" tabindex="0">Products</a>
+<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-widget widget_text mega-menu-columns-4-of-4 mega-menu-item-text-7" id="mega-menu-item-text-7">			<div class="textwidget"><div class="navigation-infor-top">
+<p>Our clients benefit from our depth of experience in real world data management and our commitment to reliable, scalable and leading-edge​ products.</p>
+<span class="navlinkwrap"><a class="nd-btn" href="http://www.datagenicgroup.com/products/">View our Products </a></span>
+</div></div>
+		</li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-clear mega-menu-item-9737" id="mega-menu-item-9737"><a class="mega-menu-link" href="http://www.datagenicgroup.com/products/enterprise-data-management/">Genic DataManager™</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9740" id="mega-menu-item-9740"><a class="mega-menu-link" href="http://www.datagenicgroup.com/products/forward-curve-builder/">Genic CurveBuilder™</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9739" id="mega-menu-item-9739"><a class="mega-menu-link" href="http://www.datagenicgroup.com/products/business-process-management/">Genic WorkFlow™</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9738" id="mega-menu-item-9738"><a class="mega-menu-link" href="http://www.datagenicgroup.com/products/data-quality-management/">Genic QualityManager™</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-clear mega-menu-item-9741" id="mega-menu-item-9741"><a class="mega-menu-link" href="http://www.datagenicgroup.com/products/business-intelligence-tools/">Genic DataiQ™</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9742" id="mega-menu-item-9742"><a class="mega-menu-link" href="http://www.datagenicgroup.com/products/genic-live-connect/">Genic LiveConnect™</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9743" id="mega-menu-item-9743"><a class="mega-menu-link" href="http://www.datagenicgroup.com/products/commodity-market-data/">Genic DataHub™</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9744" id="mega-menu-item-9744"><a class="mega-menu-link" href="http://www.datagenicgroup.com/products/excel-add-in/">Genic ExcelAdd-In™</a></li><li class="mega-menu-item mega-menu-item-type-widget widget_text mega-menu-columns-2-of-4 mega-menu-clear mega-menu-item-text-12" id="mega-menu-item-text-12">			<div class="textwidget"><div class="navigation-infor-top gcbrtnto">
+<p><b>Introducing Genic CurveBuilderRT</b> - Customised forward curves in Real-Time</p>
+<span class="navlinkwrap"><a class="nd-btn" href="http://www.datagenicgroup.com/products/forward-curve-builder/real-time/">Find out more </a></span>
+</div></div>
+		</li><li class="mega-menu-item mega-menu-item-type-widget widget_text mega-menu-columns-2-of-4 mega-menu-item-text-13" id="mega-menu-item-text-13">			<div class="textwidget"><div class="navigation-infor-top gcbrtnto genicfusihd">
+<p><b>Genic Fusion</b> - Plug-and-play connectivity to a global network of trusted partners</p>
+<span class="navlinkwrap"><a class="nd-btn" href="http://www.datagenicgroup.com/genic-fusion/">Find out more </a></span>
+</div></div>
+		</li></ul>
+</li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-menu-item-9745" id="mega-menu-item-9745"><a class="mega-menu-link" href="http://www.datagenicgroup.com/solutions/" tabindex="0">Solutions</a>
+<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-widget widget_text mega-menu-columns-4-of-4 mega-menu-item-text-8" id="mega-menu-item-text-8">			<div class="textwidget"><div class="navigation-infor-top">
+<p>Delivering innovative and award-winning​ solutions since 2002. <br><em>The natural choice for commodity market participants.</em></p>
+<span class="navlinkwrap"><a class="nd-btn" href="http://www.datagenicgroup.com/solutions/">View our Solutions </a></span>
+</div></div>
+		</li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-clear mega-menu-item-9754" id="mega-menu-item-9754"><a class="mega-menu-link" href="http://www.datagenicgroup.com/solutions/data-management/">Smart Commodity Data Management</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9755" id="mega-menu-item-9755"><a class="mega-menu-link" href="http://www.datagenicgroup.com/solutions/forward-curve-solutions/">Forward Curve Modelling For Commodity Markets</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9751" id="mega-menu-item-9751"><a class="mega-menu-link" href="http://www.datagenicgroup.com/solutions/workflow-management/">Workflow Management</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9748" id="mega-menu-item-9748"><a class="mega-menu-link" href="http://www.datagenicgroup.com/solutions/quality-management/">Enterprise Data Quality Management</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-clear mega-menu-item-9756" id="mega-menu-item-9756"><a class="mega-menu-link" href="http://www.datagenicgroup.com/solutions/market-data/">Market Data</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9759" id="mega-menu-item-9759"><a class="mega-menu-link" href="http://www.datagenicgroup.com/solutions/decision-support/">Decision Support</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9753" id="mega-menu-item-9753"><a class="mega-menu-link" href="http://www.datagenicgroup.com/solutions/ctrm-integration/">CTRM Integration</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9746" id="mega-menu-item-9746"><a class="mega-menu-link" href="http://www.datagenicgroup.com/solutions/on-premise-solutions/">On-Premise</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-clear mega-menu-item-9752" id="mega-menu-item-9752"><a class="mega-menu-link" href="http://www.datagenicgroup.com/?page_id=8849">Cloud Solutions2</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9758" id="mega-menu-item-9758"><a class="mega-menu-link" href="http://www.datagenicgroup.com/solutions/big-data-solutions/">Big Data Solutions</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9757" id="mega-menu-item-9757"><a class="mega-menu-link" href="http://www.datagenicgroup.com/solutions/natural-language-processing/">Natural Language Processing</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-11359" id="mega-menu-item-11359"><a class="mega-menu-link" href="http://www.datagenicgroup.com/iso-market-data/">ISO Markets</a></li></ul>
+</li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-menu-item-9761" id="mega-menu-item-9761"><a class="mega-menu-link" href="http://www.datagenicgroup.com/industries/" tabindex="0">Industries</a>
+<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-widget widget_text mega-menu-columns-3-of-3 mega-menu-item-text-9" id="mega-menu-item-text-9">			<div class="textwidget"><div class="navigation-infor-top">
+<p>Our market knowledge and unique application of technology has allowed us to provide solutions that are focused on energy &amp; commodity market participants.</p>
+<span class="navlinkwrap"><a class="nd-btn" href="http://www.datagenicgroup.com/industries/">View Industries </a></span>
+</div></div>
+		</li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-3 mega-menu-clear mega-menu-item-9762" id="mega-menu-item-9762"><a class="mega-menu-link" href="http://www.datagenicgroup.com/industries/energy/">Energy Markets</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-3 mega-menu-item-9763" id="mega-menu-item-9763"><a class="mega-menu-link" href="http://www.datagenicgroup.com/industries/commodities/">Commodities</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-3 mega-menu-item-9760" id="mega-menu-item-9760"><a class="mega-menu-link" href="http://www.datagenicgroup.com/industries/commercial-and-industrial/">Commercial and Industrial</a></li></ul>
+</li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-menu-item-9764" id="mega-menu-item-9764"><a class="mega-menu-link" href="http://www.datagenicgroup.com/company/" tabindex="0">Company</a>
+<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-widget widget_text mega-menu-columns-4-of-4 mega-menu-item-text-10" id="mega-menu-item-text-10">			<div class="textwidget"><div class="navigation-infor-top">
+<p>At DataGenic we build innovative products and services to drive data automation and intelligent insight.</p>
+<span class="navlinkwrap"><a class="nd-btn" href="http://www.datagenicgroup.com/company/">Learn about DataGenic </a></span>
+</div></div>
+		</li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-clear mega-menu-item-9765" id="mega-menu-item-9765"><a class="mega-menu-link" href="http://www.datagenicgroup.com/company/customer-success/">Customer Success</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9766" id="mega-menu-item-9766"><a class="mega-menu-link" href="http://www.datagenicgroup.com/company/industry-recognition/">Industry Recognition</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9767" id="mega-menu-item-9767"><a class="mega-menu-link" href="http://www.datagenicgroup.com/company/why-choose-datagenic/">Why Choose DataGenic</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9768" id="mega-menu-item-9768"><a class="mega-menu-link" href="http://www.datagenicgroup.com/company/partners/">Partners</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-clear mega-menu-item-9769" id="mega-menu-item-9769"><a class="mega-menu-link" href="http://www.datagenicgroup.com/company/our-mission/">Our Mission</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9770" id="mega-menu-item-9770"><a class="mega-menu-link" href="http://www.datagenicgroup.com/company/leadership-team/">Leadership Team</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9771" id="mega-menu-item-9771"><a class="mega-menu-link" href="http://www.datagenicgroup.com/company/business-responsibility/">Business Responsibility</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-4 mega-menu-item-9772" id="mega-menu-item-9772"><a class="mega-menu-link" href="http://www.datagenicgroup.com/company/careers/">Careers</a></li><li class="mega-menu-item mega-menu-item-type-widget widget_text mega-menu-columns-4-of-4 mega-menu-clear mega-menu-item-text-14" id="mega-menu-item-text-14">			<div class="textwidget"><div class="navigation-infor-top gcbrtnto fifyearan">
+<p><img src="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/15years.png"><b>Our journey started with a conversation between four friends…</b></p>
+<span class="navlinkwrap"><a class="nd-btn" href="http://www.datagenicgroup.com/company/our-journey/">View our Journey</a></span>
+</div></div>
+		</li></ul>
+</li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-menu-item-9773" id="mega-menu-item-9773"><a class="mega-menu-link" href="http://www.datagenicgroup.com/resources/" tabindex="0">Resources</a>
+<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-widget widget_text mega-menu-columns-5-of-5 mega-menu-item-text-11" id="mega-menu-item-text-11">			<div class="textwidget"><div class="navigation-infor-top">
+<p>Find the information you need from our wide variety of datasheets, published articles, news and more.</p>
+<span class="navlinkwrap"><a class="nd-btn" href="http://www.datagenicgroup.com/resources/">Access our Resources </a></span>
+</div></div>
+		</li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-5 mega-menu-clear mega-menu-item-9774" id="mega-menu-item-9774"><a class="mega-menu-link" href="http://www.datagenicgroup.com/resources/news/">News</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-5 mega-menu-item-9775" id="mega-menu-item-9775"><a class="mega-menu-link" href="http://www.datagenicgroup.com/resources/events/">Events</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-5 mega-menu-item-9776" id="mega-menu-item-9776"><a class="mega-menu-link" href="http://www.datagenicgroup.com/resources/datasheets/">Datasheets</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-5 mega-menu-item-9777" id="mega-menu-item-9777"><a class="mega-menu-link" href="http://www.datagenicgroup.com/resources/articles/">Articles</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-5 mega-menu-item-9778" id="mega-menu-item-9778"><a class="mega-menu-link" href="http://www.datagenicgroup.com/resources/blogs-at-datagenic/">Blogs at DataGenic</a></li></ul>
+</li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-9779" id="mega-menu-item-9779"><a class="mega-menu-link" href="http://www.datagenicgroup.com/contact/" tabindex="0">Contact</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-9780" id="mega-menu-item-9780"><a class="mega-menu-link" href="http://www.datagenicgroup.com/request-demo/" tabindex="0">Request Demo</a></li></ul></div>					</div>
+								
+			
+		</div>
+		
+					<form autocomplete="off" role="search" method="get" class="search_input fade" action="http://www.datagenicgroup.com/">
+				<div class="search_close">
+					<i class="fa fa-times"></i>
+				</div>
+				<div class="container">
+					<input value="" name="s" class="search_input_value" type="text" placeholder="Search DataGenic...">
+					<input class="hidden" type="submit" id="searchsubmit" value="Search">
+					<div class="ajax_search_results"><ul></ul></div>
+				</div>
+			</form>	
+					
+	</header>
+		
+			<div class="fullwidth-container  parallax" data-stellar-ratio="0.5" style="height: auto; background: rgb(115, 151, 225); transform: translate3d(0px, 191.5px, 0px);">
+	    					<div class="container left" style="padding:100px 0px 30px 0px 15px;">
+					<div class="pageTitle" style="text-align:left;">
+							    		
+		    		</div>
+		    		 
+				</div>
+				</div>	
+					
+			<div class="blog-default">
+				<div class="master_container container">
+					<section class="page_content left col-xs-12 col-md-9">
+						<div class="blog-default-bg">
+									<article id="post-11769" class="post">
+				
+			   	
+	    		    	
+	    	<div class="postcontent">
+				    									    	
+	    					
+				<div class="the_title"><h1>Sentiment Analysis – When Commodity Trading Meets Deep Learning</h1></div>
+		    
+			    <div class="metas-container articlesmbdg">
+	    			
+	    			<p class="blog-date"><i class="fa fa-calendar"></i> Mar 14, 2017	    			 | <a class="the_author" href="http://www.datagenicgroup.com/sentiment-analysis-when-commodity-trading-meets-deep-learning/?author=6">Posted by: Andrew Marsland</a> | 
+					
+		    							Posted in: <a class="newslinksdgar" href="http://www.datagenicgroup.com/category/blogs-at-datagenic">Blogs At DataGenic</a></p>					
+					
+	    		</div>
+	    		
+	    		
+	    		<div class="the_content">
+			    	<p><span>The automated analysis of textual data and its application in business analytics holds great promise for providing decision-makers with information from a sheer endless stream of news available online. Recent advances in computing have led to exciting new tools in the areas of Natural Language Processing, Sentiment Analysis and Machine Learning that can be used to make sense from an ever-growing number of online sources.</span>&nbsp;<span id="more-11769"></span>In a series of blog posts I will be looking at the basic concept of sentiment analysis in general and in the context of commodity trading, offer a behind-the-scenes view&nbsp;into DataGenic’s very own efforts in building a sentiment engine, introduce a number of case studies and provide a glimpse into the future of machine learning and Artificial Intelligence (AI).</p>
+<h2>News Analytics and Sentiment Analysis</h2>
+<p><span>It is widely recognised that <strong>new information plays a key role in financial markets</strong>, impacting on volumes of trade, stock returns and volatility of prices, and consequently news has always been a key source of investment information<span style="font-size: 12px;"><sup>1-3</sup>.</span></span></p>
+<p><span><span>While decision-makers have always considered a portfolio of varied news domains and sources, with the growth&nbsp;of the Internet, the amount of readily available information has grown exponentially. As major news outlets increasingly bolster their online portfolio, newspapers articles are increasingly published online. </span></span><a href="http://blog.datagenicgroup.com/big-data-in-the-commodity-markets"><span><span>Bloomberg alone adds an estimated 1 million news stories a day</span></span></a><span><span>.</span></span><span>&nbsp;</span></p>
+<p><span><span>Apart from news produced by these reputable sources, an increasing number of<strong> opinionated documents</strong> of interest are <strong>published online asynchronously 24/7/365</strong> on blogs, message boards and micro blogs&nbsp;(e.g. Twitter) by large and varied user communities.</span></span></p>
+<p><a href="http://blog.qmee.com/online-in-60-seconds-infographic-a-year-later/" target="_blank" rel="noopener" data-mce-target="_blank"><img style="width: 800px; display: block; margin-left: auto; margin-right: auto;" title="Sentiment Analysis - Infographic: 1 minute on the internet" src="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/1 internet minute Infographic.jpg" alt="Sentiment Analysis - Infographic: 1 minute on the internet" width="800" data-constrained="true"></a></p>
+<p style="text-align: right;"><span style="font-size: 12px;"><em>Image 1:&nbsp;Online in 60 seconds [Infographic], 8 July 2014,&nbsp;<a href="http://blog.qmee.com/online-in-60-seconds-infographic-a-year-later/">http://blog.qmee.com/online-in-60-seconds-infographic-a-year-later/</a>&nbsp;</em></span></p>
+<p><img style="width: 800px; display: block; margin-left: auto; margin-right: auto;" title="Sentiment Analysis: Statistic id303681 Twitter -number-of-worldwide-users-2014-2020" src="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/statistic_id303681_twitter_-number-of-worldwide-users-2014-2020.png" alt="Sentiment Analysis: Statistic id303681 Twitter -number-of-worldwide-users-2014-2020" width="800" data-constrained="true"></p>
+<p style="text-align: right;"><em><span style="font-size: 12px;">Image 2: Statista 2017, Number of Twitter Users Worldwide: <a href="https://www.statista.com/statistics/303681/twitter-users-worldwide/">https://www.statista.com/statistics/303681/twitter-users-worldwide/</a>&nbsp;</span></em></p>
+<p><span><span><span class="TextRun SCX59988874"><span class="NormalTextRun SCX59988874">The enormity and high variance of this data presents an interesting opportunity for harnessing it into a form that allows for <strong>specific market predictions,&nbsp;</strong>and in recent years this information has been repeatedly demonstrated to dramatically influence markets<sup>1</sup></span></span><span class="TextRun SCX59988874"><span class="NormalTextRun SCX59988874">. A phenomenon recently termed “<strong>collective intelligence</strong>”<sup>2</sup></span></span><span class="TextRun SCX59988874"><span class="NormalTextRun SCX59988874">.&nbsp; For a single person (or even a group of people) harnessing this information successfully is increasingly impossible due its volume and asynchronous character. The necessity for automated collection, extraction, processing and aggregation of this data has long been recognised</span></span><sup><span class="TextRun SCX59988874"><span class="NormalTextRun SCX59988874" data-fontsize="12">4</span></span></sup><span class="TextRun SCX59988874"><span class="NormalTextRun SCX59988874"> and <strong>advances in machine learning techniques</strong> have led to exciting new tools for its analysis.</span></span><span class="EOP SCX59988874">&nbsp;</span></span></span></p>
+<h2>Challenges</h2>
+<p><span><span>It is widely accepted that the automated extraction of useful information from text is a complex challenge. Apart from technical constraints, </span></span><span><span><strong>word-sense disambiguation</strong> remains one of the major challenge in the computerised processing of textual unstructured data. Words frequently change their meaning depending on context, consequently changing the meaning of the surrounding body.</span></span><span><span> In fact, </span></span><span>functional structures are so complex that it builds the latest stage in infant learning acquisition, with most of us <strong>needing over 2.5 years to master</strong> even the simplest applications<sup><span style="font-size: 12px;">5</span></sup></span><span><span>.&nbsp;</span></span><span><span> For example</span></span><span><span>, one would not consider the word “long” as either exceptionally positive or negative. However, most humans would rate “the laptop’s start-up time was long” as negative, while “the laptop’s battery life was long” would be considered positive.&nbsp;</span></span><span>&nbsp;</span></p>
+<h2>Sentiment Analysis and Natural Language Processing</h2>
+<p><span><span>Natural Language Processing (NLP), Sentiment Analysis and Machine Learning are widely recognised as the key tools in <strong>transforming the plethora of available text into meaningful information.</strong></span></span><span>&nbsp;</span></p>
+<p><span><span>Sentiment Analysis (also known as Opinion Mining), seeks to identify and categorise opinions expressed in a piece of text, especially in order to determine whether the writer’s attitude towards a particular topic is positive, negative, or neutral</span></span><sup><span><span data-fontsize="12">6,7</span></span></sup><span><span>. Sentiment Analysis builds on NLP, originally referred to as <strong>computational linguistics</strong>, and at its most basic refers to the use of algorithms that allow computers to process and understand human languages.</span></span><span>&nbsp;</span></p>
+<p><span><span>While being <strong>researched since the late 1940’s</strong>, the field has been <strong>rapidly growing over the last decade</strong>. This can be attributed to: </span></span></p>
+<ul>
+<li><span><span>the advent of the Internet and the increased availability of large amounts of electronic text; and &nbsp;</span></span></li>
+<li><span><span>the availability of computers with increased speed and memory, and the consequent improvement in Machine Learning. </span></span><a href="https://blogs.nvidia.com/blog/2016/07/29/whats-difference-artificial-intelligence-machine-learning-deep-learning-ai/"><span><span>Also, frequently referred as Artificial Intelligence (AI) or narrow AI, Machine Learning, describes the practice of using algorithms to parse data, learn from it, and then make a classification or prediction. So, rather than hard-coding a specific set of instructions for a particular task, the machine is “trained” using large amounts of data and algorithms that give it the ability to learn how to perform the task</span></span><sup><span><span data-fontsize="12">8</span></span></sup></a><span><span>.  </span></span><span>&nbsp;</span></li>
+</ul>
+<h2>NLP Techniques</h2>
+<p><span><span>Over the last decade, various NLP algorithms have been developed, combined with Machine Learning techniques and applied in numerous (commercial) applications. For example <strong>many popular spam filters</strong> include Naïve Bayes classifiers trained with NLP developed features to identify spam email. A similar approach can be used in Sentiment Analysis to classify text into positive, negative and neutral (sentiment polarity)</span></span><sup><span><span data-fontsize="12">9</span></span></sup><span><span>. Although these models tend to treat words as atomic units – no notion of word similarity, or text structure – researchers and practitioners argue that they frequently outperform more complex models, at higher computational efficiency, and consequently are more applicable to&nbsp;</span></span><span>&nbsp;</span></p>
+<p><span><span>As Machine Learning classification techniques <strong>require large quantities of </strong></span></span><span><span><strong>relevant in-domain data</strong> for training</span></span><span><span>, the <strong>highly varied</strong> and <strong>specialized topics</strong> in market news <strong>present a unique challenge</strong>. </span></span><span><span>A recent approach has been provided by <a href="https://en.wikipedia.org/wiki/Word2vec" target="_blank" rel="noopener"><strong>Google’s&nbsp;Word2Vec algorithm</strong></a>, that has the potential to allow practitioners to overcome these limitations. It takes a text corpus as input and produces the word vectors as output, by constructing a vocabulary from a training data set&nbsp;and then learning vector representation of the contained words. This results in the capture of many syntactic and semantic regularities, represented by vectors</span></span><sup><span><span data-fontsize="12">10</span></span></sup><span><span>. For example, ‘melancholy’ would be closest to ‘bittersweet’ (sentiment) as opposed to</span></span> <span><span>‘thoughtful’ and ‘warm’ (semantic). When properly employed this approach can effectively <strong>aid in the capture of sentiment of words</strong> not provided during training.</span></span><span>&nbsp;</span></p>
+<h2>Future</h2>
+<p><span><span>NLP, Sentiment Analysis and Machine Learning are fields <strong>heavily investigated and substantial breakthroughs</strong> are to be expected over the next years. It should be noted that in academic settings, more complex algorithms, such as </span></span><span><span>Recurrent Neural Network based language models, have already shown promising results. However, up-to-date computational complexity does not permit their use in robust applications relying on near-real time processing of information.</span></span><span>&nbsp;</span></p>
+<h2><span><span><span class="EOP SCX59988874"><a id="References"></a>References:</span></span></span></h2>
+<ol>
+<li><span> Bollen, J., Mao, H. &amp; Zeng, X. Twitter mood predicts the stock market. </span><i><span>J. Comput. Sci.</span></i> <strong><span>2,</span></strong><span> 1–8 (2011).</span><span></span></li>
+<li><span> Mitra, L. &amp; Mitra, G. in </span><i><span>The Handbook of News Analytics in Finance</span></i><span> 1–39 (John Wiley &amp; Sons, Ltd., 2012). doi:10.1002/9781118467411.ch1</span><span></span></li>
+<li><span> Godbole, N. &amp; Srinivasaiah, M. Large-scale sentiment analysis for news and blogs. </span><i><span>Conf. Weblogs Soc. Media (ICWSM 2007)</span></i><span> 219–222 (2007). doi:10.1177/01461079070370040501</span><span></span></li>
+<li><span> Morrison, S. So Many, Many Words. </span><i><span>The Wall Street Journal</span></i><span> (2008).</span><span></span></li>
+<li><span> Language acquisition. </span><i><span>Wikipedia</span></i><span> (2017). Available at: </span><a href="https://en.wikipedia.org/wiki/Language_acquisition"><span>https://en.wikipedia.org/wiki/Language_acquisition</span></a><span>.&nbsp;</span><span></span></li>
+<li><span> Agarwal, A., Xie, B., Vovsha, I., Rambow, O. &amp; Passonneau, R. Sentiment analysis of Twitter data. </span><i><span>Assoc. Comput. Linguist.</span></i><span> 30–38 (2011).</span><span></span></li>
+<li><span> Sentiment Analysis. </span><i><span>OxfordDictionaries.com</span></i><span> (2016). Available at: </span><a href="https://en.oxforddictionaries.com/definition/sentiment_analysis"><span>https://en.oxforddictionaries.com/definition/sentiment_analysis</span></a><span>.&nbsp;</span><span></span></li>
+<li><span> Copeland, M. What’s the Difference Between Artificial Intelligence, Machine Learning, and Deep Learning? (2016).</span><span></span></li>
+<li><span> Pang, B., Lee, L. &amp; Vaithyanathan, S. Thumbs up?: sentiment classification using machine learning techniques. </span><i><span>Proc. Conf. Empir. Methods Nat. Lang. Process.</span></i><span> 79–86 (2002). doi:10.3115/1118693.1118704</span><span></span></li>
+<li><span> Mikolov, T., Yih, S. W. &amp; Zweig, G. Linguistic Regularities in Continuous Space Word Representations. in </span><i><span>Proceedings of the 2013 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL-HLT-2013)</span></i><span> (2013).</span><span></span></li>
+</ol>
+
+			    </div>
+	    		
+	    		
+			
+	    		
+	    							<div class="share-buttons articldgshare">
+		                
+			        	<h5>Share this Post</h5>
+			            
+						<!--  NEW STUFF -->
+			            <div class="posts-shares">
+			                <div class="social-shares clearfix">
+						        <ul>
+							        									        <li>
+												<a href="http://www.facebook.com/sharer.php?u=http://www.datagenicgroup.com/sentiment-analysis-when-commodity-trading-meets-deep-learning/&amp;t=Sentiment%20Analysis%20%E2%80%93%20When%20Commodity%20Trading%20Meets%20Deep%20Learning" class="share-facebook" target="_blank" title=""><i class="fa fa-facebook"></i>Facebook</a>
+											</li>
+									        									        <li>
+												<a href="http://twitter.com/home?status=Sentiment%20Analysis%20%E2%80%93%20When%20Commodity%20Trading%20Meets%20Deep%20Learning_http://www.datagenicgroup.com/sentiment-analysis-when-commodity-trading-meets-deep-learning/" class="share-twitter" target="_blank" title=""><i class="fa fa-twitter"></i>Twitter</a>
+											</li>
+									        									        <li>
+												<a href="http://linkedin.com/shareArticle?mini=true&amp;url=http://www.datagenicgroup.com/sentiment-analysis-when-commodity-trading-meets-deep-learning/&amp;title=Sentiment%20Analysis%20%E2%80%93%20When%20Commodity%20Trading%20Meets%20Deep%20Learning" target="_blank" class="share-linkedin" title=""><i class="fa fa-linkedin"></i>LinkedIn</a>
+											</li>
+									        									        <li>
+												<a href="http://google.com/bookmarks/mark?op=edit&amp;bkmk=http://www.datagenicgroup.com/sentiment-analysis-when-commodity-trading-meets-deep-learning/&amp;title=Sentiment%20Analysis%20%E2%80%93%20When%20Commodity%20Trading%20Meets%20Deep%20Learning" target="_blank" class="share-google" title=""><i class="fa fa-google-plus"></i>Google Plus</a>
+											</li>
+									        	
+						        </ul>
+						    </div>
+			                
+			            </div>
+			            
+			         </div> 
+					    
+				 
+				 
+				 <nav id="nav-below" role="article" class="navigation">
+					<div class="nav-previous"> <a href="http://www.datagenicgroup.com/datagenic-wins-corporate-livewire-innovation-excellence-award/" rel="prev">Previous post</a></div><div class="nav-next"><a href="http://www.datagenicgroup.com/datagenic-gfi-group-enter-data-distribution-agreement/" rel="next">Next post</a> </div>				</nav>
+					
+			   
+		    
+				
+				
+		    </div> <!-- end of .postcontent -->
+	    	
+	    </article> <!-- end of post -->
+								</div>
+					</section>
+					<section class="page_content right sidebar col-xs-12 col-md-3">
+						<div class="blog-sidebar-bg">
+							<div id="secondary" class="widget-area four columns alpha">
+			<div id="recent-posts-2" class="  widget widget_recent_entries">		<h2><span class="widget_title_span">Latest Posts</span></h2>		<ul>
+					<li>
+				<a href="http://www.datagenicgroup.com/datagenic-goes-serverless-interview-kowshik-datagenic-senior-software-developer/">DataGenic Goes Serverless! An interview with Kowshik, a DataGenic senior software developer</a>
+							<span class="post-date">14th March 2018</span>
+						</li>
+					<li>
+				<a href="http://www.datagenicgroup.com/global-technology-innovator-award/">DataGenic receives Global Technology Innovator Award for Best Commodity Data Management Provider 2017</a>
+							<span class="post-date">28th July 2017</span>
+						</li>
+					<li>
+				<a href="http://www.datagenicgroup.com/datagenic-celebrates-15-years-business/">DataGenic Celebrates 15 Years in Business</a>
+							<span class="post-date">23rd May 2017</span>
+						</li>
+					<li>
+				<a href="http://www.datagenicgroup.com/agreeement-with-sp-global-platts-to-distribute-uaes-fujairah-oil-inventory-data/">DataGenic extends its existing agreement with S&amp;P Global Platts to distribute UAE’s Fujairah Oil Inventory Data</a>
+							<span class="post-date">12th April 2017</span>
+						</li>
+				</ul>
+		</div>		</div><!-- #secondary .widget-area -->						</div>
+					</section>
+				</div>
+			</div>
+			
+				
+	
+	<div class="maindg-footer">
+    
+    <div class="container">
+    
+<div class="col-md-4 mb20">
+<iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-timeline twitter-timeline-rendered" style="position: static; visibility: visible; display: inline-block; width: 100%; height: 275px; padding: 0px; border: none; max-width: 100%; min-width: 180px; margin-top: 0px; margin-bottom: 0px; min-height: 200px;" data-widget-id="profile:DataGenic" title="Twitter Timeline" src="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/saved_resource.html"></iframe>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+
+<div class="col-md-5">
+<h3>Latest Updates</h3>
+<ul>
+<li><a href="http://www.datagenicgroup.com/datagenic-goes-serverless-interview-kowshik-datagenic-senior-software-developer/">DataGenic Goes Serverless! An interview with Kowshik, a DataGenic senior software developer..</a> </li> <li><a href="http://www.datagenicgroup.com/global-technology-innovator-award/">DataGenic receives Global Technology Innovator Award for Best Commodity Data Management Provider 2017..</a> </li> <li><a href="http://www.datagenicgroup.com/datagenic-celebrates-15-years-business/">DataGenic Celebrates 15 Years in Business..</a> </li> <li><a href="http://www.datagenicgroup.com/agreeement-with-sp-global-platts-to-distribute-uaes-fujairah-oil-inventory-data/">DataGenic extends its existing agreement with S&amp;P Global Platts to distribute UAE's Fujairah Oil Inventory Data..</a> </li> <li><a href="http://www.datagenicgroup.com/datagenic-gfi-group-enter-data-distribution-agreement/">DataGenic and GFI Group enter data distribution agreement..</a> </li> </ul>
+</div>
+<div class="col-md-3 footrhsl">
+<ul>
+                    <li><a href="http://www.datagenicgroup.com/products/">Products</a></li>
+                    <li><a href="http://www.datagenicgroup.com/solutions/">Solutions</a></li>
+                    <li><a href="http://www.datagenicgroup.com/industries/">Industries</a></li>
+                    <li><a href="http://www.datagenicgroup.com/company/">Company</a></li>
+                    <li><a href="http://www.datagenicgroup.com/contact/">Contact</a></li>
+                    <li><a class="req-demo-foot" href="http://www.datagenicgroup.com/request-demo/">Request Demo</a></li>
+                </ul>
+                <p class="nd-award-winning">
+                <a href="http://www.datagenicgroup.com/company/industry-recognition/"><img src="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/nd-award-winning.png" width="180" alt="Award Winning Solutions"></a> 
+                </p>
+                
+                <p class="dgfootcr">2018 © DataGenic | <a href="http://www.datagenicgroup.com/terms-conditions/">Terms</a> | <a href="https://info.drillinginfo.com/privacy-policy/" target="_blank">Privacy</a> </p>
+</div>
+
+</div>
+</div>
+
+
+	<div class="blake_helper_div" id="loader-startPage">0</div>
+	<div class="blake_helper_div" id="loader-maxPages">0</div>
+	<div class="blake_helper_div" id="loader-nextLink"></div>
+	<div class="blake_helper_div" id="loader-prevLink"></div>
+	<div id="bodyLayoutType" class="blake_helper_div"></div>
+<div id="headerType" class="blake_helper_div">color</div>
+<div id="templatepath" class="blake_helper_div">http://www.datagenicgroup.com/wp-content/themes/blake/</div>
+<div id="homeURL" class="blake_helper_div">http://www.datagenicgroup.com//</div>
+<div id="styleColor" class="blake_helper_div">#7db624</div>	
+<div id="headerStyleType" class="blake_helper_div">style1</div>
+<div class="blake_helper_div" id="reading_option">paged</div>
+<div class="blake_helper_div" id="blake_no_more_posts_text">No more posts to load.</div>
+<div class="blake_helper_div" id="blake_load_more_posts_text">Load More Posts</div>
+<div class="blake_helper_div" id="blake_loading_posts_text">Loading posts...</div>
+<div class="blake_helper_div" id="blake_links_color_hover">7db624</div>
+<div class="blake_helper_div" id="blake_enable_images_magnifier"></div>
+<div class="blake_helper_div" id="blake_thumbnails_hover_option"></div>
+<div id="homePATH" class="blake_helper_div">D:\Web\Apache24\htdocs/</div>
+<div class="blake_helper_div" id="blake_menu_color">#</div>
+<div class="blake_helper_div" id="blake_fixed_menu">off</div>
+<div class="blake_helper_div" id="blake_thumbnails_effect">none</div>
+<div class="blake_helper_div loadinger">
+	<img alt="loading" src="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/ajx_loading.gif">
+</div>
+<div class="blake_helper_div" id="permalink_structure">/%postname%/</div>
+<div class="blake_helper_div" id="headerstyle3_menucolor">#</div>
+<div class="blake_helper_div" id="disable_responsive_layout"></div>
+<div class="blake_helper_div" id="filters-dropdown-sort">Sort Gallery</div>
+<div class="blake_helper_div" id="templatepath">http://www.datagenicgroup.com/wp-content/themes/blake</div>
+<div class="blake_helper_div" id="searcheverything">on</div>
+<div class="blake_helper_div" id="blake_header_shrink"></div>
+<div class="blake_helper_div" id="blake_header_after_scroll"></div>
+<div class="blake_helper_div" id="blake_grayscale_effect">off</div>
+<div class="blake_helper_div" id="blake_enable_ajax_search">off</div>
+<div class="blake_helper_div" id="blake_menu_add_border"></div>
+<div class="blake_helper_div" id="blake_newsletter_input_text"></div>
+<div class="blake_helper_div" id="blake_content_to_the_top">off</div>
+<div class="blake_helper_div" id="blake_update_section_titles">off</div>
+		<p id="back-top" style="display: block; opacity: 0.938744;"><a href="http://www.datagenicgroup.com/sentiment-analysis-when-commodity-trading-meets-deep-learning/#home"><i class="fa fa-angle-up"></i></a></p>
+		<link rel="stylesheet" id="blake-custom-style-css" href="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/blake-custom.css" type="text/css" media="all">
+<style id="blake-custom-style-inline-css" type="text/css">
+header .header_social_icons, header .header_social_icons_wrapper{min-width:0px;}
+</style>
+<script type="text/javascript" src="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/comment-reply.min.js.下載"></script>
+<script type="text/javascript" src="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/animo.min.js.下載"></script>
+<script type="text/javascript" src="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/jquery.ba-throttle-debounce.min.js.下載"></script>
+<script type="text/javascript" src="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/viewportchecker.js.下載"></script>
+<script type="text/javascript" src="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/edsanimate.js.下載"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var edsanimate_options = {"offset":"75","hide_hz_scrollbar":"1","hide_vl_scrollbar":"0"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/edsanimate.site.js.下載"></script>
+<script type="text/javascript" src="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/jquery.form.min.js.下載"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var _wpcf7 = {"loaderUrl":"http:\/\/www.datagenicgroup.com\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","recaptchaEmpty":"Please verify that you are not a robot.","sending":"Sending ..."};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/scripts.js.下載"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var ctcc_vars = {"expiry":"30","method":"1","version":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/uk-cookie-consent-js.js.下載"></script>
+<script type="text/javascript" src="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/utils.js.下載"></script>
+<script type="text/javascript" src="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/blake.js.下載"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function(){
+				jQuery(".social-shares a[target='_blank']").live("click", function(){
+			        newwindow=window.open($(this).attr("href"),"","height=450,width=700");
+			        if (window.focus) {newwindow.focus()}
+			        return false;
+			    });
+			});
+		
+</script>
+<script type="text/javascript" src="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/jquery.tweet.js.下載"></script>
+<script type="text/javascript" src="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/main.min-1.13.2.js.下載"></script>
+<script type="text/javascript" src="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/jquery.prettyPhoto.min.js.下載"></script>
+<!--[if lt IE 9]>
+<script type='text/javascript' src='http://www.datagenicgroup.com/wp-content/themes/blake/js/IE.js?ver=1'></script>
+<![endif]-->
+<script type="text/javascript" src="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/SmoothScroll.min.js.下載"></script>
+<script type="text/javascript" src="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/hoverIntent.min.js.下載"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var megamenu = {"effect":{"fade":{"in":{"animate":{"opacity":"show"},"css":{"display":"none"}},"out":{"animate":{"opacity":"hide"}}},"slide":{"in":{"animate":{"height":"show"},"css":{"display":"none"}},"out":{"animate":{"height":"hide"}}}},"timeout":"300","interval":"100"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/maxmegamenu.js.下載"></script>
+<script type="text/javascript" src="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/wp-embed.min.js.下載"></script>
+			
+				<script type="text/javascript">
+					jQuery(document).ready(function($){
+												if(!catapultReadCookie("catAccCookies")){ // If the cookie has not been set then show the bar
+							$("html").addClass("has-cookie-bar");
+							$("html").addClass("cookie-bar-top-bar");
+							$("html").addClass("cookie-bar-bar");
+															// Wait for the animation on the html to end before recalculating the required top margin
+								$("html").on('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(e) {
+									// code to execute after transition ends
+									var barHeight = $('#catapult-cookie-bar').outerHeight();
+									$("html").css("margin-top",barHeight);
+									$("body.admin-bar").css("margin-top",barHeight-32); // Push the body down if the admin bar is active
+								});
+													}
+																			ctccFirstPage();
+											});
+				</script>
+			
+			<div id="catapult-cookie-bar" class=""><div class="ctcc-inner "><span class="ctcc-left-side">DataGenic uses cookies to personalize our services and provide customized information to enhance your experience. By continuing to use the website, we understand that you accept their use. <a class="ctcc-more-info-link" tabindex="0" target="_blank" href="http://www.datagenicgroup.com/sentiment-analysis-when-commodity-trading-meets-deep-learning/">Learn more</a></span><span class="ctcc-right-side"><button id="catapultCookie" tabindex="0" onclick="catapultAcceptCookies();">Ok, got it</button></span></div><!-- custom wrapper class --></div><!-- #catapult-cookie-bar -->
+
+
+
+<iframe scrolling="no" frameborder="0" allowtransparency="true" src="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/widget_iframe.f6c7d667d236c62537eeaba62686136d.html" title="Twitter settings iframe" style="display: none;"></iframe><iframe name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame" id="_hjRemoteVarsFrame" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;" src="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/rcj-da10bd4908deb9e19dfde013ec3fe4ff.html"></iframe><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe" src="./Sentiment Analysis - When Commodity Trading Meets Deep Learning_files/saved_resource(1).html"></iframe><div id="ads"></div></body></html>

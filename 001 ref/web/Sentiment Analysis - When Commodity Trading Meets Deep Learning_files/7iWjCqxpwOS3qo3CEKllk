@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
+    <title></title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+            <!--[if lte IE 10]> <link rel="icon" href="/ttpwp/resources/images/favicon.ico" /> <![endif]-->
+            <link rel="shortcut icon" href="/ttpwp/resources/images/favicon.ico" />
+            <link rel="apple-touch-icon" sizes="152x152" href="/ttpwp/resources/images/favicon-mobile.png" />
+            <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/ttpwp/resources/images/favicon-mobile.png" />
+    
+    
+    <script>window.mimecast = {"branding":{"defaultBranding":{"defaultConfiguration":{"knowledgeBase":{"href":"https://community.mimecast.com/docs/DOC-241","label":"LOGIN_HOME_LNK"},"home":{"href":"http://www.mimecast.com/","label":"KNOWLEDGE_BASE"},"loginHelp":{"href":"https://community.mimecast.com/docs/DOC-241","label":"LOGIN_LOGIN_HELP_LNK"},"support":{"href":"https://community.mimecast.com/docs/DOC-241","label":"LOGIN_LOGIN_HELP_LNK"}},"originalContextPath":"ttpwp","branded":false,"favIcon":"/ttpwp/resources/images/favicon.ico","favIconMobile":"/ttpwp/resources/images/favicon-mobile.png","home":{"default":true,"href":"http://www.mimecast.com/","label":"KNOWLEDGE_BASE"},"knowledgeBase":{"default":true,"href":"https://community.mimecast.com/docs/DOC-241","label":"LOGIN_HOME_LNK"},"loginHelp":{"default":true,"href":"https://community.mimecast.com/docs/DOC-241","label":"LOGIN_LOGIN_HELP_LNK"},"support":{"default":true,"href":"https://community.mimecast.com/docs/DOC-241","label":"LOGIN_LOGIN_HELP_LNK"},"logo":"/ttpwp/resources/images/mimecast-logo.png"},"defaultConfiguration":{"knowledgeBase":{"href":"https://community.mimecast.com/docs/DOC-241","label":"LOGIN_HOME_LNK"},"home":{"href":"http://www.mimecast.com/","label":"KNOWLEDGE_BASE"},"loginHelp":{"href":"https://community.mimecast.com/docs/DOC-241","label":"LOGIN_LOGIN_HELP_LNK"},"support":{"href":"https://community.mimecast.com/docs/DOC-241","label":"LOGIN_LOGIN_HELP_LNK"}},"originalContextPath":"ttpwp","branded":false,"favIcon":"/ttpwp/resources/images/favicon.ico","favIconMobile":"/ttpwp/resources/images/favicon-mobile.png","home":{"default":true,"href":"http://www.mimecast.com/","label":"KNOWLEDGE_BASE"},"knowledgeBase":{"default":true,"href":"https://community.mimecast.com/docs/DOC-241","label":"LOGIN_HOME_LNK"},"loginHelp":{"default":true,"href":"https://community.mimecast.com/docs/DOC-241","label":"LOGIN_LOGIN_HELP_LNK"},"support":{"default":true,"href":"https://community.mimecast.com/docs/DOC-241","label":"LOGIN_LOGIN_HELP_LNK"},"logo":"/ttpwp/resources/images/mimecast-logo.png"}};</script>
+<link href="/ttpwp/resources/css/app.a9f944429371d8c50a84.css" rel="stylesheet"></head>
+<body>
+<ttp-app></ttp-app>
+<script type="text/javascript" src="/ttpwp/resources/js/vendor.a9f944429371d8c50a84.js"></script><script type="text/javascript" src="/ttpwp/resources/js/polyfills.a9f944429371d8c50a84.js"></script><script type="text/javascript" src="/ttpwp/resources/js/twbs.a9f944429371d8c50a84.js"></script><script type="text/javascript" src="/ttpwp/resources/js/app.a9f944429371d8c50a84.js"></script></body>
+</html>
