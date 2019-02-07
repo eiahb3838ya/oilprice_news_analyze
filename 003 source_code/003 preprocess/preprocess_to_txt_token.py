@@ -14,10 +14,10 @@ from nltk.stem import PorterStemmer
 
 
 START_DATE="2018-01-01"
-ROOT="D:/work/fortune_street/002 news_analyze/data/newsdata/"
+ROOT="D:/work/fortune_street/002 news_analyze/002 data/002 corpus_data/"
 
 root_dir=ROOT
-list_of_source=os.listdir(root_dir+"raw_csv_data/")
+list_of_source=os.listdir(root_dir+"raw_csv_data/waiting_preprocess/")
 
 class Preprocessor:
     def __init__(self,stem=False):
