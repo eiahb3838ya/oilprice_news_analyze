@@ -14,7 +14,7 @@ if not START_DATE:
 
 ROOT_DIR="D:/work/fortune_street/002 news_analyze/003 source_code/002 crawler"
 for root, dirs, files in os.walk(ROOT_DIR):
-    print("路徑：", root)
+#    print("路徑：", root)
     print("檔案：", files)
     for filename in files:
         if filename.startswith("crawler"):

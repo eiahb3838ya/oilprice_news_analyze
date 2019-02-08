@@ -4,12 +4,13 @@ Created on Wed Jan  2 15:14:19 2019
 
 @author: eiahb
 """
-import os,pickle
+import os
 import pandas as pd
 import numpy as np
 from collections import Counter
 from nltk import word_tokenize
 from nltk.stem import PorterStemmer
+from datetime import datetime
 
 
 
@@ -57,9 +58,10 @@ preprocessor=Preprocessor()
         
 counter = Counter()
 for aSource in list_of_source:
-    list_of_filenames=os.listdir(root_dir+"raw_csv_data/"+aSource) 
+    list_of_filenames=os.listdir(root_dir+"raw_csv_data/waiting_preprocess/"+aSource) 
     for aFile in list_of_filenames:
-        news_data_df=pd.read_csv(root_dir+"raw_csv_data/"+aSource+"/"+aFile)
+        filedir=root_dir+"raw_csv_data/waiting_preprocess/"+aSource+"/"+aFile
+        news_data_df=pd.read_csv(root_dir+"raw_csv_data/waiting_preprocess/"+aSource+"/"+aFile)
         news_contents=news_data_df['content']
         news_tokens=preprocessor.get_tokens(news_contents)
         news_counter=preprocessor.get_counter(news_tokens)
@@ -77,9 +79,12 @@ for aSource in list_of_source:
                 text_file.writelines(a_title.lower()+"\n")
                 for token in a_tokens:
                     text_file.write(token+"\n")
+        os.remove(filedir) 
+        print(filedir,"preprocess done and removed!")
                     
 dictionary = counter
-np.save(ROOT+'word_counter_data/word_counter.npy', dictionary) 
+datetimestr=datetime.today().date().strftime("%Y_%m_%d")
+np.save('D:/work/fortune_street/002 news_analyze/002 data/003 outcome_data/word_counter_data/word_counter_'+datetimestr+'.npy', dictionary) 
 
 # Load
 #counter = np.load('my_file.npy').item()
