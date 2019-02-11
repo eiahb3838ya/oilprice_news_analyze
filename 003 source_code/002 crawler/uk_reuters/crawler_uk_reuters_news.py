@@ -77,7 +77,7 @@ output_list=[]
 latest_date = None
 
 
-for page in range(1,500):
+for page in range(1,50000):
     page_res=requests.get(oilRpt_web+str(page))
     print("start process page:",page,page_res)
     page_soup=bs4.BeautifulSoup(page_res.text,'html.parser')

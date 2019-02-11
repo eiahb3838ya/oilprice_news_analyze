@@ -7,7 +7,7 @@ Created on Sun Jan 27 13:31:39 2019
 import os,json, subprocess
 from datetime import datetime
 
-START_DATE="2018-01-01"
+START_DATE=""
 if not START_DATE:
     with open('startdate_record.json', 'r') as outfile:
         START_DATE=json.load(outfile)["START_DATE"]
