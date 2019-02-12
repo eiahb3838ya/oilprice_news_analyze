@@ -75,14 +75,15 @@ if not os.path.exists(root_dir+"/waiting_preprocess/uk_reuters_news_data"):
 
 output_list=[]
 latest_date = None
-
-
-for page in range(1,50000):
+this_date = None
+page=1425
+for page in range(50000):
     page_res=requests.get(oilRpt_web+str(page))
     print("start process page:",page,page_res)
     page_soup=bs4.BeautifulSoup(page_res.text,'html.parser')
-    story_content_list=page_soup.findAll("div",{"class":"story-content"})
-    
+    news_headline_list=page_soup.find("div",{"class":"news-headline-list"})
+    story_content_list=news_headline_list.findAll("div",{"class":"story-content"})
+#    print(latest_date,this_date)
     for categoryArticle__content in tqdm(story_content_list):
         story=get_story(categoryArticle__content)
         this_date=np.datetime64(story['publish_datetime'])
