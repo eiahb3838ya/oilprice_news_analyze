@@ -1,0 +1,11 @@
+blocks 1,2,3,4 in burgos basin receive no bids in mexican shallow water auction
+
+block
+burgos
+basin
+receives
+bids
+mexican
+shallow
+water
+auction

@@ -62,12 +62,15 @@ for aSource in list_of_source:
     for aFile in list_of_filenames:
         filedir=root_dir+"raw_csv_data/waiting_preprocess/"+aSource+"/"+aFile
         news_data_df=pd.read_csv(root_dir+"raw_csv_data/waiting_preprocess/"+aSource+"/"+aFile)
-        news_contents=news_data_df['content']
+        try:
+            news_contents=news_data_df['content']
+            
+            news_titles=news_data_df['title']
+            news_datetime=news_data_df['publish_datetime']
+        except:
+            continue
         news_tokens=preprocessor.get_tokens(news_contents)
         news_counter=preprocessor.get_counter(news_tokens)
-        news_titles=news_data_df['title']
-        news_datetime=news_data_df['publish_datetime']
-        
         counter.update(news_counter)
         
         savedir=root_dir+"token_txt_data/"+aSource+"/"+news_datetime[0]+"/"
