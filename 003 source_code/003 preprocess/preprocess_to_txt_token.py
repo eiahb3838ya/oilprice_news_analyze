@@ -15,9 +15,10 @@ from datetime import datetime
 
 
 START_DATE="2018-01-01"
-ROOT="D:/work/fortune_street/002 news_analyze/002 data/002 corpus_data/"
+ROOT_DIR_OF_PROJECT="D:/work/fortune_street/002 news_analyze/"
+#ROOT="D:/work/fortune_street/002 news_analyze/002 data/002 corpus_data/"
 
-root_dir=ROOT
+root_dir=ROOT_DIR_OF_PROJECT+"002 data/002 corpus_data/"
 list_of_source=os.listdir(root_dir+"raw_csv_data/waiting_preprocess/")
 
 class Preprocessor:

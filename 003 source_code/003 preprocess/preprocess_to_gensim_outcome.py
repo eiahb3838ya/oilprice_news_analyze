@@ -9,17 +9,21 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-import gensim,os,sklearn,tqdm
+import os,tqdm
 
 from collections import Counter
 from datetime import datetime
 
+from sklearn.feature_extraction.text import TfidfVectorizer
 
 from gensim import corpora , models
 
+
+ROOT_DIR_OF_PROJECT="C:\\Users\\Evan\\MyFile\\Fortune-street\\007 oil_price\\oilprice_news_analyze\\"
+
 # 1.load data
 #load all token txt
-txt_dir="D:/work/fortune_street/002 news_analyze/002 data/002 corpus_data/token_txt_data/"
+txt_dir=ROOT_DIR_OF_PROJECT+"002 data/002 corpus_data/token_txt_data/"
 list_txt_source=list(os.walk(txt_dir))[0][1]
 print(list_txt_source)
 
@@ -36,8 +40,8 @@ def read_news_txt_file(aFilepath):
             token_list.append(line.strip())
     return(news_title,token_list)
     
-def clean_stop_words(aListOfTokens):
-    new_l=[token for token in aListOfTokens if token not in temp_stopwords]
+def stop_words_filter(aListOfTokens,stopwords=None):
+    new_l=[token for token in aListOfTokens if token not in stopwords]
     return(new_l)
     
 full_list=[]
@@ -54,15 +58,30 @@ for aSource in list_txt_source:
                       'news_tokens_list':news_tokens_list,
                       'source':source}
             full_list.append(out_dict)
+            
 full_news_df=pd.DataFrame(full_list)
-full_news_df['news_tokens_list_stripped']=full_news_df.news_tokens_list.apply(clean_stop_words)
+## define the srop words using sklearn TfidfVectorizer
+###* tf>15
+###* df<70%            
+corpus_for_vectorizer=full_news_df.news_tokens_list.apply(lambda x: " ".join(x))
+vectorizer=TfidfVectorizer(max_df=0.7,min_df=15)
+vectorizer.fit(corpus_for_vectorizer)
+defined_stopwords=vectorizer.stop_words_
+##strip stopwords            
+
+full_news_df['news_tokens_list_stripped']=full_news_df.news_tokens_list.apply(stop_words_filter,stopwords=defined_stopwords)
+
 
 # 2.gensim
 ## build dictionary
 
-DICT_FOLDER = "D:/work/fortune_street/002 news_analyze/002 data/003 outcome_data/gemsim_outcome/dictionary/"
-CORPUS_FOLDER="D:/work/fortune_street/002 news_analyze/002 data/003 outcome_data/gemsim_outcome/corpus/"
+DICT_FOLDER = ROOT_DIR_OF_PROJECT+"002 data/003 outcome_data/gemsim_outcome/dictionary/"
+CORPUS_FOLDER= ROOT_DIR_OF_PROJECT+"002 data/003 outcome_data/gemsim_outcome/corpus/"
+STOPWORDS_FOLDER = ROOT_DIR_OF_PROJECT+'002 data\\003 outcome_data\\stop_words/'
+
+
 saving_date=datetime.today().date()
+
 print('Folder "{}" will be used to save dictionary and corpus for {}'.format(DICT_FOLDER,saving_date))
 if not os.path.exists(CORPUS_FOLDER):
     os.makedirs(CORPUS_FOLDER)
@@ -78,3 +97,6 @@ print("dictionary saved at:"+os.path.join(DICT_FOLDER, str(saving_date)+'.dict')
 corpus = [dictionary.doc2bow(text) for text in full_news_df.news_tokens_list]
 corpora.MmCorpus.serialize(CORPUS_FOLDER+str(saving_date)+'.mm', corpus)
 print("corpus saved at:"+CORPUS_FOLDER+str(saving_date)+'.mm')
+#save stopwords
+np.save(STOPWORDS_FOLDER+'/stop_words_'+str(saving_date)+'.npy', defined_stopwords) 
+print("corpus saved at:"+STOPWORDS_FOLDER+'/stop_words_'+str(saving_date)+'.npy')

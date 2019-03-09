@@ -11,8 +11,10 @@ START_DATE=""
 if not START_DATE:
     with open('startdate_record.json', 'r') as outfile:
         START_DATE=json.load(outfile)["START_DATE"]
+        
+ROOT_DIR_OF_PROJECT="C:\\Users\\Evan\\MyFile\\Fortune-street\\007 oil_price\\oilprice_news_analyze\\"
+ROOT_DIR=ROOT_DIR_OF_PROJECT+"003 source_code/002 crawler"
 
-ROOT_DIR="D:/work/fortune_street/002 news_analyze/003 source_code/002 crawler"
 for root, dirs, files in os.walk(ROOT_DIR):
 #    print("路徑：", root)
     print("檔案：", files)
