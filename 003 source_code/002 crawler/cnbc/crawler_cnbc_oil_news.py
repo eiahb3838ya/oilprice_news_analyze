@@ -24,7 +24,7 @@ try:
 except:
     ROOT="D:/work/fortune_street/002 news_analyze/002 data/002 corpus_data/"
 print("save at root : ",ROOT)
-
+#ROOT='C:\\Users\\Evan\\MyFile\\Fortune-street\\007 oil_price\\oilprice_news_analyze\\003 data/002 corpus_data'
 
 root_dir=ROOT+"raw_csv_data"
 root_web="https://www.cnbc.com/"

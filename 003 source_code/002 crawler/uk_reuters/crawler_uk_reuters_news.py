@@ -4,10 +4,8 @@ Created on Sun Jan 27 15:02:08 2019
 
 @author: eiahb
 """
-import bs4,requests,urllib3,os
+import bs4,requests,os
 from datetime import datetime
-from ipywidgets import IntProgress
-from IPython.display import display
 import pandas as pd
 import numpy as np
 from tqdm import tqdm
@@ -16,12 +14,12 @@ import sys
 try:
     START_DATE=sys.argv[1]
 except:
-    START_DATE="2018-01-01"
+    START_DATE="2019-02-24"
 print("start with ",START_DATE)
 try:
     ROOT=sys.argv[2]
 except:
-    ROOT="D:/work/fortune_street/002 news_analyze/002 data/002 corpus_data/"
+    ROOT='C:\\Users\\Evan\\MyFile\\Fortune-street\\007 oil_price\\oilprice_news_analyze\\003 data/002 corpus_data/'
 print("save at root : ",ROOT)
 
 root_web="https://uk.reuters.com"

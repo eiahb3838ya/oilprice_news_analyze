@@ -15,7 +15,8 @@ from datetime import datetime
 
 
 START_DATE="2018-01-01"
-ROOT_DIR_OF_PROJECT="D:/work/fortune_street/002 news_analyze/"
+ROOT_DIR_OF_PROJECT="C:\\Users\\Evan\\MyFile\\Fortune-street\\007 oil_price\\oilprice_news_analyze\\"
+
 #ROOT="D:/work/fortune_street/002 news_analyze/002 data/002 corpus_data/"
 
 root_dir=ROOT_DIR_OF_PROJECT+"002 data/002 corpus_data/"
@@ -56,7 +57,7 @@ class Preprocessor:
             content_counter.update(news)
         return(content_counter)
 preprocessor=Preprocessor()
-        
+preprocessor_stem=Preprocessor(stem=True)
 counter = Counter()
 for aSource in list_of_source:
     list_of_filenames=os.listdir(root_dir+"raw_csv_data/waiting_preprocess/"+aSource) 
@@ -65,15 +66,17 @@ for aSource in list_of_source:
         news_data_df=pd.read_csv(root_dir+"raw_csv_data/waiting_preprocess/"+aSource+"/"+aFile)
         try:
             news_contents=news_data_df['content']
-            
             news_titles=news_data_df['title']
             news_datetime=news_data_df['publish_datetime']
         except:
             continue
+        
+        #preprocess with no stem 
         news_tokens=preprocessor.get_tokens(news_contents)
         news_counter=preprocessor.get_counter(news_tokens)
         counter.update(news_counter)
         
+        # save the ones with no stemming
         savedir=root_dir+"token_txt_data/"+aSource+"/"+news_datetime[0]+"/"
         if not os.path.exists(savedir):
             os.makedirs(savedir)
@@ -83,12 +86,28 @@ for aSource in list_of_source:
                 text_file.writelines(a_title.lower()+"\n")
                 for token in a_tokens:
                     text_file.write(token+"\n")
+                    
+        #preprocess with stem
+        news_tokens=preprocessor_stem.get_tokens(news_contents)
+        news_counter=preprocessor_stem.get_counter(news_tokens)
+        
+        # save the ones with token_txt_data
+        savedir=root_dir+"token_stemmed_txt_data/"+aSource+"/"+news_datetime[0]+"/"
+        if not os.path.exists(savedir):
+            os.makedirs(savedir)
+        for a_news_id,a_news in enumerate(zip(news_titles,news_tokens)):
+            a_title,a_tokens=a_news
+            with open(savedir+"news_"+str(a_news_id)+".txt", "w",encoding="utf8") as text_file:
+                text_file.writelines(a_title.lower()+"\n")
+                for token in a_tokens:
+                    text_file.write(token+"\n")
+        
         os.remove(filedir) 
         print(filedir,"preprocess done and removed!")
                     
 dictionary = counter
 datetimestr=datetime.today().date().strftime("%Y_%m_%d")
-np.save('D:/work/fortune_street/002 news_analyze/002 data/003 outcome_data/word_counter_data/word_counter_'+datetimestr+'.npy', dictionary) 
+#np.save('D:/work/fortune_street/002 news_analyze/002 data/003 outcome_data/word_counter_data/word_counter_'+datetimestr+'.npy', dictionary) 
 
 # Load
 #counter = np.load('my_file.npy').item()
