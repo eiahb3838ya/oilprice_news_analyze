@@ -1,0 +1,12 @@
+german prosecutors probing hack of energy firm last year
+berlin reuters federal prosecutors are investigating a cyber attack on a subsidiary of german energy firm enbw by unknown hackers last summer the prosecutor s office said on wednesday
+the sueddeutsche zeitung newspaper reported on tuesday that hackers had breached the networks of netcom bw last summer but did not gain access to the computer system it uses to control energy supplies
+the hack was not publicly disclosed at the time
+germany s bsi federal cyber agency on wednesday said it had assessed the incident and that there was no evidence to suggest that the company s operations had been affected
+the chief federal prosecutor has opened a preliminary investigation in connection with the incident it said without naming the company involved or providing additional details
+a spokesman for the prosecutor s office confirmed the investigation was underway but gave no further details
+a spokeswoman for enbw confirmed the incident in a statement but said it was detected early and caused no damage
+unknown people attacked the telecommunications network of the enbw subsidiary netcom
+the attackers breached the network by hacking the the portal used by an external service provider and had access to a limited portion of the internet traffic for a period of a few minutes she said
+no damage was caused as a result she said adding that the company immediately notified government authorities
+reporting by andrea shalal and thorsten severin in berlin and christoph steitz in frankfurt editing by raissa kasolowsky

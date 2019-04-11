@@ -1,0 +1,54 @@
+insight-run your dishwasher when the sun shines: dynamic power pricing grows
+paris reuters one day the weather could drive your domestic schedule
+your dishwasher springs to life at the windiest time of day
+the washing machine starts spinning when the sun beats down
+in such scenarios algorithms in smart appliances automatically respond to price drops on wholesale spot markets caused by higher supplies of wind and solar power saving households money and balancing the electricity market
+this may be many years away but it is the future envisioned by the european union which wants to make the electricity system more efficient as the continent switches from predictable power generation to intermittent renewables
+most utilities have long offered cheaper tariffs but new eu rules expected in will require them to provide more flexible options that encourage customers to use power during sunny or windy periods at varied times of day or when businesses are shut at weekends
+these kind of flexible dynamic pricing contracts are already widely offered in spain and scandinavia
+but utilities in some of the biggest european markets like britain and france are now beginning to follow suit in a shift that analysts say could disrupt the continent s electricity retailing industry
+the nascent drive is enabled by the mass rollout of smart meters which can precisely record energy usage patterns
+from now on consumers in europe will be able to seize more spot market opportunities as the rise of renewable power and the availability of smart meters and appliances boost dynamic pricing said ollagnier group ceo of consultancy accenture resources
+newer smaller players are offering the most experimental tariffs selling power in hourly or even slots tied to wholesale spot prices
+the big traditional utilities like edf and centrica are responding more gradually by offering variable options
+borchardt director internal energy market at the european commission the eu s executive says variable pricing could cut power bills for a household by up to euros a year
+it is early days in europe and in other developed power markets such as the united states and australia
+utilities largely sell at fixed prices regardless of wholesale swings or time of usage and dynamic pricing accounts for a fraction of the market but it is growing
+the number of customers on dynamic pricing rates globally is expected to rise from million in to million by of which million will be in europe according to navigant research analyst brett feldman
+experts say automation will be crucial for
+the proportion of households with smart appliances is expected to rise to about percent globally by from percent now according to market data provider statista
+convenience is key ollagnier said
+users want to be able to set and forget smart rules for their the commission agrees
+to enable consumers to benefit financially from those new opportunities they must have access to smart systems as well as electricity supply contracts with dynamic prices it said in a policy document
+an anticipated surge in electric vehicle usage will also bolster uptake of flexible pricing tariffs analysts say
+british startup octopus energy in march launched an agile tariff which sells power in slots tied to wholesale spot prices
+it also sends sms alerts when prices turn negative and customers get paid for taking excess power off the grid which happens a few times a year on sunny and windy days
+the company whose uk market share is about percent has limited the experimental tariff to of its more than residential customers
+we hit that limit quickly and are now assessing the impact before expanding further which we expect to do next year ceo greg jackson said
+octopus told reuters it was working with electronics companies including samsung to allow its software to communicate with smart household appliances so that they can switch on automatically at the cheapest time
+the company said a family on its agile tariff could have saved pounds over the last months compared with average british prices
+green energy uk another small player is offering contracts with varying rates for residential customers ranging on weekdays from pence per kilowatt hour to pence
+in france engie which has million customers has also started offering flexible pricing deals including percent weekend discounts and for electric vehicle owners a percent discount for nighttime charging
+engie s retail chief augustin honorat declined to detail how many customers have flexible tariffs
+it is a success as the offers are among our he said
+the flexible contracts offered by new players are prompting traditional utilities to offer their own options analysts say
+french market leader edf for example has launched offers with to percent tariff discounts for weekend use and a tariff that offers varying rates for each period of the day
+edf marketing director gregory trannoy said the new offers were growing quickly but declined to give numbers
+oliver wyman consultant keric morris said dynamic pricing was a big operational challenge for traditional utilities
+it is much more difficult for an incumbent with all its legacy systems than for a nimble he said
+the european commission s clean energy package aims to force all utilities to offer customers smart meters and a dynamic price contract linked to spot market prices
+the rules are being negotiated with the eu parliament and member states this year with a target for implementation from
+that may be overly ambitious several eu states do not yet have the smart meters required for flexible pricing notably major power market germany
+the case of spain gives an idea of the potential of dynamic pricing as well as the possible obstacles
+spain decreed in that utilities had to offer dynamic pricing contracts as the default regulated offer
+all spanish utilities now offer contracts linked to hourly spot prices on the omie exchange and with utilities margins set by regulation
+the european commission estimates that in spain where million smart meters were installed end about percent of power users have some form dynamic pricing
+however pedro gonzalez head of regulation at spanish utilities association unesa told reuters that this is down from about percent four year ago
+despite the fact that power is slightly cheaper on dynamic contracts their number has fallen as customers switch to contracts because they want the peace of mind of not being exposed to fluctuating wholesale prices
+surprisingly despite the fact that average dynamic prices should be lower many people want to avoid risk and prefer to pay a fixed amount per month gonzalez said
+he said the number of people on dynamic pricing contracts has been stable over the past year and that in recent months utilities have started offering intermediate options such as varying rates for different blocks of the day
+in the nordics many utilities offer dynamic pricing though uptake ranges from about percent in the tiny but highly digital baltic country estonia to percent in finland and a few percent in sweden and norway according to eu data
+industry specialists say much will depend on to what extent the european commission s proposal on dynamic pricing is accepted but all agree the higher the share of renewables in total generation the bigger the pressure will become to make demand more flexible
+octopus energy s jackson said mass rollout of smart meters could ultimately lead to a sophisticated form of congestion pricing with supply and demand increasingly driving prices
+on trains and airlines the first seats are very cheap the last ones very expensive he said
+the electricity market will end up like that additional reporting by susanna twidale in london lefteris karagiannopoulos in oslo and jose elias rodriguez in madrid writing by geert de clercq editing by pravin char

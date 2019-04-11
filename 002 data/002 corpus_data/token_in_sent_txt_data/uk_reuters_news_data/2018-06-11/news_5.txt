@@ -1,0 +1,24 @@
+trump's coal, nuclear bailout no shield from hackers -cyber experts
+washington reuters bailing out nuclear and power plants will not toughen the power grid against cyber attacks as the trump administration claims according to cyber experts because hackers have a wide array of options for hitting electric infrastructure and nuclear facilities that are targets
+president donald trump this month directed energy secretary rick perry to take emergency steps to stem a surge in coal and nuclear plant retirements in recent years arguing that more shutdowns would leave the country less able to bounce back from disruptions caused by storms physical attacks and hackers
+the announcement came as the national security council debated a department of energy doe memo that said cyber and physical threats are minimized at nuclear and coal plants because they can store months of fuel on site to survive a supply cut unlike natural gas facilities that rely on pipeline networks or wind and solar installations that need the right weather
+while the administration had been arguing for months that fuel secure facilities were important to america s ability to rebound from storms and physical attacks its efforts to link plant closures with protection from cyber attacks appeared to open a new front in its support for the coal and nuclear industries
+chris bronk a professor of computer and information systems at the university of houston said he could not endorse the idea
+i don t see where a policy of keeping open aging infrastructure that would shut unless there was federal markets intervention keeps us any safer from cyber attacks he said
+bronk said coal plants train deliveries and transmission systems are just as susceptible to hackers as gas pipelines and added that while nuclear facilities are tough targets the stakes involved in a successful nuclear cyber attack are enormous potentially involving an accident that leaks radioactivity and hits surrounding communities
+nuclear power backers stress that reactors are protected from hackers by so called air gaps isolating them from unsecured networks
+but bronk said air gaps are not impervious to attackers that may seek to gain information such as worker and maintenance schedules from administrative networks over long periods of time
+those are the control systems that frighten me to no end bronk said
+sergio caltagirone the director of threat intelligence at cyber security company dragos agreed that bailing out nuclear and coal plants offers little protection
+i do not expect this policy shift to deliver any additional cyber security resilience based on the threats we re actively monitoring caltagirone said
+a doe official who spoke on the condition of anonymity said the agency recognizes that cyber security risk permeates every energy source
+but the official said there is concern that natural gas s role has grown too rapidly in the last decade making the grid vulnerable to hacks on pipelines that could knock out to natural gas plants in one fell while the administration talks about gas pipelines nuclear plants have also been attacked
+in march the trump administration blamed russia for seeking to penetrate multiple types of infrastructure including nuclear water and manufacturing
+and last july news reports said wolf creek nuclear operating corp which runs a nuclear power plant in kansas had been targeted by hackers
+wolf creek said there was no operational damage and sensitive systems were separate from the corporate network
+ben garber a cyber security engineer for ultra electronics said the government should put greater focus on encouraging power utilities to strengthen security against attacks as it has with the financial and health industries
+the doe said in february it is forming an office of cyber security to do that
+trump s fiscal year budget included million to fund it but trump has not yet nominated a leader to run it
+cameron camp a researcher at slovakian software maker eset said the push to subsidize coal and nuclear seemed more about saving blue collar energy jobs than boosting resiliency
+it s trying to kill multiple birds with one stone rather than take a holistic view of the structural problems with the grid itself said camp
+reporting by timothy gardner editing by marguerita choy

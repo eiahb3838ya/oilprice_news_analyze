@@ -1,0 +1,12 @@
+﻿【NLP】Attention原理和源码解析
+https://zhuanlan.zhihu.com/p/43493999
+【NLP】Transformer详解
+https://zhuanlan.zhihu.com/p/44121378
+从Word Embedding到Bert模型—自然语言处理中的预训练技术发展史
+https://zhuanlan.zhihu.com/p/49271699
+[NLP自然语言处理]谷歌BERT模型深度解析
+https://blog.csdn.net/qq_39521554/article/details/83062188
+最强NLP模型BERT喜迎🤗PyTorch版：谷歌官方推荐，也会支持中文
+https://zhuanlan.zhihu.com/p/48811620
+PyTorch Pretrained BERT: The Big & Extending Repository of pretrained Transformers
+https://github.com/huggingface/pytorch-pretrained-BERT#overview

@@ -1,0 +1,17 @@
+u.s. nuclear power regulator urged to reject limits on cyber protections
+washington reuters a science advocacy group urged the nuclear regulatory commission on friday to reject a longstanding industry request to limit cyber attack protections at nuclear plants a day after the trump administration publicly blamed moscow for hacking into nuclear power and other energy infrastructure
+the nuclear energy institute industry group petitioned the nuclear regulatory commission in june to limit the scope of the agency s safeguards to only systems with a direct impact on safety
+the institute said in the petition that such limits would be less burdensome for operators of nuclear power plants while being adequately protective of public health and safety
+the petition is foolhardy at best and at worse downright dangerous said edwin lyman a senior scientist at the union of concerned scientists a nonprofit science advisory group
+the department of homeland security and fbi on thursday said that the russian government hacking campaign on energy and other facilities stretched back at least two years
+in light of the growing cyber threat to nuclear plants highlighted by yesterday s alert the agency should now simply reject it lyman said
+nrc spokesman david mcintyre said the agency sent the institute a letter in september telling them it was deferring consideration of the petition until it completes a round of inspections related to cyber security
+the inspections started late last year and will continue through
+systems that control the most critical safety equipment at nuclear plants are largely immune to cyber attacks because they are and not connected to the internet
+but many other systems with key safety and security functions are and could be compromised via their internet connections lyman said
+hackers could disable or reprogram systems including electronic locks alarms television cameras and communications equipment the group said
+some plants have equipment such as cranes that move highly radioactive spent fuel that use systems that could be manipulated to cause an accident it said
+the united states is the world leader in nuclear power with operating reactors
+but the industry has suffered numerous closures in recent years in the face of a glut of cheap natural gas a competing fuel for power plants and soaring safety protection costs as a result of measures put in place after the attacks on
+nei spokesman john keeley said his group had no comment on the request by the union of concerned scientists
+reporting by timothy gardner editing by phil berlowitz

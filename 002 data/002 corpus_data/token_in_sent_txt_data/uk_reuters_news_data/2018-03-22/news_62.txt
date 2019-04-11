@@ -1,0 +1,32 @@
+self-driving car industry confronts trust issues after uber crash
+detroit march reuters the fatal accident involving an uber car cranks up pressure on the vehicle industry to prove its software and sensors are safe in the absence of strong government standards experts in the field said
+automakers including general motors co technology companies such as alphabet inc and ride services providers like uber technologies inc have all urged policy makers at the federal and state level not to put a heavy regulatory hand on an industry still in development
+they have said their extensive testing demonstrates commitment to safety
+but the uber accident in tempe arizona the first death attributed to a car operating in autonomous mode has given ammunition to critics of the industry concerned that the lack of clear standards allows manufacturers to test faulty or partially developed technology on public streets
+industry executives had begun well before sunday s accident to defuse concerns by opening up about their testing methods without giving away the secrets of their system designs
+public disclosure of car testing data is inconsistent and varies by state
+california for example requires manufacturers to report instances when an autonomous vehicle system disengages
+arizona does not
+there is no question whatsoever that regulations are coming said doug mehl a partner at kearney s automotive practice based in detroit
+but right now automakers software developers and service providers have an opportunity to shape what those regulations are going to look alphabet s waymo car unit for example has underscored in a report that its autonomous vehicles have now logged million miles in testing and billions more in computer simulations
+gm s cruise automation unit has highlighted its decision to teach its driving system to navigate san francisco s congested streets
+still amnon shashua head of intel corp s mobileye vision systems unit said the industry must do more
+he has called for the vehicle industry to develop provable safety assurances
+we need to prove that these vehicles are much much safer than humans shashua told reuters
+how do you go and guarantee that you have a technology that the probability of a fatality per one hour of driving is times better than a human
+nobody talks about that because nobody knows what to most vehicles are equipped with radar sensors and lidar sensors which use lasers to detect obstacles around the vehicle
+there are no federal standards yet specifying how such systems should work
+congress and federal regulators are still debating how tightly to regulate such systems
+there should be vision tests for the sensors they are using both static and dynamic to see how well they work said missy cummings a duke university mechanical engineering professor
+the short video recorded by cameras in the uber vehicle that struck pedestrian elaine herzberg while crossing a street in tempe arizona late sunday raises questions about whether the uber system responded better than a human driver experts said on wednesday
+uber has hired human operators to sit in the driver s seats of its autonomous vehicles to intervene if necessary
+the video released by tempe police shows a human operator behind the wheel of the uber vehicle before the impact
+the operator is seen looking down away from the street in the seconds before the vehicle struck herzberg
+she was pushing a bicycle across the street from left lane into the right lane where the uber vehicle was driving
+it seems it should have detected her daniel sperling director of the institute for transportation studies at university of california davis told reuters in an email after viewing the video
+it seems unlikely that a human driver would have done better
+we do want avs to do better than us and the potential americans were wary of autonomous vehicle technology even before sunday s fatality
+according to a opinion poll released in late january of americans are uncomfortable about the idea of riding in cars
+the greater risk for the industry is that if people feel it is unsafe or the testing is unsafe you ll see a real backlash against this technology matthew of the university of michigan ford center for autonomous vehicles
+reporting by alexandria sage nick carey tina bellon and paul lienert
+editing by joseph white and kenneth maxwell

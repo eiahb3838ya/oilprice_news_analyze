@@ -1,0 +1,10 @@
+japanese scientists invent floating 'firefly' light
+tokyo reuters japanese engineering researchers say they have created a tiny electronic light the size of a firefly which rides waves of ultrasound and could eventually figure in applications ranging from moving displays to projection mapping
+named luciola for its resemblance to the firefly the featherweight levitating particle weighs mg has a diameter of mm inch and emits a red glimmer that can just about illuminate text
+but its minuscule size belies the power of the microspeakers emitting ultrasonic waves that hold up the light and have a frequency inaudible to the human ear allowing luciola to operate in apparent total silence
+it took two years for luciola to get this far said circuit design specialist makoto takamiya a member of the kawahara universal information network project that developed the device
+ultimately my hope is that such tiny objects will have smartphone capabilities and be built to float about helping us in our everyday lives in smarter ways said the university of tokyo professor who hopes it will be commercially viable in five to years
+the developers expect luciola to find applications in the internet of things in which regular objects such as cars or domestic appliances such as are connected to networks to send and receive data
+equipped with movement or temperature sensors luciola could fly to such objects to deliver a message or help to make moving displays with multiple lights that can detect the presence of humans or participate in futuristic projection mapping events
+the kawahara universal information network project is a program that is part of the japan science and technology agency and explores advances in information and communication technology
+reporting by hideki kato writing by karishma singh editing by clarence fernandez

@@ -1,0 +1,25 @@
+blockchain benefits still murky for most commodities trading
+london reuters commodity firms and banks have been diving into blockchain pilot schemes over the last two years but the new technology s application for most trading has likely been a report by boston consulting group bcg said
+blockchain originally the platform behind cryptocurrency bitcoin is viewed by some as a solution to inefficiencies improving transparency and reducing to the risk of fraud
+but bcg believes its potential has been exaggerated
+a ledger blockchain uses a shared database that updates in and can process and settle transactions in minutes without the need for verification
+the volume of trades through various schemes has been negligible so far and it is too early to tell how soon it might reach a critical mass
+there are so many pilot schemes but none have become real production scale systems yet
+one of the problems is that it s not designed for physical trades
+the fundamental issue how do you track a physical entity in a virtual world
+it s two worlds colliding antti belt of the bcg report said
+among the obstacles to scaling up the technology include reconciling terminologies and whether the switch to a blockchain platform is even financially justifiable
+the industry is very old and everyone uses a different language
+how do you define quality shipment schedules a lot of reconciliation is currently needed for both sides belt said
+people have spent millions sometimes over million on it system do they want to do it again furthermore it is uncertain to what degree traders will want to adopt a technology that will erode already profit margins
+bcg said that as the platforms take shape it would be bad news for merchant traders as the price inefficiencies and unequal dissemination of information that they rely on to make profits would disappear
+the use of blockchain solutions would significantly improve transparency
+it would also create a more efficient and liquid market moving commodity trading away from bilateral deals struck directly between two parties to transactions based on electronic platforms to match buyers and sellers the report said
+steven kok said interest in the wider adoption of blockchain technology would start where the primary driver is certifying the source of the asset as with diamonds rather than efficiency
+anglo american s de beers said in may it had tracked diamonds from miner to retailer using blockchain in the first effort of its kind to clear the supply chain of impostors and exploitation
+nevertheless major companies and banks have tested blockchain across commodities such as in power diamonds food and oil
+last year a consortium including major banks trading firms and producers bp equinor and royal dutch shell announced that they would develop a platform ready to go by the end of
+separately commodities trader trafigura set up another platform with ibm and natixis for the crude oil market last year
+major agriculture traders have also tried blockchain such as louis dreyfus co with a cargo of soybeans
+simply put blockchain may not be the right answer for all players the report concluded
+reporting by julia payne editing by mark potter

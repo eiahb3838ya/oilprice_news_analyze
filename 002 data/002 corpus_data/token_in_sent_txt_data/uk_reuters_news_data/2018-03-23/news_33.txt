@@ -1,0 +1,42 @@
+utilities step into blockchain to stay ahead of europe's energy shakeup
+frankfurt reuters european utilities plan to begin some direct trades with one another using blockchain technology within months hoping to stay ahead in a world in which individuals may eventually sell green energy to one another
+the distributed ledger technology that underpins the bitcoin currency has already been tested by energy operators for wholesale trading but it will go live with just a few selected electricity and gas contracts to start with
+the initiative enerchain is a forerunner of more possible uses of the technology by established energy players and wider options explored by a raft of to harness its potential many of them years away from execution
+regulators are seeking to control this strategic sector to avoid security issues digital infrastructure is lagging and players must agree to share data and avoid privacy breaches
+while tentative enerchain is a test of the utilities ability to protect their margins by dominating novel automated trading architectures matching energy producers with each other and also with users
+apart from staving off competition from more agile digital companies it could help speed a sector shift in germany from fossil fuels to renewables bypassing nuclear highlighted in a reorganisation of and rwe this month
+german it company ponton has worked with power and gas traders to build the platform since
+managing director michael merz told reuters its members will choose contracts to go live with as soon as they set up a legal entity to pool budgets probably in the second or third quarter of his first detailed comments on the timeline to mainstream media
+the companies which include prominent names such as italy s enel germany s and sweden s vattenfall were driven by the need to lower transaction costs in an era of growing competition and energy supplies he said
+publishing orders and transactions via blockchain can replace trading via brokers merz said
+we have developed an order execution process that works just like a typical otc market front alongside brokers potential losers from the enerchain proposition include exchanges such as ice or eex but both are joining the blockchain party
+ice in january launched a cryptocurrency data feed in january and both it and eex are discussing applications with customers and tech firms
+we see this new technology as a real opportunity to further improve our business eex chief executive peter reitz said during the of energy trade fair last month
+instead of administering duplicate databases blockchain comprises one record maintained by a network of participants rather than a centralised entity accessible and unchangeable
+ponton would not monopolise enerchain software metz said but step back to develop other products to simplify grid processes and speed north germany s green power supply
+vattenfall business development manager kilian leykam said while enerchain was still in test phase we are confident that we will see live trades this year when all necessary technical and regulatory prerequisites are germany s regulator the bundesnetzagentur said it keeps a tight watch over networks and retail markets where suppliers are licensed and monitored regardless of the technology they use
+matthias lang an energy specialist at law firm bird bird said this creates high entrance hurdles which software developers should build into their processes from the start
+i have to clarify in practice that i can only sell energy when i ve got some and what happens at other times he said
+two or more suppliers must club together and someone has to control austrian utility wien energie also part of the enerchain initiative has been testing blockchain for settling gas trades via the platform of canadian btl with the likes of eni and bp since
+vattenfall also participates in that test consortium called btl one office which is more focused on trade settlements and is also close to revealing further progress
+energy shipments often involve lengthy chains of documents and multiple acknowledgement receipts
+even electronic platforms with central clearing functions can be slow and expensive
+while blockchain can not yet take on billions of dollars of transactions in equities or currency markets handling thousands of deals per second energy trades are not overly complex and occur at a rate of one every few seconds offering a good fit
+graphic blockchain the key some in a fiercely competitive commodities sector are reluctant to put their data on a common platform however making progress slow going
+research firm idc estimates global investment in blockchain will more than double in to billion from million last year most of it for banking but expects strong growth in the energy space between and
+germany s capital berlin has become a thriving hub for looking at digital business models
+its european school of management and technology esmt polled attendees of the city s annual blockchain in energy conference eventhorizon last year and said some percent saw blockchain cutting utility process costs by almost a third
+another research firm trend research of bremen has said more than percent of energy companies it interviewed are planning or preparing blockchain processes in decentralised energy production electric mobility retail sales renewable power origin certificates network management and billing
+merz said financial trading rules with high capital requirements did not apply to enerchain as it is defined as a communication channel for data exchanges
+if successful it could in theory allow the group to pool other professional resources such as risk management and compliance reporting
+christoph burger senior lecturer at esmt said enerchain looked well placed to avoid the lack of trust issues that have caused other attempts to use blockchain to founder
+this is a nicely focused and well functioning use case and legal questions are easily resolved he said
+new infrastructure is needed and new regulation and industry standards must be embedded before blockchain can transform existing mass market processes experts say
+a public blockchain may involve everyone seeing the movements around my account if my smart metre is hooked up to the network said ewald hesse chief executive and of grid singularity an energy data exchange platform hosted by the energy web foundation wef
+it can t be that everyone who is able to code knows what is it also must be clear who builds and maintains the systems
+bear in mind that there might be job losses in areas such as controlling legal it and administration said esmt s burger
+are drawn to germany europe s biggest and most highly priced power market and home to million small renewable power production units and over million consumers
+things are really going to take off here in the future said s chief executive johannes teyssen of solar markets where rising sales of inexpensive batteries could allow millions of prosumers to enter the scene
+solar panels owners dream of neighbourhood schemes and of owning electric cars helped by the roll out of mobile data network services enabling smart home applications
+they have been encouraged by sellers of the panels which will start gradually losing fixed term subsidies in the next few years who gloss over the fact that the smart meters needed to enable such schemes are years from being rolled out
+additional research by alissa de carbonnel editing by philippa fletcher

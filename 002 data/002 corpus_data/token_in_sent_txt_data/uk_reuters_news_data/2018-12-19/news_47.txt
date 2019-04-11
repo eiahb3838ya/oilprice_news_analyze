@@ -1,0 +1,19 @@
+lawmakers urge trump administration to bolster u.s. pipeline cybersecurity
+washington dec reuters two democratic lawmakers urged the department of homeland security on wednesday to better protect oil and gas pipelines from cyberattacks after a report they requested detailed a lack of federal oversight of the critical conduits
+a federal report released on wednesday said homeland security s transportation security administration or tsa does not have a process to update its pipeline security guidelines to reflect revisions to standards considered by experts and regulators to be the industry bible on cybersecurity
+the standards on avoiding hacker attacks are the cybersecurity framework from the national institute of standards and technology
+the report by the general accountability office or gao the investigative arm of congress was requested by senator maria cantwell and representative frank pallone
+protecting our pipelines and the people who live and work near them must be a top priority for our government and i hope this report will prompt the trump administration to start treating this challenge with the urgency it deserves cantwell said in a release
+dhs which concurred with gao recommendations in the report did not immediately respond to a request for comment on cantwell s comments
+the gao s recommendations for the tsa included implementing a process for reviewing and if necessary revising security guidelines at regular intervals
+energy infrastructure has long been a target of hackers
+last week hackers using a variant of the notorious shamoon virus crippled more than computers owned by italian oil services company saipem and brought down servers in the middle east and india
+the company did not know who conducted the strike but an official at a cybersecurity company crowdstrike said he believed iran was responsible
+the report on wednesday found tsa relied on by the pipeline industry to determine whether operators have critical facilities in their systems that could be the target of hackers
+that is a classification the agency uses to determine calculations about the vulnerability of pipelines to cyberattacks
+as a result operators for one third of the top pipeline systems based on volume told the tsa they did not have critical facilities and the tsa did not verify the it said
+the report also said tsa had not tracked the status of security review recommendations to pipeline operators for the past five years
+the vulnerability of gas pipelines to cyberattacks has been one argument that energy secretary rick perry a republican has used to justify asking the federal energy regulatory commission to bail out aging nuclear and coal power plants which do not depend on pipelines
+cyber experts said perry s plan would not shield the grid from hackers because they have a wide array of options for hitting electricity infrastructure
+ferc an independent agency of the department of energy rejected the perry directive but the issue could come up again
+reporting by timothy gardner editing by peter cooney

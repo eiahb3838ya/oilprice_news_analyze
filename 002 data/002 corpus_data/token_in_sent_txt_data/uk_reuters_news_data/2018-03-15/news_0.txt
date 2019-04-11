@@ -1,0 +1,33 @@
+update 5-in a first, u.s. blames russia for cyber attacks on energy grid
+washington reuters the trump administration on thursday blamed the russian government for a campaign of cyber attacks stretching back at least two years that targeted the power grid marking the first time the united states has publicly accused moscow of hacking into american energy infrastructure
+beginning in march or possibly earlier russian government hackers sought to penetrate multiple critical infrastructure sectors including energy nuclear commercial facilities water aviation and manufacturing according to a security alert published thursday
+the department of homeland security and fbi said in the alert that a intrusion campaign by russian government cyber actors had targeted the networks of small commercial facilities where they staged malware conducted spear phishing and gained remote access into energy sector the alert did not name facilities or companies targeted
+the direct condemnation of moscow represented an escalation in the trump administration s attempts to deter russia s aggression in cyberspace after senior intelligence officials said in recent weeks the kremlin believes it can launch hacking operations against the west with impunity
+it coincided with a decision thursday by the treasury department to impose sanctions on russian people and five groups including moscow s intelligence services for meddling in the presidential election and other malicious cyber attacks
+russia in the past has denied it has tried to hack into other countries infrastructure and vowed on thursday to retaliate for the new sanctions
+security officials have long warned that the united states may be vulnerable to debilitating cyber attacks from hostile adversaries
+it was not clear what impact the attacks had on the firms that were targeted
+but thursday s alert provided a link to an analysis by the cyber security firm symantec last fall that said a group it had dubbed dragonfly had targeted energy companies in the united states and europe and in some cases broke into the core systems that control the companies operations
+malicious email campaigns dating back to late were used to gain entry into organizations in the united states turkey and switzerland and likely other countries symantec said at the time though it did not name russia as the culprit
+the decision by the united states to publicly attribute hacking attempts of american critical infrastructure was unprecedented and extraordinary said amit yoran a former official who founded dhs s computer emergency response team
+i have never seen anything like this said yoran now chief executive of the cyber firm tenable said
+a white house national security council spokesman did not respond when asked what specifically prompted the public blaming of russia
+officials have historically been reluctant to call out such activity in part because the united states also spies on infrastructure in other parts of the world
+news of the hacking campaign targeting power companies first surfaced in june in a confidential alert to industry that described attacks on industrial firms including nuclear plants but did not attribute blame
+people sort of suspected russia was behind it but today s statement from the government carries a lot of weight said ben read manager for cyber espionage analysis with cyber security company fireeye inc
+the campaign targeted engineers and technical staff with access to industrial controls suggesting the hackers were interested in disrupting operations though fireeye has seen no evidence that they actually took that step read said
+a former senior dhs official familiar with the government response to the campaign said that russia s targeting of infrastructure networks dropped off after the publication in the fall of symantec s research and an october government alert which detailed technical forensics about the hacking attempts but did not name russia
+the official declined to say whether the campaign was still ongoing or provide specifics on which targets were breached or how close hackers may have gotten to operational control systems
+we did not see them cross into the control networks dhs cyber security official rick driggers told reporters at a dinner on thursday evening
+driggers said he was unaware of any cases of control networks being compromised in the united states and that the breaches were limited to business networks
+but he added we know that there is intent it was not clear what russia s motive was
+many cyber security experts and former officials say such behaviour is generally with the potential if needed for sabotage
+russia has shown a willingness to leverage access into energy networks for damaging effect in the past
+hackers were widely blamed for two attacks on the ukrainian energy grid in and that caused temporary blackouts for hundreds of thousands of customers and were considered assaults
+senator maria cantwell the top democrat on the senate energy and natural resources committee asked the trump administration earlier this month to provide a threat assessment gauging russian capabilities to breach the electric grid
+it was the third time cantwell and other senators had asked for such a review
+the administration has not yet responded a spokesman for cantwell s office said on thursday
+last july there were news reports that the wolf creek nuclear operating corp which operates a nuclear plant in kansas had been targeted by hackers from an unknown origin
+spokeswoman jenny hageman declined to say at the time if the plant had been hacked but said that there had been no operational impact to the plant because operational computer systems were separate from the corporate network
+hageman on thursday said the company does not comment on security matters
+john keeley a spokesman for the industry group the nuclear energy institute said there has been no successful cyber attack against any nuclear facility including wolf reporting by dustin volz and timothy gardner additional reporting by jim finkle editing by tom brown alistair bell and cynthia osterman

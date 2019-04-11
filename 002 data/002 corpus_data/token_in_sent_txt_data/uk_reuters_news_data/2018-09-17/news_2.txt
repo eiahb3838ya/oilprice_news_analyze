@@ -1,0 +1,21 @@
+update 3-nasdaq restores nordic clearing buffer after power trader default
+oslo reuters members of nasdaq s nordic commodities exchange have fully replenished vital clearing house contingency funds that were lost last week when a single norwegian trader defaulted the exchange operator said
+einar aas a derivatives trader who made large bets on the power market left a million euro million hole in the clearing house buffers when his funds ran out drawing scrutiny from regulators seeking to clarify whether rules were broken
+energy firms and other players on the market had been given until the end of monday to cover the loss or face default themselves
+the member default fund now has been recapitalized by percent or million euros million nasdaq said in a statement
+the company had previously said it would replace the remaining loss of million euros itself
+clearing houses like the one operated by nasdaq are vital for the stability of markets acting as an intermediary in stock bond or derivatives transactions and ensuring completion if one side goes bust
+finansinspektionen the swedish financial supervisory authority is following up on whether nasdaq clearing has acted in compliance with current regulation and whether the regulation is sufficient the swedish financial markets regulator said in a statement late on friday
+the clearing house will also hire an external party to review its handling of the case nasdaq clearing chief executive officer julia haglind told reuters
+while aas had bet that spreads would narrow this backfired on as heavy rain pushed down prices in the nordic region while a spike in the cost of carbon drove up german prices nasdaq said
+in a single day the difference between nordic and german power prices for widened by euros times more than the average daily move and exceeding the maximum level of euros for which nasdaq clearing s risk model had been calibrated
+since when the current pricing system was set up the largest change in spreads on any single day had been euros nasdaq said calling the market move a true black swan graphic german and nordic power prices nordic power prices continued to fall on monday due to wet weather and lingering concerns about the default said lauri riihimaki a trading manager at finnish energy services company enegia
+following the default of aas nasdaq s clearing house on friday said it would adjust its models and demand bigger capital buffers in order to shift more of the risk from the mutualized default fund to the owners of individual portfolios
+the fact that they are increasing marginal requirements could decrease market liquidity investor relations manager maans holmberg at finnish power firm fortum told reuters
+but if they didn t increase them after last week s event maybe some members would anyway reduce their liquidity as they may be worried about trading safety he said
+lower liquidity could be an outcome of this it is completely logical
+after an incident like this it is normal that you will see an effect on liquidity
+and it is unfortunate as we have seen liquidity falling over the years he added
+nasdaq on friday also deposited million in additional funds on a temporary basis to help restore trust in the market the exchange said
+aas is now barred from trading and said on thursday that he risked personal bankruptcy
+euros norwegian crowns additional reporting by nerijus adomaitis editing by susan fenton and mark potter
