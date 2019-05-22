@@ -1,0 +1,668 @@
+
+% Default to the notebook output style
+
+    
+
+
+% Inherit from the specified cell style.
+
+
+
+
+    
+\documentclass[11pt]{article}
+
+    
+    
+    \usepackage[T1]{fontenc}
+    % Nicer default font (+ math font) than Computer Modern for most use cases
+    \usepackage{mathpazo}
+
+    % Basic figure setup, for now with no caption control since it's done
+    % automatically by Pandoc (which extracts ![](path) syntax from Markdown).
+    \usepackage{graphicx}
+    % We will generate all images so they have a width \maxwidth. This means
+    % that they will get their normal width if they fit onto the page, but
+    % are scaled down if they would overflow the margins.
+    \makeatletter
+    \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth
+    \else\Gin@nat@width\fi}
+    \makeatother
+    \let\Oldincludegraphics\includegraphics
+    % Set max figure width to be 80% of text width, for now hardcoded.
+    \renewcommand{\includegraphics}[1]{\Oldincludegraphics[width=.8\maxwidth]{#1}}
+    % Ensure that by default, figures have no caption (until we provide a
+    % proper Figure object with a Caption API and a way to capture that
+    % in the conversion process - todo).
+    \usepackage{caption}
+    \DeclareCaptionLabelFormat{nolabel}{}
+    \captionsetup{labelformat=nolabel}
+
+    \usepackage{adjustbox} % Used to constrain images to a maximum size 
+    \usepackage{xcolor} % Allow colors to be defined
+    \usepackage{enumerate} % Needed for markdown enumerations to work
+    \usepackage{geometry} % Used to adjust the document margins
+    \usepackage{amsmath} % Equations
+    \usepackage{amssymb} % Equations
+    \usepackage{textcomp} % defines textquotesingle
+    % Hack from http://tex.stackexchange.com/a/47451/13684:
+    \AtBeginDocument{%
+        \def\PYZsq{\textquotesingle}% Upright quotes in Pygmentized code
+    }
+    \usepackage{upquote} % Upright quotes for verbatim code
+    \usepackage{eurosym} % defines \euro
+    \usepackage[mathletters]{ucs} % Extended unicode (utf-8) support
+    \usepackage[utf8x]{inputenc} % Allow utf-8 characters in the tex document
+    \usepackage{fancyvrb} % verbatim replacement that allows latex
+    \usepackage{grffile} % extends the file name processing of package graphics 
+                         % to support a larger range 
+    % The hyperref package gives us a pdf with properly built
+    % internal navigation ('pdf bookmarks' for the table of contents,
+    % internal cross-reference links, web links for URLs, etc.)
+    \usepackage{hyperref}
+    \usepackage{longtable} % longtable support required by pandoc >1.10
+    \usepackage{booktabs}  % table support for pandoc > 1.12.2
+    \usepackage[inline]{enumitem} % IRkernel/repr support (it uses the enumerate* environment)
+    \usepackage[normalem]{ulem} % ulem is needed to support strikethroughs (\sout)
+                                % normalem makes italics be italics, not underlines
+    
+
+    
+    
+    % Colors for the hyperref package
+    \definecolor{urlcolor}{rgb}{0,.145,.698}
+    \definecolor{linkcolor}{rgb}{.71,0.21,0.01}
+    \definecolor{citecolor}{rgb}{.12,.54,.11}
+
+    % ANSI colors
+    \definecolor{ansi-black}{HTML}{3E424D}
+    \definecolor{ansi-black-intense}{HTML}{282C36}
+    \definecolor{ansi-red}{HTML}{E75C58}
+    \definecolor{ansi-red-intense}{HTML}{B22B31}
+    \definecolor{ansi-green}{HTML}{00A250}
+    \definecolor{ansi-green-intense}{HTML}{007427}
+    \definecolor{ansi-yellow}{HTML}{DDB62B}
+    \definecolor{ansi-yellow-intense}{HTML}{B27D12}
+    \definecolor{ansi-blue}{HTML}{208FFB}
+    \definecolor{ansi-blue-intense}{HTML}{0065CA}
+    \definecolor{ansi-magenta}{HTML}{D160C4}
+    \definecolor{ansi-magenta-intense}{HTML}{A03196}
+    \definecolor{ansi-cyan}{HTML}{60C6C8}
+    \definecolor{ansi-cyan-intense}{HTML}{258F8F}
+    \definecolor{ansi-white}{HTML}{C5C1B4}
+    \definecolor{ansi-white-intense}{HTML}{A1A6B2}
+
+    % commands and environments needed by pandoc snippets
+    % extracted from the output of `pandoc -s`
+    \providecommand{\tightlist}{%
+      \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+    \DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+    % Add ',fontsize=\small' for more characters per line
+    \newenvironment{Shaded}{}{}
+    \newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
+    \newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{{#1}}}
+    \newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{{#1}}}}
+    \newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{{#1}}}
+    \newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+    \newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{{#1}}}
+    \newcommand{\RegionMarkerTok}[1]{{#1}}
+    \newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+    \newcommand{\NormalTok}[1]{{#1}}
+    
+    % Additional commands for more recent versions of Pandoc
+    \newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.53,0.00,0.00}{{#1}}}
+    \newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.73,0.40,0.53}{{#1}}}
+    \newcommand{\ImportTok}[1]{{#1}}
+    \newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.73,0.13,0.13}{\textit{{#1}}}}
+    \newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{{#1}}}
+    \newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
+    \newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.40,0.40,0.40}{{#1}}}
+    \newcommand{\BuiltInTok}[1]{{#1}}
+    \newcommand{\ExtensionTok}[1]{{#1}}
+    \newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.74,0.48,0.00}{{#1}}}
+    \newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{{#1}}}
+    \newcommand{\InformationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    
+    
+    % Define a nice break command that doesn't care if a line doesn't already
+    % exist.
+    \def\br{\hspace*{\fill} \\* }
+    % Math Jax compatability definitions
+    \def\gt{>}
+    \def\lt{<}
+    % Document parameters
+    \title{observe\_news}
+    
+    
+    
+
+    % Pygments definitions
+    
+\makeatletter
+\def\PY@reset{\let\PY@it=\relax \let\PY@bf=\relax%
+    \let\PY@ul=\relax \let\PY@tc=\relax%
+    \let\PY@bc=\relax \let\PY@ff=\relax}
+\def\PY@tok#1{\csname PY@tok@#1\endcsname}
+\def\PY@toks#1+{\ifx\relax#1\empty\else%
+    \PY@tok{#1}\expandafter\PY@toks\fi}
+\def\PY@do#1{\PY@bc{\PY@tc{\PY@ul{%
+    \PY@it{\PY@bf{\PY@ff{#1}}}}}}}
+\def\PY#1#2{\PY@reset\PY@toks#1+\relax+\PY@do{#2}}
+
+\expandafter\def\csname PY@tok@w\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.73,0.73}{##1}}}
+\expandafter\def\csname PY@tok@c\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.74,0.48,0.00}{##1}}}
+\expandafter\def\csname PY@tok@k\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kt\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.69,0.00,0.25}{##1}}}
+\expandafter\def\csname PY@tok@o\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@ow\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@ne\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.82,0.25,0.23}{##1}}}
+\expandafter\def\csname PY@tok@nv\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@no\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nl\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.63,0.63,0.00}{##1}}}
+\expandafter\def\csname PY@tok@ni\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.60,0.60,0.60}{##1}}}
+\expandafter\def\csname PY@tok@na\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.49,0.56,0.16}{##1}}}
+\expandafter\def\csname PY@tok@nt\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nd\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\expandafter\def\csname PY@tok@s\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sd\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@si\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
+\expandafter\def\csname PY@tok@se\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sr\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
+\expandafter\def\csname PY@tok@ss\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@sx\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@m\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@gh\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@gu\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.50,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@gd\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.63,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.63,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gr\endcsname{\def\PY@tc##1{\textcolor[rgb]{1.00,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@ge\endcsname{\let\PY@it=\textit}
+\expandafter\def\csname PY@tok@gs\endcsname{\let\PY@bf=\textbf}
+\expandafter\def\csname PY@tok@gp\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@go\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.53,0.53}{##1}}}
+\expandafter\def\csname PY@tok@gt\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.27,0.87}{##1}}}
+\expandafter\def\csname PY@tok@err\endcsname{\def\PY@bc##1{\setlength{\fboxsep}{0pt}\fcolorbox[rgb]{1.00,0.00,0.00}{1,1,1}{\strut ##1}}}
+\expandafter\def\csname PY@tok@kc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kd\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kr\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@bp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@fm\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@vc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vg\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vm\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@sa\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@dl\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@s2\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sh\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@s1\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@mb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mh\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@il\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mo\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@ch\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cm\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cpf\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@c1\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cs\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+
+\def\PYZbs{\char`\\}
+\def\PYZus{\char`\_}
+\def\PYZob{\char`\{}
+\def\PYZcb{\char`\}}
+\def\PYZca{\char`\^}
+\def\PYZam{\char`\&}
+\def\PYZlt{\char`\<}
+\def\PYZgt{\char`\>}
+\def\PYZsh{\char`\#}
+\def\PYZpc{\char`\%}
+\def\PYZdl{\char`\$}
+\def\PYZhy{\char`\-}
+\def\PYZsq{\char`\'}
+\def\PYZdq{\char`\"}
+\def\PYZti{\char`\~}
+% for compatibility with earlier versions
+\def\PYZat{@}
+\def\PYZlb{[}
+\def\PYZrb{]}
+\makeatother
+
+
+    % Exact colors from NB
+    \definecolor{incolor}{rgb}{0.0, 0.0, 0.5}
+    \definecolor{outcolor}{rgb}{0.545, 0.0, 0.0}
+
+
+
+    
+    % Prevent overflowing lines due to hard-to-break entities
+    \sloppy 
+    % Setup hyperref package
+    \hypersetup{
+      breaklinks=true,  % so long urls are correctly broken across lines
+      colorlinks=true,
+      urlcolor=urlcolor,
+      linkcolor=linkcolor,
+      citecolor=citecolor,
+      }
+    % Slightly bigger margins than the latex defaults
+    
+    \geometry{verbose,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in}
+    
+    
+
+    \begin{document}
+    
+    
+    \maketitle
+    
+    
+
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}1}]:} \PY{k+kn}{import} \PY{n+nn}{numpy} \PY{k}{as} \PY{n+nn}{np}
+        \PY{k+kn}{import} \PY{n+nn}{pandas} \PY{k}{as} \PY{n+nn}{pd}
+        \PY{k+kn}{import} \PY{n+nn}{matplotlib}\PY{n+nn}{.}\PY{n+nn}{pyplot} \PY{k}{as} \PY{n+nn}{plt}
+        
+        \PY{k+kn}{import} \PY{n+nn}{gensim}\PY{o}{,}\PY{n+nn}{os}\PY{o}{,}\PY{n+nn}{sklearn}\PY{o}{,}\PY{n+nn}{tqdm}
+        
+        \PY{k+kn}{from} \PY{n+nn}{collections} \PY{k}{import} \PY{n}{Counter}
+        \PY{k+kn}{from} \PY{n+nn}{datetime} \PY{k}{import} \PY{n}{datetime}
+        
+        \PY{k+kn}{from} \PY{n+nn}{scipy}\PY{n+nn}{.}\PY{n+nn}{sparse} \PY{k}{import} \PY{n}{csr\PYZus{}matrix}
+        \PY{k+kn}{from} \PY{n+nn}{sklearn}\PY{n+nn}{.}\PY{n+nn}{feature\PYZus{}extraction}\PY{n+nn}{.}\PY{n+nn}{text} \PY{k}{import} \PY{n}{TfidfVectorizer}
+        \PY{k+kn}{from} \PY{n+nn}{gensim} \PY{k}{import} \PY{n}{corpora}
+        \PY{k+kn}{from} \PY{n+nn}{gensim} \PY{k}{import} \PY{n}{models}
+        
+        \PY{c+c1}{\PYZsh{} \PYZpc{}matplotlib inline}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+C:\textbackslash{}Users\textbackslash{}Evan\textbackslash{}AppData\textbackslash{}Local\textbackslash{}conda\textbackslash{}conda\textbackslash{}envs\textbackslash{}env\_futures\textbackslash{}lib\textbackslash{}site-packages\textbackslash{}gensim\textbackslash{}utils.py:1197: UserWarning: detected Windows; aliasing chunkize to chunkize\_serial
+  warnings.warn("detected Windows; aliasing chunkize to chunkize\_serial")
+
+    \end{Verbatim}
+
+    \hypertarget{load-data}{%
+\section{load data}\label{load-data}}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}2}]:} \PY{n}{counter\PYZus{}dir}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{C:/Users/Evan/MyFile/Fortune\PYZhy{}street/007 oil\PYZus{}price/oilprice\PYZus{}news\PYZus{}analyze/002 data/003 outcome\PYZus{}data/word\PYZus{}counter\PYZus{}data/}\PY{l+s+s2}{\PYZdq{}}
+        \PY{n}{txt\PYZus{}dir}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{C:/Users/Evan/MyFile/Fortune\PYZhy{}street/007 oil\PYZus{}price/oilprice\PYZus{}news\PYZus{}analyze/002 data/002 corpus\PYZus{}data/token\PYZus{}pos\PYZus{}filtered\PYZus{}txt\PYZus{}data/}\PY{l+s+s2}{\PYZdq{}}
+        \PY{c+c1}{\PYZsh{} C:\PYZbs{}Users\PYZbs{}Evan\PYZbs{}MyFile\PYZbs{}Fortune\PYZhy{}street\PYZbs{}007 oil\PYZus{}price\PYZbs{}oilprice\PYZus{}news\PYZus{}analyze\PYZbs{}002 data\PYZbs{}002 corpus\PYZus{}data\PYZbs{}token\PYZus{}txt\PYZus{}data}
+        
+        \PY{n}{list\PYZus{}counter\PYZus{}filenames}\PY{o}{=}\PY{n+nb}{list}\PY{p}{(}\PY{n}{os}\PY{o}{.}\PY{n}{walk}\PY{p}{(}\PY{n}{counter\PYZus{}dir}\PY{p}{)}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{[}\PY{l+m+mi}{2}\PY{p}{]}
+        \PY{n+nb}{print}\PY{p}{(}\PY{n}{list\PYZus{}counter\PYZus{}filenames}\PY{p}{)}
+        \PY{n}{list\PYZus{}txt\PYZus{}source}\PY{o}{=}\PY{n+nb}{list}\PY{p}{(}\PY{n}{os}\PY{o}{.}\PY{n}{walk}\PY{p}{(}\PY{n}{txt\PYZus{}dir}\PY{p}{)}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}
+        \PY{n+nb}{print}\PY{p}{(}\PY{n}{list\PYZus{}txt\PYZus{}source}\PY{p}{)}
+        \PY{k}{def} \PY{n+nf}{read\PYZus{}news\PYZus{}txt\PYZus{}file}\PY{p}{(}\PY{n}{aFilepath}\PY{p}{)}\PY{p}{:}
+            \PY{n}{token\PYZus{}list}\PY{o}{=}\PY{p}{[}\PY{p}{]}
+            \PY{k}{with} \PY{n+nb}{open}\PY{p}{(}\PY{n}{aFilepath}\PY{p}{,}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{r}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,}\PY{n}{encoding}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{utf8}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)} \PY{k}{as} \PY{n}{f}\PY{p}{:}
+                \PY{n}{news\PYZus{}title}\PY{o}{=}\PY{n}{f}\PY{o}{.}\PY{n}{readline}\PY{p}{(}\PY{p}{)}
+                \PY{n}{line} \PY{o}{=} \PY{n}{news\PYZus{}title}
+                \PY{k}{while} \PY{n}{line} \PY{p}{:}
+                    \PY{n}{line} \PY{o}{=} \PY{n}{f}\PY{o}{.}\PY{n}{readline}\PY{p}{(}\PY{p}{)}
+                    \PY{n}{token\PYZus{}list}\PY{o}{.}\PY{n}{append}\PY{p}{(}\PY{n}{line}\PY{o}{.}\PY{n}{strip}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+            \PY{k}{return}\PY{p}{(}\PY{n}{news\PYZus{}title}\PY{p}{,}\PY{n}{token\PYZus{}list}\PY{p}{)}
+        \PY{n}{full\PYZus{}list}\PY{o}{=}\PY{p}{[}\PY{p}{]}
+        \PY{k}{for} \PY{n}{aSource} \PY{o+ow}{in} \PY{n}{list\PYZus{}txt\PYZus{}source}\PY{p}{:}
+            \PY{k}{for} \PY{n}{subpath} \PY{p}{,} \PY{n}{null} \PY{p}{,} \PY{n}{list\PYZus{}news\PYZus{}filenames} \PY{o+ow}{in} \PY{n}{tqdm}\PY{o}{.}\PY{n}{tqdm}\PY{p}{(}\PY{n+nb}{list}\PY{p}{(}\PY{n}{os}\PY{o}{.}\PY{n}{walk}\PY{p}{(}\PY{n}{txt\PYZus{}dir}\PY{o}{+}\PY{n}{aSource}\PY{p}{)}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{:}\PY{p}{]}\PY{p}{)}\PY{p}{:}
+                \PY{n}{news\PYZus{}publish\PYZus{}date}\PY{o}{=}\PY{n}{subpath}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+se}{\PYZbs{}\PYZbs{}}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}
+                \PY{n}{source}\PY{o}{=}\PY{n}{subpath}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+se}{\PYZbs{}\PYZbs{}}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{/}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{]}
+                \PY{k}{for} \PY{n}{aFilename} \PY{o+ow}{in} \PY{n}{list\PYZus{}news\PYZus{}filenames}\PY{p}{:}
+                    \PY{n}{aFilepath}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{/}\PY{l+s+s2}{\PYZdq{}}\PY{o}{.}\PY{n}{join}\PY{p}{(}\PY{p}{[}\PY{n}{subpath}\PY{p}{,} \PY{n}{aFilename}\PY{p}{]}\PY{p}{)}
+                    \PY{n}{news\PYZus{}title}\PY{p}{,}\PY{n}{news\PYZus{}tokens\PYZus{}list}\PY{o}{=}\PY{p}{(}\PY{n}{read\PYZus{}news\PYZus{}txt\PYZus{}file}\PY{p}{(}\PY{n}{aFilepath}\PY{p}{)}\PY{p}{)}
+                    
+                    \PY{n}{out\PYZus{}dict}\PY{o}{=}\PY{p}{\PYZob{}}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{news\PYZus{}publish\PYZus{}date}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:}\PY{n}{news\PYZus{}publish\PYZus{}date}\PY{p}{,}
+                              \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{news\PYZus{}title}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:}\PY{n}{news\PYZus{}title}\PY{p}{,}
+                              \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{news\PYZus{}tokens\PYZus{}list}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:}\PY{n}{news\PYZus{}tokens\PYZus{}list}\PY{p}{,}
+                              \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{source}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:}\PY{n}{source}\PY{p}{\PYZcb{}}
+                    \PY{n}{full\PYZus{}list}\PY{o}{.}\PY{n}{append}\PY{p}{(}\PY{n}{out\PYZus{}dict}\PY{p}{)}
+        \PY{n}{full\PYZus{}news\PYZus{}df}\PY{o}{=}\PY{n}{pd}\PY{o}{.}\PY{n}{DataFrame}\PY{p}{(}\PY{n}{full\PYZus{}list}\PY{p}{)}
+        \PY{n}{full\PYZus{}news\PYZus{}df}\PY{o}{.}\PY{n}{head}\PY{p}{(}\PY{l+m+mi}{10}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+['word\_counter.npy', 'word\_counter\_2019\_02\_08.npy', 'word\_counter\_2019\_02\_12.npy', 'word\_counter\_2019\_02\_26.npy']
+['cnbc\_news\_data', 'oil\_price\_news\_data', 'uk\_reuters\_news\_data']
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+100\%|██████████| 73/73 [00:04<00:00, 16.80it/s]
+100\%|██████████| 278/278 [00:06<00:00, 35.30it/s]
+100\%|██████████| 373/373 [02:31<00:00,  3.27it/s]
+
+    \end{Verbatim}
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}2}]:}   news\_publish\_date                                         news\_title  \textbackslash{}
+        0        2018-12-04  update 3-oil prices skid with global stock mar{\ldots}   
+        1        2018-12-04  u.s. oil prices slide with global markets on e{\ldots}   
+        2        2018-12-04  heating oil futures turn negative in post-sett{\ldots}   
+        3        2018-12-04  oil futures fall in post-settlement trade afte{\ldots}   
+        4        2018-12-05  update 1-oil prices dip as stock markets slide{\ldots}   
+        5        2018-12-05  oil prices ease in cautious trading ahead of o{\ldots}   
+        6        2018-12-05  oil prices extend gains, brent crude up by mor{\ldots}   
+        7        2018-12-05  update 5-oil prices fall on global growth conc{\ldots}   
+        8        2018-12-05  update 4-oil prices slip on global growth conc{\ldots}   
+        9        2018-12-06  oil firms on drop in us crude stocks, market a{\ldots}   
+        
+                                            news\_tokens\_list          source  
+        0  [, singapore, dec, reuters, oil, prices, slump{\ldots}  cnbc\_news\_data  
+        1  [, singapore, dec, reuters, oil, prices, slipp{\ldots}  cnbc\_news\_data  
+        2  [, heating, oil, futures, turn, negative, trad{\ldots}  cnbc\_news\_data  
+        3  [, oil, futures, fall, trade, api, data, show,{\ldots}  cnbc\_news\_data  
+        4  [, opec, meeting, singapore, dec, reuters, oil{\ldots}  cnbc\_news\_data  
+        5  [, singapore, dec, reuters, oil, prices, dippe{\ldots}  cnbc\_news\_data  
+        6  [, oil, prices, extend, gains, brent, crude, m{\ldots}  cnbc\_news\_data  
+        7  [, singapore, dec, reuters, oil, prices, fell,{\ldots}  cnbc\_news\_data  
+        8  [, singapore, dec, reuters, oil, prices, fell,{\ldots}  cnbc\_news\_data  
+        9  [, decision, singapore, dec, reuters, oil, pri{\ldots}  cnbc\_news\_data  
+\end{Verbatim}
+            
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor} }]:} \PY{n}{first\PYZus{}date}\PY{o}{=}\PY{n}{full\PYZus{}news\PYZus{}df}\PY{o}{.}\PY{n}{news\PYZus{}publish\PYZus{}date}\PY{o}{.}\PY{n}{unique}\PY{p}{(}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}
+        \PY{n}{full\PYZus{}history\PYZus{}df}\PY{o}{=}\PY{n}{pd}\PY{o}{.}\PY{n}{read\PYZus{}csv}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{C:}\PY{l+s+se}{\PYZbs{}\PYZbs{}}\PY{l+s+s2}{Users}\PY{l+s+se}{\PYZbs{}\PYZbs{}}\PY{l+s+s2}{Evan}\PY{l+s+se}{\PYZbs{}\PYZbs{}}\PY{l+s+s2}{MyFile}\PY{l+s+se}{\PYZbs{}\PYZbs{}}\PY{l+s+s2}{Fortune\PYZhy{}street}\PY{l+s+se}{\PYZbs{}\PYZbs{}}\PY{l+s+s2}{007 oil\PYZus{}price}\PY{l+s+se}{\PYZbs{}}
+        \PY{l+s+se}{\PYZbs{}\PYZbs{}}\PY{l+s+s2}{oilprice\PYZus{}news\PYZus{}analyze}\PY{l+s+se}{\PYZbs{}\PYZbs{}}\PY{l+s+s2}{002 data}\PY{l+s+se}{\PYZbs{}\PYZbs{}}\PY{l+s+s2}{001 price\PYZus{}data}\PY{l+s+se}{\PYZbs{}\PYZbs{}}\PY{l+s+s2}{crude\PYZus{}oil\PYZus{}price}\PY{l+s+se}{\PYZbs{}\PYZbs{}}\PY{l+s+s2}{Crude Oil WTI Futures Historical Data.csv}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+        \PY{n}{full\PYZus{}history\PYZus{}df}\PY{o}{.}\PY{n}{Date}\PY{o}{=}\PY{n}{pd}\PY{o}{.}\PY{n}{DatetimeIndex}\PY{p}{(}\PY{n}{full\PYZus{}history\PYZus{}df}\PY{o}{.}\PY{n}{Date}\PY{p}{)}
+        \PY{n}{full\PYZus{}history\PYZus{}df}\PY{o}{.}\PY{n}{columns}\PY{o}{=}\PY{p}{[}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Date}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Price}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Open}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{High}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Low}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{volume}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{change\PYZus{}percentage}\PY{l+s+s2}{\PYZdq{}}\PY{p}{]}
+        \PY{n}{full\PYZus{}history\PYZus{}df}\PY{o}{=}\PY{n}{full\PYZus{}history\PYZus{}df}\PY{p}{[}\PY{p}{:}\PY{p}{:}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{]}
+        \PY{n}{full\PYZus{}history\PYZus{}df}\PY{o}{=}\PY{n}{full\PYZus{}history\PYZus{}df}\PY{o}{.}\PY{n}{set\PYZus{}index}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Date}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,}\PY{n}{drop}\PY{o}{=}\PY{k+kc}{False}\PY{p}{)}
+        \PY{n}{history\PYZus{}since\PYZus{}news\PYZus{}df}\PY{o}{=}\PY{n}{full\PYZus{}history\PYZus{}df}\PY{o}{.}\PY{n}{loc}\PY{p}{[}\PY{n}{first\PYZus{}date}\PY{p}{:}\PY{p}{]}
+        \PY{n}{history\PYZus{}since\PYZus{}news\PYZus{}df}\PY{o}{.}\PY{n}{head}\PY{p}{(}\PY{p}{)}
+        \PY{c+c1}{\PYZsh{} history\PYZus{}since\PYZus{}news\PYZus{}df.to\PYZus{}csv(\PYZdq{}C:\PYZbs{}\PYZbs{}Users\PYZbs{}\PYZbs{}Evan\PYZbs{}\PYZbs{}MyFile\PYZbs{}\PYZbs{}Fortune\PYZhy{}street\PYZbs{}\PYZbs{}007 oil\PYZus{}price\PYZbs{}}
+        \PY{c+c1}{\PYZsh{} \PYZbs{}\PYZbs{}oilprice\PYZus{}news\PYZus{}analyze\PYZbs{}\PYZbs{}002 data\PYZbs{}\PYZbs{}001 price\PYZus{}data\PYZbs{}\PYZbs{}crude\PYZus{}oil\PYZus{}price\PYZbs{}\PYZbs{}Crude Oil WTI Futures Historical Data\PYZus{}haha.csv\PYZdq{})}
+        
+        \PY{n}{full\PYZus{}news\PYZus{}df}\PY{o}{.}\PY{n}{loc}\PY{p}{[}\PY{p}{:}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{news\PYZus{}publish\PYZus{}date}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{o}{=}\PY{n}{pd}\PY{o}{.}\PY{n}{DatetimeIndex}\PY{p}{(}\PY{n}{full\PYZus{}news\PYZus{}df}\PY{o}{.}\PY{n}{loc}\PY{p}{[}\PY{p}{:}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{news\PYZus{}publish\PYZus{}date}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}
+\end{Verbatim}
+
+
+    \hypertarget{define-functions-for-conveniency}{%
+\section{define functions for
+conveniency}\label{define-functions-for-conveniency}}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor} }]:} \PY{k}{def} \PY{n+nf}{get\PYZus{}news\PYZus{}by\PYZus{}date}\PY{p}{(}\PY{n}{start}\PY{p}{,}\PY{n}{end}\PY{o}{=}\PY{k+kc}{None}\PY{p}{)}\PY{p}{:}
+            \PY{n}{START}\PY{o}{=}\PY{n}{start}
+            \PY{k}{if} \PY{o+ow}{not} \PY{n}{end}\PY{p}{:}
+                \PY{n}{END}\PY{o}{=}\PY{n}{START}
+            \PY{k}{else}\PY{p}{:}
+                \PY{n}{END}\PY{o}{=}\PY{n}{end}
+            \PY{n}{out}\PY{o}{=}\PY{n}{full\PYZus{}news\PYZus{}df}\PY{o}{.}\PY{n}{loc}\PY{p}{[}\PY{n}{full\PYZus{}news\PYZus{}df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{news\PYZus{}publish\PYZus{}date}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{o}{\PYZgt{}}\PY{o}{=}\PY{n}{START}\PY{p}{,}\PY{p}{:}\PY{p}{]}
+            \PY{n}{out}\PY{o}{=}\PY{n}{out}\PY{o}{.}\PY{n}{loc}\PY{p}{[}\PY{n}{out}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{news\PYZus{}publish\PYZus{}date}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{o}{\PYZlt{}}\PY{o}{=}\PY{n}{END}\PY{p}{,}\PY{p}{:}\PY{p}{]}
+            \PY{k}{return}\PY{p}{(}\PY{n}{out}\PY{p}{)}
+        
+        \PY{k}{def} \PY{n+nf}{get\PYZus{}news\PYZus{}by\PYZus{}dates}\PY{p}{(}\PY{n}{dates}\PY{p}{)}\PY{p}{:}
+            \PY{n}{out}\PY{o}{=}\PY{n}{full\PYZus{}news\PYZus{}df}\PY{o}{.}\PY{n}{loc}\PY{p}{[}\PY{n}{full\PYZus{}news\PYZus{}df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{news\PYZus{}publish\PYZus{}date}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{o}{.}\PY{n}{isin}\PY{p}{(}\PY{n}{dates}\PY{p}{)}\PY{p}{,}\PY{p}{:}\PY{p}{]}
+        \PY{c+c1}{\PYZsh{}     out=out.loc[out[\PYZsq{}news\PYZus{}publish\PYZus{}date\PYZsq{}]\PYZlt{}=END,:]}
+            \PY{k}{return}\PY{p}{(}\PY{n}{out}\PY{p}{)}
+\end{Verbatim}
+
+
+    \hypertarget{observe-change_percentage}{%
+\section{observe change\_percentage}\label{observe-change_percentage}}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}110}]:} \PY{k}{if} \PY{n+nb}{type}\PY{p}{(}\PY{n}{history\PYZus{}since\PYZus{}news\PYZus{}df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{change\PYZus{}percentage}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{)}\PY{o}{==}\PY{n+nb}{str}\PY{p}{:}
+              \PY{n}{history\PYZus{}since\PYZus{}news\PYZus{}df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{change\PYZus{}percentage}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{o}{=}\PY{n}{history\PYZus{}since\PYZus{}news\PYZus{}df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{change\PYZus{}percentage}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{o}{.}\PY{n}{apply}\PY{p}{(}\PY{k}{lambda} \PY{n}{x} \PY{p}{:}\PY{n+nb}{float}\PY{p}{(}\PY{n}{x}\PY{p}{[}\PY{p}{:}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{)}\PY{p}{)}
+          \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{[}\PY{l+s+s2}{\PYZsq{}}\PY{l+s+s2}{change\PYZus{}percentage}\PY{l+s+s2}{\PYZsq{}}\PY{l+s+s2}{].abs().mean()}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,}\PY{n}{history\PYZus{}since\PYZus{}news\PYZus{}df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{change\PYZus{}percentage}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{o}{.}\PY{n}{abs}\PY{p}{(}\PY{p}{)}\PY{o}{.}\PY{n}{mean}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+          \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{[}\PY{l+s+s2}{\PYZsq{}}\PY{l+s+s2}{change\PYZus{}percentage}\PY{l+s+s2}{\PYZsq{}}\PY{l+s+s2}{].abs().std()}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,}\PY{n}{history\PYZus{}since\PYZus{}news\PYZus{}df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{change\PYZus{}percentage}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{o}{.}\PY{n}{abs}\PY{p}{(}\PY{p}{)}\PY{o}{.}\PY{n}{std}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+          \PY{n}{history\PYZus{}since\PYZus{}news\PYZus{}df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{change\PYZus{}percentage}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{o}{.}\PY{n}{abs}\PY{p}{(}\PY{p}{)}\PY{o}{.}\PY{n}{hist}\PY{p}{(}\PY{p}{)}
+          
+          \PY{n+nb}{print}\PY{p}{(}\PY{n}{history\PYZus{}since\PYZus{}news\PYZus{}df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{change\PYZus{}percentage}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{o}{.}\PY{n}{count}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+          \PY{n}{big\PYZus{}change\PYZus{}date}\PY{o}{=}\PY{n}{history\PYZus{}since\PYZus{}news\PYZus{}df}\PY{o}{.}\PY{n}{loc}\PY{p}{[}\PY{n}{history\PYZus{}since\PYZus{}news\PYZus{}df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{change\PYZus{}percentage}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{o}{.}\PY{n}{abs}\PY{p}{(}\PY{p}{)}\PY{o}{\PYZgt{}}\PY{l+m+mi}{3}\PY{p}{]}\PY{o}{.}\PY{n}{index}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+['change\_percentage'].abs().mean() 1.6206976744186046
+['change\_percentage'].abs().std() 1.468391509499765
+86
+
+    \end{Verbatim}
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_7_1.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \hypertarget{draw-big_change_date}{%
+\section{draw big\_change\_date}\label{draw-big_change_date}}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}109}]:} \PY{k+kn}{from} \PY{n+nn}{pandas}\PY{n+nn}{.}\PY{n+nn}{plotting} \PY{k}{import} \PY{n}{register\PYZus{}matplotlib\PYZus{}converters}
+          \PY{k+kn}{import} \PY{n+nn}{matplotlib}\PY{n+nn}{.}\PY{n+nn}{dates} \PY{k}{as} \PY{n+nn}{mdates}
+          
+          \PY{n}{fig}\PY{o}{=}\PY{n}{plt}\PY{o}{.}\PY{n}{figure}\PY{p}{(}\PY{n}{figsize}\PY{o}{=}\PY{p}{(}\PY{l+m+mi}{32}\PY{p}{,}\PY{l+m+mi}{16}\PY{p}{)}\PY{p}{)}
+          \PY{n}{plt}\PY{o}{.}\PY{n}{gca}\PY{p}{(}\PY{p}{)}\PY{o}{.}\PY{n}{xaxis}\PY{o}{.}\PY{n}{set\PYZus{}major\PYZus{}formatter}\PY{p}{(}\PY{n}{mdates}\PY{o}{.}\PY{n}{DateFormatter}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZpc{}}\PY{l+s+s1}{Y\PYZhy{}}\PY{l+s+s1}{\PYZpc{}}\PY{l+s+s1}{m\PYZhy{}}\PY{l+s+si}{\PYZpc{}d}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{)}
+          \PY{c+c1}{\PYZsh{} plt.gca().xaxis.set\PYZus{}major\PYZus{}locator(mdates.DayLocator())}
+          \PY{n}{register\PYZus{}matplotlib\PYZus{}converters}\PY{p}{(}\PY{p}{)}
+          
+          
+          \PY{n}{xt}\PY{o}{=}\PY{n}{pd}\PY{o}{.}\PY{n}{Series}\PY{p}{(}\PY{n}{pd}\PY{o}{.}\PY{n}{date\PYZus{}range}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{2018\PYZhy{}12\PYZhy{}01}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{2019\PYZhy{}03\PYZhy{}31}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,}\PY{n}{freq}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{5D}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{)}\PY{o}{.}\PY{n}{apply}\PY{p}{(}\PY{n}{pd}\PY{o}{.}\PY{n}{to\PYZus{}datetime}\PY{p}{)}
+          \PY{n}{plt}\PY{o}{.}\PY{n}{xticks}\PY{p}{(}\PY{n}{xt}\PY{p}{,}\PY{n}{rotation}\PY{o}{=}\PY{l+m+mi}{90}\PY{p}{)}
+          \PY{n}{plt}\PY{o}{.}\PY{n}{yticks}\PY{p}{(}\PY{n}{np}\PY{o}{.}\PY{n}{arange}\PY{p}{(}\PY{l+m+mi}{42}\PY{p}{,}\PY{l+m+mi}{60}\PY{p}{,}\PY{l+m+mf}{0.5}\PY{p}{)}\PY{p}{)}
+          \PY{n}{plt}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{n}{history\PYZus{}since\PYZus{}news\PYZus{}df}\PY{o}{.}\PY{n}{loc}\PY{p}{[}\PY{p}{:}\PY{p}{,}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Date}\PY{l+s+s2}{\PYZdq{}}\PY{p}{]}\PY{p}{,}\PY{n}{history\PYZus{}since\PYZus{}news\PYZus{}df}\PY{o}{.}\PY{n}{loc}\PY{p}{[}\PY{p}{:}\PY{p}{,}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Price}\PY{l+s+s2}{\PYZdq{}}\PY{p}{]}\PY{p}{,}\PY{n}{linewidth}\PY{o}{=}\PY{l+m+mi}{2}\PY{p}{)}
+          \PY{n}{plt}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{n}{history\PYZus{}since\PYZus{}news\PYZus{}df}\PY{o}{.}\PY{n}{loc}\PY{p}{[}\PY{n}{history\PYZus{}since\PYZus{}news\PYZus{}df}\PY{o}{.}\PY{n}{Date}\PY{o}{.}\PY{n}{isin}\PY{p}{(}\PY{n}{big\PYZus{}change\PYZus{}date}\PY{o}{\PYZhy{}}\PY{n}{pd}\PY{o}{.}\PY{n}{Timedelta}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{1D}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{)}\PY{p}{,}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Price}\PY{l+s+s2}{\PYZdq{}}\PY{p}{]}\PY{p}{,}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{or}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+          
+          \PY{n}{plt}\PY{o}{.}\PY{n}{grid}\PY{p}{(}\PY{k+kc}{True}\PY{p}{,}\PY{n}{linestyle}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZhy{}.}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+          \PY{n}{plt}\PY{o}{.}\PY{n}{show}\PY{p}{(}\PY{p}{)}
+          \PY{n}{plt}\PY{o}{.}\PY{n}{savefig}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{./big\PYZus{}change.png}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_9_0.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    
+    \begin{verbatim}
+<Figure size 432x288 with 0 Axes>
+    \end{verbatim}
+
+    
+    \hypertarget{apply-stopwords}{%
+\section{apply stopwords}\label{apply-stopwords}}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor} }]:} \PY{k+kn}{from} \PY{n+nn}{collections} \PY{k}{import} \PY{n}{Counter}
+        \PY{k+kn}{from} \PY{n+nn}{nltk}\PY{n+nn}{.}\PY{n+nn}{corpus} \PY{k}{import} \PY{n}{stopwords}
+        \PY{c+c1}{\PYZsh{}define the pos\PYZus{}date \PYZam{} neg\PYZus{}date}
+        \PY{n}{neg\PYZus{}date}\PY{o}{=}\PY{n}{history\PYZus{}since\PYZus{}news\PYZus{}df}\PY{o}{.}\PY{n}{loc}\PY{p}{[}\PY{n}{history\PYZus{}since\PYZus{}news\PYZus{}df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{change\PYZus{}percentage}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{o}{\PYZlt{}}\PY{o}{\PYZhy{}}\PY{l+m+mi}{3}\PY{p}{]}\PY{o}{.}\PY{n}{index}
+        \PY{n}{pos\PYZus{}date}\PY{o}{=}\PY{n}{history\PYZus{}since\PYZus{}news\PYZus{}df}\PY{o}{.}\PY{n}{loc}\PY{p}{[}\PY{n}{history\PYZus{}since\PYZus{}news\PYZus{}df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{change\PYZus{}percentage}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{o}{\PYZgt{}}\PY{l+m+mi}{3}\PY{p}{]}\PY{o}{.}\PY{n}{index}
+        \PY{c+c1}{\PYZsh{} get stopWords from nltk}
+        \PY{n}{stopWords} \PY{o}{=}\PY{n+nb}{set}\PY{p}{(}\PY{n}{stopwords}\PY{o}{.}\PY{n}{words}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{english}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{)}
+        \PY{n}{human\PYZus{}stopWords}\PY{o}{=}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}
+        \PY{k}{def} \PY{n+nf}{stop\PYZus{}words\PYZus{}filter}\PY{p}{(}\PY{n}{aListOfTokens}\PY{p}{,}\PY{n}{stopwords}\PY{o}{=}\PY{k+kc}{None}\PY{p}{)}\PY{p}{:}
+            \PY{n}{new\PYZus{}l}\PY{o}{=}\PY{p}{[}\PY{n}{token} \PY{k}{for} \PY{n}{token} \PY{o+ow}{in} \PY{n}{aListOfTokens} \PY{k}{if} \PY{n}{token} \PY{o+ow}{not} \PY{o+ow}{in} \PY{n}{stopwords}\PY{p}{]}
+            \PY{k}{return}\PY{p}{(}\PY{n}{new\PYZus{}l}\PY{p}{)}
+        
+        \PY{n}{corpus\PYZus{}for\PYZus{}vectorizer}\PY{o}{=}\PY{n}{full\PYZus{}news\PYZus{}df}\PY{o}{.}\PY{n}{news\PYZus{}tokens\PYZus{}list}\PY{o}{.}\PY{n}{apply}\PY{p}{(}\PY{k}{lambda} \PY{n}{x}\PY{p}{:} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{ }\PY{l+s+s2}{\PYZdq{}}\PY{o}{.}\PY{n}{join}\PY{p}{(}\PY{n}{x}\PY{p}{)}\PY{p}{)}
+        \PY{n}{vectorizer}\PY{o}{=}\PY{n}{TfidfVectorizer}\PY{p}{(}\PY{n}{max\PYZus{}df}\PY{o}{=}\PY{l+m+mf}{0.7}\PY{p}{,}\PY{n}{min\PYZus{}df}\PY{o}{=}\PY{l+m+mi}{15}\PY{p}{)}
+        \PY{n}{vectorizer}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{n}{corpus\PYZus{}for\PYZus{}vectorizer}\PY{p}{)}
+        \PY{n}{defined\PYZus{}stopwords}\PY{o}{=}\PY{n}{vectorizer}\PY{o}{.}\PY{n}{stop\PYZus{}words\PYZus{}}
+        \PY{n}{defined\PYZus{}stopwords}\PY{o}{.}\PY{n}{update}\PY{p}{(}\PY{n}{stopWords}\PY{p}{)}
+        \PY{n}{defined\PYZus{}stopwords}\PY{o}{.}\PY{n}{add}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+        
+        \PY{n}{full\PYZus{}news\PYZus{}df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{news\PYZus{}tokens\PYZus{}list\PYZus{}stripped}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{o}{=}\PY{n}{full\PYZus{}news\PYZus{}df}\PY{o}{.}\PY{n}{news\PYZus{}tokens\PYZus{}list}\PY{o}{.}\PYZbs{}
+        \PY{n}{apply}\PY{p}{(}\PY{n}{stop\PYZus{}words\PYZus{}filter}\PY{p}{,}\PYZbs{}
+              \PY{n}{stopwords}\PY{o}{=}\PY{n}{defined\PYZus{}stopwords}\PY{p}{)}
+\end{Verbatim}
+
+
+    \hypertarget{get-tfidf-vec-of-pos-and-neg}{%
+\section{get tfidf vec of pos and
+neg}\label{get-tfidf-vec-of-pos-and-neg}}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}111}]:} \PY{c+c1}{\PYZsh{} get counter of each category}
+          \PY{n}{all\PYZus{}counter}\PY{o}{=}\PY{n}{Counter}\PY{p}{(}\PY{p}{)}
+          \PY{c+c1}{\PYZsh{} for t\PYZus{}date in history\PYZus{}since\PYZus{}news\PYZus{}df.index:}
+          \PY{c+c1}{\PYZsh{}     aListOfToken=get\PYZus{}news\PYZus{}by\PYZus{}date(t\PYZus{}date).news\PYZus{}tokens\PYZus{}list\PYZus{}stripped}
+          \PY{c+c1}{\PYZsh{}     for tokens in aListOfToken:}
+          \PY{c+c1}{\PYZsh{}         all\PYZus{}counter.update(tokens)}
+          \PY{n}{aListOfToken}\PY{o}{=}\PY{n}{get\PYZus{}news\PYZus{}by\PYZus{}dates}\PY{p}{(}\PY{n}{history\PYZus{}since\PYZus{}news\PYZus{}df}\PY{o}{.}\PY{n}{index}\PY{p}{)}\PY{o}{.}\PY{n}{news\PYZus{}tokens\PYZus{}list\PYZus{}stripped}
+          \PY{n}{for\PYZus{}vectorizer}\PY{o}{=}\PY{n}{aListOfToken}\PY{o}{.}\PY{n}{apply}\PY{p}{(}\PY{k}{lambda} \PY{n}{x}\PY{p}{:} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{ }\PY{l+s+s2}{\PYZdq{}}\PY{o}{.}\PY{n}{join}\PY{p}{(}\PY{n}{x}\PY{p}{)}\PY{p}{)}
+          \PY{n}{all\PYZus{}vec}\PY{o}{=}\PY{n}{vectorizer}\PY{o}{.}\PY{n}{transform}\PY{p}{(}\PY{n}{for\PYZus{}vectorizer}\PY{p}{)}
+          \PY{n}{aListOfToken}\PY{o}{.}\PY{n}{apply}\PY{p}{(}\PY{k}{lambda} \PY{n}{x}\PY{p}{:} \PY{n}{all\PYZus{}counter}\PY{o}{.}\PY{n}{update}\PY{p}{(}\PY{n}{x}\PY{p}{)}\PY{p}{)}
+          \PY{c+c1}{\PYZsh{} for tokens in aListOfToken:}
+          \PY{c+c1}{\PYZsh{}     all\PYZus{}counter.update(tokens)}
+          
+          \PY{n}{pos\PYZus{}counter}\PY{o}{=}\PY{n}{Counter}\PY{p}{(}\PY{p}{)}
+          \PY{c+c1}{\PYZsh{} for t\PYZus{}date in pos\PYZus{}date\PYZhy{}pd.Timedelta(\PYZdq{}1D\PYZdq{}):}
+          \PY{c+c1}{\PYZsh{}     aListOfToken=get\PYZus{}news\PYZus{}by\PYZus{}date(t\PYZus{}date).news\PYZus{}tokens\PYZus{}list\PYZus{}stripped}
+          \PY{c+c1}{\PYZsh{}     for\PYZus{}vectorizer=aListOfToken.apply(lambda x: \PYZdq{} \PYZdq{}.join(x))}
+          \PY{c+c1}{\PYZsh{}     vec=vectorizer.transform(for\PYZus{}vectorizer)}
+          \PY{c+c1}{\PYZsh{}     print(vec)}
+          \PY{c+c1}{\PYZsh{}     for tokens in aListOfToken:}
+          \PY{c+c1}{\PYZsh{}         pos\PYZus{}counter.update(tokens)}
+                  
+          \PY{n}{aListOfToken}\PY{o}{=}\PY{n}{get\PYZus{}news\PYZus{}by\PYZus{}dates}\PY{p}{(}\PY{n}{pos\PYZus{}date}\PY{o}{\PYZhy{}}\PY{n}{pd}\PY{o}{.}\PY{n}{Timedelta}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{1D}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{)}\PY{o}{.}\PY{n}{news\PYZus{}tokens\PYZus{}list\PYZus{}stripped}
+          \PY{n}{for\PYZus{}vectorizer}\PY{o}{=}\PY{n}{aListOfToken}\PY{o}{.}\PY{n}{apply}\PY{p}{(}\PY{k}{lambda} \PY{n}{x}\PY{p}{:} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{ }\PY{l+s+s2}{\PYZdq{}}\PY{o}{.}\PY{n}{join}\PY{p}{(}\PY{n}{x}\PY{p}{)}\PY{p}{)}
+          \PY{n}{pos\PYZus{}vec}\PY{o}{=}\PY{n}{vectorizer}\PY{o}{.}\PY{n}{transform}\PY{p}{(}\PY{n}{for\PYZus{}vectorizer}\PY{p}{)}
+          \PY{k}{for} \PY{n}{tokens} \PY{o+ow}{in} \PY{n}{aListOfToken}\PY{p}{:}
+              \PY{n}{pos\PYZus{}counter}\PY{o}{.}\PY{n}{update}\PY{p}{(}\PY{n}{tokens}\PY{p}{)}
+                  
+                  
+          \PY{n}{neg\PYZus{}counter}\PY{o}{=}\PY{n}{Counter}\PY{p}{(}\PY{p}{)}
+          \PY{c+c1}{\PYZsh{} for t\PYZus{}date in neg\PYZus{}date\PYZhy{}pd.Timedelta(\PYZdq{}1D\PYZdq{}):}
+          \PY{c+c1}{\PYZsh{}     aListOfToken=get\PYZus{}news\PYZus{}by\PYZus{}date(t\PYZus{}date).news\PYZus{}tokens\PYZus{}list\PYZus{}stripped}
+          \PY{c+c1}{\PYZsh{}     for tokens in aListOfToken:}
+          \PY{c+c1}{\PYZsh{}         neg\PYZus{}counter.update(tokens)}
+          \PY{n}{aListOfToken}\PY{o}{=}\PY{n}{get\PYZus{}news\PYZus{}by\PYZus{}dates}\PY{p}{(}\PY{n}{neg\PYZus{}date}\PY{o}{\PYZhy{}}\PY{n}{pd}\PY{o}{.}\PY{n}{Timedelta}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{1D}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{)}\PY{o}{.}\PY{n}{news\PYZus{}tokens\PYZus{}list\PYZus{}stripped}
+          \PY{n}{for\PYZus{}vectorizer}\PY{o}{=}\PY{n}{aListOfToken}\PY{o}{.}\PY{n}{apply}\PY{p}{(}\PY{k}{lambda} \PY{n}{x}\PY{p}{:} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{ }\PY{l+s+s2}{\PYZdq{}}\PY{o}{.}\PY{n}{join}\PY{p}{(}\PY{n}{x}\PY{p}{)}\PY{p}{)}
+          \PY{n}{neg\PYZus{}vec}\PY{o}{=}\PY{n}{vectorizer}\PY{o}{.}\PY{n}{transform}\PY{p}{(}\PY{n}{for\PYZus{}vectorizer}\PY{p}{)}
+          \PY{k}{for} \PY{n}{tokens} \PY{o+ow}{in} \PY{n}{aListOfToken}\PY{p}{:}
+              \PY{n}{neg\PYZus{}counter}\PY{o}{.}\PY{n}{update}\PY{p}{(}\PY{n}{tokens}\PY{p}{)}
+          \PY{c+c1}{\PYZsh{}}
+          \PY{c+c1}{\PYZsh{} pd.DataFrame.from\PYZus{}dict(all\PYZus{}counter,orient=\PYZsq{}index\PYZsq{},columns=[\PYZsq{}all\PYZus{}count\PYZsq{}]).head()}
+\end{Verbatim}
+
+
+    \hypertarget{find-keywords-with-a-naive-way}{%
+\section{find keywords with a naive
+way}\label{find-keywords-with-a-naive-way}}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}54}]:} \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{pos\PYZhy{}neg}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,}\PY{p}{(}\PY{n}{pos\PYZus{}counter}\PY{o}{\PYZhy{}}\PY{n}{neg\PYZus{}counter}\PY{p}{)}\PY{o}{.}\PY{n}{most\PYZus{}common}\PY{p}{(}\PY{l+m+mi}{40}\PY{p}{)}\PY{p}{,}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{neg\PYZhy{}pos}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,}\PY{p}{(}\PY{n}{neg\PYZus{}counter}\PY{o}{\PYZhy{}}\PY{n}{pos\PYZus{}counter}\PY{p}{)}\PY{o}{.}\PY{n}{most\PYZus{}common}\PY{p}{(}\PY{l+m+mi}{40}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+pos-neg [('trade', 164), ('tuesday', 89), ('new', 76), ('imports', 69), ('gas', 66), ('beijing', 61), ('talks', 61), ('december', 60), ('lng', 60), ('states', 57), ('euro', 51), ('demand', 47), ('chinese', 47), ('hit', 43), ('hopes', 42), ('diesel', 42), ('risk', 40), ('two', 40), ('dispute', 39), ('points', 39), ('well', 38), ('york', 38), ('thursday', 38), ('supply', 37), ('world', 37), ('bank', 37), ('recession', 37), ('deal', 36), ('change', 33), ('air', 33), ('officials', 32), ('exports', 32), ('copper', 31), ('positions', 30), ('supported', 29), ('rose', 29), ('huawei', 29), ('year', 28), ('united', 28), ('net', 28)] 
+
+neg-pos [('output', 107), ('maduro', 87), ('oil', 76), ('venezuela', 76), ('guaido', 72), ('saturday', 69), ('sunday', 68), ('president', 62), ('minister', 59), ('aid', 55), ('friday', 52), ('pdvsa', 52), ('fed', 51), ('monday', 50), ('economic', 50), ('leader', 48), ('opec', 47), ('pct', 47), ('dec', 46), ('iran', 46), ('investors', 46), ('opposition', 46), ('jan', 44), ('bureau', 44), ('markets', 41), ('market', 39), ('gmt', 38), ('japan', 38), ('military', 38), ('percent', 36), ('lowest', 35), ('power', 35), ('tv', 35), ('meeting', 33), ('national', 33), ('quevedo', 33), ('former', 31), ('venezuelan', 31), ('record', 30), ('official', 29)]
+
+    \end{Verbatim}
+
+    \hypertarget{find-keywords-of-pos_vec-by-minus-mean-of-all_vec}{%
+\section{find keywords of pos\_vec by minus mean of
+all\_vec}\label{find-keywords-of-pos_vec-by-minus-mean-of-all_vec}}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}136}]:} \PY{n}{all\PYZus{}vec\PYZus{}mean}\PY{o}{=}\PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{n}{all\PYZus{}vec}\PY{o}{.}\PY{n}{mean}\PY{p}{(}\PY{n}{axis}\PY{o}{=}\PY{l+m+mi}{0}\PY{p}{)}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}
+          \PY{n}{a}\PY{o}{=}\PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{n}{pos\PYZus{}vec}\PY{o}{.}\PY{n}{mean}\PY{p}{(}\PY{n}{axis}\PY{o}{=}\PY{l+m+mi}{0}\PY{p}{)}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{o}{\PYZhy{}}\PY{n}{all\PYZus{}vec\PYZus{}mean}
+          \PY{n}{keyword\PYZus{}index}\PY{o}{=}\PY{n}{np}\PY{o}{.}\PY{n}{argwhere}\PY{p}{(}\PY{n}{a}\PY{o}{\PYZgt{}}\PY{l+m+mf}{0.005}\PY{p}{)}\PY{o}{.}\PY{n}{reshape}\PY{p}{(}\PY{l+m+mi}{1}\PY{p}{,}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}
+          \PY{n}{feature\PYZus{}names}\PY{o}{=}\PY{n}{vectorizer}\PY{o}{.}\PY{n}{get\PYZus{}feature\PYZus{}names}\PY{p}{(}\PY{p}{)}
+          \PY{n}{aList}\PY{o}{=}\PY{p}{[}\PY{p}{]}
+          \PY{k}{for} \PY{n}{i} \PY{o+ow}{in} \PY{n}{keyword\PYZus{}index}\PY{p}{:}
+              \PY{n}{aList}\PY{o}{.}\PY{n}{append}\PY{p}{(}\PY{n}{feature\PYZus{}names}\PY{p}{[}\PY{n}{i}\PY{p}{]}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}143}]:} \PY{n+nb}{sorted}\PY{p}{(}\PY{n+nb}{zip}\PY{p}{(}\PY{n}{a}\PY{p}{[}\PY{n}{keyword\PYZus{}index}\PY{p}{]}\PY{o}{.}\PY{n}{tolist}\PY{p}{(}\PY{p}{)}\PY{p}{,}\PY{n}{aList}\PY{p}{)}\PY{p}{,}\PY{n}{key}\PY{o}{=}\PY{k}{lambda} \PY{n}{atuple}\PY{p}{:}\PY{n}{atuple}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{,}\PY{n}{reverse}\PY{o}{=}\PY{k+kc}{True}\PY{p}{)}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}143}]:} [(0.014739537783220364, 'trade'),
+           (0.012264784828320231, 'jan'),
+           (0.012105036954528777, 'december'),
+           (0.011895448515047913, 'imports'),
+           (0.011515875063206529, 'china'),
+           (0.010536262016827055, 'futures'),
+           (0.010457537088336856, 'demand'),
+           (0.01026891016022631, 'beijing'),
+           (0.00981513639425604, 'dispute'),
+           (0.00928816121088667, 'monday'),
+           (0.00884054454215243, 'lng'),
+           (0.008511594312195194, 'audi'),
+           (0.008419321156062977, 'wti'),
+           (0.00838721666712231, 'chinese'),
+           (0.008134410484869434, 'hopes'),
+           (0.007725918995589869, 'tuesday'),
+           (0.007158085589749293, 'barrel'),
+           (0.007079325329748384, 'resolve'),
+           (0.007070039667679027, 'talks'),
+           (0.00678941036054455, 'positions'),
+           (0.006707101256312667, 'fsru'),
+           (0.006703557000214151, 'huawei'),
+           (0.006667150549841579, 'euro'),
+           (0.0066336916449697084, 'copper'),
+           (0.006559425339850194, 'air'),
+           (0.0065228137601051565, 'pollution'),
+           (0.006508383772619299, 'ratings'),
+           (0.0063486638773039405, 'supported'),
+           (0.006313471881706057, 'projects'),
+           (0.006190268213679549, 'recession'),
+           (0.006157665435559529, 'slowing'),
+           (0.0061477607988884315, 'officials'),
+           (0.006011975902950789, 'risk'),
+           (0.005994593005462507, 'world'),
+           (0.005964325322259499, 'rials'),
+           (0.005821531106958572, 'weather'),
+           (0.005740458374459827, 'christmas'),
+           (0.0056620345315434376, 'unscheduled'),
+           (0.00555592277320921, 'slowdown'),
+           (0.005524669921451527, 'improved'),
+           (0.00547830890508864, 'per'),
+           (0.00538815021270866, 'ice'),
+           (0.005306106143136452, 'ports'),
+           (0.0051955581363708845, 'diesel'),
+           (0.005185945069485838, 'significantly'),
+           (0.0051768073019909395, 'knees'),
+           (0.00517529912594054, 'appetite'),
+           (0.005168898909587119, 'managers'),
+           (0.005154303800901307, 'bullish'),
+           (0.005153612751625442, 'well'),
+           (0.005129604429044579, 'economies'),
+           (0.005124465521278799, 'rouhani'),
+           (0.005122829768521447, 'new'),
+           (0.005067031870830501, 'article'),
+           (0.005054844540731766, 'mmboe'),
+           (0.005032264689785236, 'weakening')]
+\end{Verbatim}
+            
+
+    % Add a bibliography block to the postdoc
+    
+    
+    
+    \end{document}
